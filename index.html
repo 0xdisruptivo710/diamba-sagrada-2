@@ -54,55 +54,25 @@
   <main>
 
     <!-- ========== HERO ========== -->
-    <section class="hero">
-      <div class="hero__bg"></div>
-
-      <!-- Decorative leaves -->
-      <div class="hero__decor hero__decor--left" aria-hidden="true">
-        <svg viewBox="0 0 200 300" width="200" height="300" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M100 290V100"/>
-          <path d="M100 100c-15-30-50-55-85-55 5 35 35 65 85 70"/>
-          <path d="M100 100c15-30 50-55 85-55-5 35-35 65-85 70"/>
-          <path d="M100 160c-20-15-55-18-78-5 10 22 40 30 78 18"/>
-          <path d="M100 160c20-15 55-18 78-5-10 22-40 30-78 18"/>
-          <path d="M100 60c-8-25-30-48-55-55 2 30 18 52 55 65"/>
-          <path d="M100 60c8-25 30-48 55-55-2 30-18 52-55 65"/>
-          <path d="M100 40c-5-15-18-30-35-38 1 20 12 35 35 43"/>
-          <path d="M100 40c5-15 18-30 35-38-1 20-12 35-35 43"/>
-        </svg>
-      </div>
-
-      <div class="hero__decor hero__decor--right" aria-hidden="true">
-        <svg viewBox="0 0 200 300" width="200" height="300" fill="none" stroke="currentColor" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M100 290V100"/>
-          <path d="M100 100c-15-30-50-55-85-55 5 35 35 65 85 70"/>
-          <path d="M100 100c15-30 50-55 85-55-5 35-35 65-85 70"/>
-          <path d="M100 160c-20-15-55-18-78-5 10 22 40 30 78 18"/>
-          <path d="M100 160c20-15 55-18 78-5-10 22-40 30-78 18"/>
-          <path d="M100 60c-8-25-30-48-55-55 2 30 18 52 55 65"/>
-          <path d="M100 60c8-25 30-48 55-55-2 30-18 52-55 65"/>
-          <path d="M100 40c-5-15-18-30-35-38 1 20 12 35 35 43"/>
-          <path d="M100 40c5-15 18-30 35-38-1 20-12 35-35 43"/>
-        </svg>
-      </div>
+    <section class="hero hero--cinema">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="img/logo.png" aria-hidden="true">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay" aria-hidden="true"></div>
 
       <div class="container hero__content">
-        <span class="hero__badge page-enter">Associação de Pacientes</span>
         <h1 class="hero__title page-enter">
           Cultivar é direito.<br>
           Tratar é <span class="accent">dignidade</span>.
         </h1>
-        <p class="hero__subtitle page-enter">
-          A Diamba Sagrada é uma associação de pacientes que acredita que o cuidado com a saúde é um direito de todos.
-        </p>
         <div class="btn-group page-enter" style="justify-content:center">
-          <a href="seja-associado.html" class="btn btn--primary btn--lg">Quero me associar</a>
-          <a href="#jornada" class="btn btn--secondary btn--lg">Como funciona</a>
+          <a href="seja-associado.html" class="btn btn--gold btn--lg">Quero me associar</a>
         </div>
-        <p class="hero__disclaimer page-enter">
-          Atualmente em fase de construção. Não fornecemos óleo neste momento.
-        </p>
       </div>
+
+      <a href="#jornada" class="hero__scroll" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
     </section>
 
     <!-- ========== PILLARS ========== -->
