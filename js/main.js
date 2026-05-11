@@ -10,6 +10,78 @@
   'use strict';
 
   /* ------------------------------------------------------------------------
+     0. WEBHOOK — Padrão único de envio JSON para n8n
+     ------------------------------------------------------------------------ */
+  var WEBHOOK_URL = 'https://aios-n8n-webhook.yspmhc.easypanel.host/webhook/diamba-sagrada';
+
+  function fileToBase64(file) {
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var result = reader.result || '';
+        var base64 = String(result).split(',')[1] || '';
+        resolve({ name: file.name, type: file.type, size: file.size, data: base64 });
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function collectFormData(form) {
+    var data = {};
+    var filePromises = [];
+
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.disabled) return;
+      var name = el.name;
+
+      if (el.type === 'checkbox') {
+        data[name] = el.checked;
+      } else if (el.type === 'radio') {
+        if (el.checked) data[name] = el.value;
+      } else if (el.type === 'file') {
+        if (el.files && el.files.length > 0) {
+          (function (key, file) {
+            filePromises.push(
+              fileToBase64(file).then(function (payload) { data[key] = payload; })
+            );
+          })(name, el.files[0]);
+        } else {
+          data[name] = null;
+        }
+      } else if (el.tagName === 'SELECT' || el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
+        data[name] = el.value;
+      }
+    });
+
+    return Promise.all(filePromises).then(function () { return data; });
+  }
+
+  function submitFormToWebhook(form) {
+    var formId = form.id || 'unknown-form';
+    var pageSlug = (window.location.pathname.split('/').pop() || 'index.html').replace(/\.html$/, '') || 'index';
+
+    return collectFormData(form).then(function (data) {
+      var payload = {
+        form: formId,
+        page: pageSlug,
+        url: window.location.href,
+        submittedAt: new Date().toISOString(),
+        data: data
+      };
+
+      return fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (res) {
+        if (!res.ok) throw new Error('Webhook respondeu ' + res.status);
+        return res;
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      1. NAVIGATION — Scroll-based background + Mobile menu
      ------------------------------------------------------------------------ */
   var nav = document.querySelector('.nav');
@@ -188,9 +260,27 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (validateStep(currentStep)) {
-        goToStep(steps.length - 1);
+      if (!validateStep(currentStep)) return;
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
       }
+
+      submitFormToWebhook(form)
+        .then(function () {
+          goToStep(steps.length - 1);
+        })
+        .catch(function (err) {
+          console.error('Erro ao enviar cadastro:', err);
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText || 'Tentar novamente';
+          }
+          alert('Não foi possível enviar seu cadastro agora. Tente novamente em instantes.');
+        });
     });
 
     function goToStep(index) {
@@ -470,30 +560,41 @@
       }
 
       if (allValid) {
-        // Show success state
         var submitBtn = form.querySelector('[type="submit"]');
         if (submitBtn) {
-          submitBtn.textContent = 'Mensagem enviada!';
-          submitBtn.classList.remove('btn--primary');
-          submitBtn.classList.add('btn--gold');
+          submitBtn.textContent = 'Enviando...';
           submitBtn.disabled = true;
         }
-        // Reset after 3 seconds
-        setTimeout(function () {
-          form.reset();
-          if (submitBtn) {
-            submitBtn.textContent = 'Enviar mensagem';
-            submitBtn.classList.add('btn--primary');
-            submitBtn.classList.remove('btn--gold');
-            submitBtn.disabled = false;
-          }
-          // Clear all validation states
-          inputs.forEach(function (input) {
-            input.classList.remove('form-input--valid', 'form-input--invalid');
-            var fb = input.parentElement.querySelector('.form-feedback');
-            if (fb) fb.classList.remove('form-feedback--visible');
+
+        submitFormToWebhook(form)
+          .then(function () {
+            if (submitBtn) {
+              submitBtn.textContent = 'Mensagem enviada!';
+              submitBtn.classList.remove('btn--primary');
+              submitBtn.classList.add('btn--gold');
+            }
+            setTimeout(function () {
+              form.reset();
+              if (submitBtn) {
+                submitBtn.textContent = 'Enviar mensagem';
+                submitBtn.classList.add('btn--primary');
+                submitBtn.classList.remove('btn--gold');
+                submitBtn.disabled = false;
+              }
+              inputs.forEach(function (input) {
+                input.classList.remove('form-input--valid', 'form-input--invalid');
+                var fb = input.parentElement.querySelector('.form-feedback');
+                if (fb) fb.classList.remove('form-feedback--visible');
+              });
+            }, 3000);
+          })
+          .catch(function (err) {
+            console.error('Erro ao enviar formulário:', err);
+            if (submitBtn) {
+              submitBtn.textContent = 'Erro — tente novamente';
+              submitBtn.disabled = false;
+            }
           });
-        }, 3000);
       } else {
         // Shake the first invalid field
         var firstInvalid = form.querySelector('.form-input--invalid');
