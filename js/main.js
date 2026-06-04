@@ -18,9 +18,9 @@
      0.1 CONFIG — valores definidos na reunião (28/05)
      ⚠ PENDENTE: preencher com os dados reais antes de publicar.
      ------------------------------------------------------------------------ */
-  var WHATSAPP = '5500000000000';                       // número novo (só dígitos, DDI 55)
+  var WHATSAPP = '553598848060';                       // número novo (só dígitos, DDI 55)
   var CONTACT_EMAIL = 'contato@diambasagrada.org.br';   // e-mail corporativo
-  var PIX_KEY = '';                                     // chave Pix para doações
+  var PIX_KEY = '+55 35 9884-8060';                     // chave Pix (telefone) para doações
   var PAYMENT_URL = '';                                 // link Abacate Pay da taxa de associação
   var VOUCHER_PERCENT = 50;                             // desconto da 1ª consulta
 
