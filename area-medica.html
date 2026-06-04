@@ -32,6 +32,7 @@
         <a href="area-juridica.html" class="nav__link">Jurídico</a>
         <a href="blog.html" class="nav__link">Blog</a>
         <a href="produtos.html" class="nav__link">Loja</a>
+        <a href="doar.html" class="nav__link">Doar</a>
         <a href="contato.html" class="nav__link">Contato</a>
       </div>
       <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
@@ -46,6 +47,7 @@
       <a href="area-juridica.html">Jurídico</a>
       <a href="blog.html">Blog</a>
       <a href="produtos.html">Loja</a>
+      <a href="doar.html">Doar</a>
       <a href="contato.html">Contato</a>
       <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
     </div>
@@ -81,60 +83,37 @@
       <div class="container">
 
         <div class="section__header reveal">
-          <span class="section__overline">Nossos Parceiros</span>
-          <h2 class="section__title" id="parceiros-title">Médicos prescritores parceiros</h2>
+          <span class="section__overline">Conexão com médico</span>
+          <h2 class="section__title" id="parceiros-title">Conecte-se com um médico prescritor</h2>
         </div>
 
-        <div class="medicos-grid reveal">
+        <div class="conn-grid reveal">
 
-          <!-- Médico 1 -->
-          <article class="medico-card">
-            <div class="medico-card__photo" aria-hidden="true" style="background: linear-gradient(135deg, var(--color-green-deep), var(--color-green-mid));">
-              <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke="var(--color-offwhite)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="40" cy="28" r="12"/>
-                <path d="M20 64c0-11 9-20 20-20s20 9 20 20"/>
-              </svg>
-            </div>
-            <div class="medico-card__body">
-              <h3 class="medico-card__name">Dra. Renata Almeida Costa</h3>
-              <p class="medico-card__crm">CRM/SP 142.837</p>
-              <span class="medico-card__specialty">Neurologia</span>
-              <a href="#" class="btn btn--primary medico-card__btn">Agendar consulta</a>
-            </div>
+          <!-- Caminho 1 — voucher (associado) -->
+          <article class="conn-card">
+            <span class="conn-card__tag">Associado</span>
+            <h3>Voucher de 50% na primeira consulta</h3>
+            <p>Ao se associar, você recebe um voucher de desconto para a primeira consulta com médico parceiro e pode anexar sua receita e laudo. Pessoas com deficiência têm consulta gratuita.</p>
+            <a href="seja-associado.html" class="btn btn--gold">Quero meu voucher</a>
           </article>
 
-          <!-- Médico 2 -->
-          <article class="medico-card">
-            <div class="medico-card__photo" aria-hidden="true" style="background: linear-gradient(135deg, var(--color-green-deep), var(--color-green-mid));">
-              <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke="var(--color-offwhite)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="40" cy="28" r="12"/>
-                <path d="M20 64c0-11 9-20 20-20s20 9 20 20"/>
-              </svg>
-            </div>
-            <div class="medico-card__body">
-              <h3 class="medico-card__name">Dr. Marcos Vinícius Ferreira</h3>
-              <p class="medico-card__crm">CRM/RJ 198.254</p>
-              <span class="medico-card__specialty">Dor Crônica</span>
-              <a href="#" class="btn btn--primary medico-card__btn">Agendar consulta</a>
-            </div>
+          <!-- Caminho 2 — WhatsApp direto -->
+          <article class="conn-card">
+            <span class="conn-card__tag">Direto</span>
+            <h3>Prefere falar agora?</h3>
+            <p>Converse com nossa equipe de acolhimento pelo WhatsApp. Orientamos sobre o atendimento médico e os próximos passos do seu tratamento.</p>
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20para%20uma%20consulta%20m%C3%A9dica%20de%20cannabis%20com%20a%20Diamba%20Sagrada." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
           </article>
 
-          <!-- Médico 3 -->
-          <article class="medico-card">
-            <div class="medico-card__photo" aria-hidden="true" style="background: linear-gradient(135deg, var(--color-green-deep), var(--color-green-mid));">
-              <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke="var(--color-offwhite)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="40" cy="28" r="12"/>
-                <path d="M20 64c0-11 9-20 20-20s20 9 20 20"/>
-              </svg>
-            </div>
-            <div class="medico-card__body">
-              <h3 class="medico-card__name">Dra. Camila Nascimento Souza</h3>
-              <p class="medico-card__crm">CRM/MG 176.491</p>
-              <span class="medico-card__specialty">Psiquiatria</span>
-              <a href="#" class="btn btn--primary medico-card__btn">Agendar consulta</a>
-            </div>
-          </article>
+        </div>
 
+        <!-- Seja médico parceiro -->
+        <div class="conn-parceiro reveal">
+          <p>
+            <strong>Para profissionais</strong>
+            É médico e quer prescrever com a gente? Junte-se à nossa rede de parceiros.
+          </p>
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Sou%20m%C3%A9dico(a)%20e%20tenho%20interesse%20em%20ser%20parceiro%20da%20Diamba%20Sagrada." class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Seja médico parceiro</a>
         </div>
       </div>
     </section>

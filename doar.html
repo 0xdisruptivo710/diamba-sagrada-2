@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apoie a Diamba Sagrada. Sua doação sustenta o acolhimento, a orientação e o acesso de pacientes ao tratamento com cannabis medicinal.">
+  <title>Seja um Doador — Diamba Sagrada</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVIGATION
+       ==================================================================== -->
+  <nav class="nav" aria-label="Navegação principal">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página inicial">
+        <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
+        Diamba Sagrada
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Início</a>
+        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link">Jurídico</a>
+        <a href="blog.html" class="nav__link">Blog</a>
+        <a href="produtos.html" class="nav__link">Loja</a>
+        <a href="doar.html" class="nav__link nav__link--active" aria-current="page">Doar</a>
+        <a href="contato.html" class="nav__link">Contato</a>
+      </div>
+
+      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
+
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu de navegação">
+      <a href="index.html">Início</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="area-medica.html">Área Médica</a>
+      <a href="area-juridica.html">Jurídico</a>
+      <a href="blog.html">Blog</a>
+      <a href="produtos.html">Loja</a>
+      <a href="doar.html" aria-current="page">Doar</a>
+      <a href="contato.html">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       HERO — INTERNAL
+       ==================================================================== -->
+  <section class="hero hero--internal">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Seja um Doador</span>
+      </nav>
+      <span class="section__overline page-enter page-enter--delay-1">Apoie a Causa</span>
+      <h1 class="hero__title page-enter page-enter--delay-1">Seja um doador</h1>
+      <p class="hero__subtitle page-enter page-enter--delay-2">Não é preciso ser paciente para cuidar. Sua doação sustenta uma rede de acolhimento que existe para quem mais precisa.</p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTENT
+       ==================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="form-layout">
+
+        <!-- Left — Pix -->
+        <div class="form-main reveal">
+          <span class="section__overline">Apoie via Pix</span>
+          <h2 class="section__title">Doe com Pix</h2>
+          <p style="color: var(--color-text-light); margin: var(--space-md) 0 var(--space-xl); max-width: 52ch;">
+            A Diamba Sagrada é uma associação sem fins lucrativos. Toda doação é destinada
+            integralmente à nossa missão de cuidado.
+          </p>
+
+          <div class="voucher-box" style="margin-inline: 0; text-align: left; max-width: 460px;">
+            <span class="voucher-box__label">Chave Pix</span>
+            <span class="voucher-box__code" data-pix-key style="font-size: var(--text-lg); word-break: break-all;">—</span>
+            <div style="margin-top: var(--space-md);">
+              <button type="button" class="btn btn--secondary" data-pix-copy hidden>Copiar chave Pix</button>
+            </div>
+            <p class="voucher-box__hint" data-pix-note hidden>A chave Pix está sendo configurada. Fale conosco no WhatsApp para apoiar a causa.</p>
+          </div>
+
+          <div style="margin-top: var(--space-xl);">
+            <a href="#" class="btn btn--gold btn--lg" data-doar-whatsapp target="_blank" rel="noopener noreferrer">Já doei — avisar no WhatsApp</a>
+            <p style="color: var(--color-text-light); font-size: var(--text-sm); margin-top: var(--space-md); max-width: 48ch;">
+              Avise sua doação e responderemos com gratidão. Cada contribuição sustenta o
+              acolhimento de quem mais precisa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right — para onde vai -->
+        <aside class="sidebar reveal reveal--right">
+          <div class="sidebar__card">
+            <h3 class="sidebar__title">O que sua doação sustenta</h3>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Acolhimento humanizado de pacientes e familiares</span>
+              </li>
+              <li class="sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Consultas gratuitas para pessoas com deficiência</span>
+              </li>
+              <li class="sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Orientação jurídica sobre o direito à saúde</span>
+              </li>
+              <li class="sidebar__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Manutenção das atividades da associação</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CTA FINAL
+       ==================================================================== -->
+  <section class="section cta-final">
+    <div class="cta-final__bg" aria-hidden="true"></div>
+    <div class="cta-final__watermark" aria-hidden="true">
+      <img src="img/marca-dagua-branca.png" alt="" loading="lazy">
+    </div>
+    <div class="container">
+      <div class="cta-final__content reveal">
+        <h2>Cultivar é direito. Tratar é dignidade.</h2>
+        <p>Você também pode apoiar se associando e fortalecendo a comunidade.</p>
+        <a href="seja-associado.html" class="btn btn--gold btn--lg">Seja associado</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
+            Diamba Sagrada
+          </div>
+          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro e legal a cannabis medicinal no Brasil.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navegação</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="o-que-fazemos.html">O Que Fazemos</a></li>
+            <li><a href="seja-associado.html">Seja Associado</a></li>
+            <li><a href="doar.html">Doar</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Legal</h4>
+          <ul class="footer__list">
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+            <li><a href="privacidade.html">LGPD</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 Diamba Sagrada. Todos os direitos reservados.</span>
+        <span>Feito com cuidado e propósito.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
