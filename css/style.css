@@ -4322,3 +4322,27 @@ textarea.form-input {
 .conn-parceiro p { max-width: 46ch; color: var(--color-text-light); }
 .conn-parceiro strong { display: block; color: var(--color-green-deep); font-family: var(--font-display); font-size: var(--text-lg); }
 @media (max-width: 768px) { .conn-grid { grid-template-columns: 1fr; } }
+
+/* Formulário de envio de receita (área médica) */
+.receita-form { max-width: 720px; margin: 0 auto; }
+.receita-form__actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: var(--space-lg);
+}
+.receita-form__success {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-2xl);
+  border: 1px solid var(--color-green-mid);
+  border-radius: var(--border-radius-lg);
+  background: var(--color-green-pale);
+  color: var(--color-green-deep);
+}
+.receita-form__success svg { flex-shrink: 0; }
+.receita-form__success p { margin: 0; }

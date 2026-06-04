@@ -891,6 +891,75 @@
   }
 
   /* ------------------------------------------------------------------------
+     X. RECEITA — formulário de envio de receita médica (área médica) → webhook
+     ------------------------------------------------------------------------ */
+  function initReceitaForm() {
+    var form = document.getElementById('receita-form');
+    if (!form) return;
+
+    var waBtn = form.querySelector('[data-receita-whatsapp]');
+    if (waBtn) {
+      waBtn.href = whatsappUrl('Olá! Quero enviar minha receita médica para a Diamba Sagrada.');
+    }
+
+    function clearError(input) {
+      var fg = input.closest('.form-group');
+      var errorEl = fg ? fg.querySelector('.form-error') : null;
+      if (errorEl) errorEl.classList.remove('form-error--visible');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var valid = true;
+      var firstInvalid = null;
+      form.querySelectorAll('[required]').forEach(function (input) {
+        var fg = input.closest('.form-group');
+        var errorEl = fg ? fg.querySelector('.form-error') : null;
+        var ok;
+        if (input.type === 'checkbox') ok = input.checked;
+        else if (input.type === 'file') ok = input.files && input.files.length > 0;
+        else ok = !!input.value.trim();
+        if (!ok) {
+          valid = false;
+          if (errorEl) errorEl.classList.add('form-error--visible');
+          if (!firstInvalid) firstInvalid = input;
+        } else if (errorEl) {
+          errorEl.classList.remove('form-error--visible');
+        }
+      });
+      if (!valid) {
+        if (firstInvalid && firstInvalid.focus) firstInvalid.focus();
+        return;
+      }
+
+      var btn = form.querySelector('button[type="submit"]');
+      var original = btn ? btn.innerHTML : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Enviando...'; }
+
+      submitFormToWebhook(form)
+        .then(function () {
+          var success = form.querySelector('[data-receita-success]');
+          if (success) success.hidden = false;
+          Array.prototype.forEach.call(
+            form.querySelectorAll('.form-row, .form-group, .receita-form__actions'),
+            function (el) { el.style.display = 'none'; }
+          );
+        })
+        .catch(function (err) {
+          console.error('Erro ao enviar receita:', err);
+          if (btn) { btn.disabled = false; btn.innerHTML = original || 'Tentar novamente'; }
+          alert('Não foi possível enviar agora. Tente novamente em instantes.');
+        });
+    });
+
+    form.querySelectorAll('.form-input, input[type="file"], input[type="checkbox"]').forEach(function (input) {
+      input.addEventListener('input', function () { clearError(input); });
+      input.addEventListener('change', function () { clearError(input); });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      16. INIT — Run all modules on DOMContentLoaded
      ------------------------------------------------------------------------ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -909,5 +978,6 @@
     initArticleTOC();
     initSkeletonLoading();
     initDonation();
+    initReceitaForm();
   });
 })();
