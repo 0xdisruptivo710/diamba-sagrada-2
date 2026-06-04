@@ -14,6 +14,30 @@
      ------------------------------------------------------------------------ */
   var WEBHOOK_URL = 'https://aios-n8n-webhook.yspmhc.easypanel.host/webhook/diamba-sagrada';
 
+  /* ------------------------------------------------------------------------
+     0.1 CONFIG — valores definidos na reunião (28/05)
+     ⚠ PENDENTE: preencher com os dados reais antes de publicar.
+     ------------------------------------------------------------------------ */
+  var WHATSAPP = '5500000000000';                       // número novo (só dígitos, DDI 55)
+  var CONTACT_EMAIL = 'contato@diambasagrada.org.br';   // e-mail corporativo
+  var PIX_KEY = '';                                     // chave Pix para doações
+  var PAYMENT_URL = '';                                 // link Abacate Pay da taxa de associação
+  var VOUCHER_PERCENT = 50;                             // desconto da 1ª consulta
+
+  function whatsappUrl(message) {
+    var base = 'https://wa.me/' + WHATSAPP;
+    return message ? base + '?text=' + encodeURIComponent(message) : base;
+  }
+
+  function gerarVoucher() {
+    var alpha = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    var b = '';
+    for (var i = 0; i < 6; i++) {
+      b += alpha.charAt(Math.floor(Math.random() * alpha.length));
+    }
+    return 'DS-' + b.slice(0, 3) + '-' + b.slice(3);
+  }
+
   function fileToBase64(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
@@ -269,8 +293,15 @@
         submitBtn.textContent = 'Enviando...';
       }
 
+      // Gera o voucher (se solicitado) e injeta no payload enviado ao webhook.
+      var querVoucher = form.querySelector('input[name="quer_voucher"]');
+      var voucher = (!querVoucher || querVoucher.checked) ? gerarVoucher() : '';
+      var voucherInput = form.querySelector('input[name="voucher"]');
+      if (voucherInput) voucherInput.value = voucher;
+
       submitFormToWebhook(form)
         .then(function () {
+          populateSuccessStep(voucher);
           goToStep(steps.length - 1);
         })
         .catch(function (err) {
@@ -282,6 +313,36 @@
           alert('Não foi possível enviar seu cadastro agora. Tente novamente em instantes.');
         });
     });
+
+    function populateSuccessStep(voucher) {
+      var wrap = form.querySelector('[data-voucher-wrap]');
+      var disp = form.querySelector('[data-voucher-display]');
+      if (voucher && wrap && disp) {
+        disp.textContent = voucher;
+        wrap.hidden = false;
+      }
+
+      var payBtn = form.querySelector('[data-payment-btn]');
+      var payNote = form.querySelector('[data-payment-note]');
+      if (payBtn) {
+        if (PAYMENT_URL) {
+          payBtn.href = PAYMENT_URL;
+          payBtn.hidden = false;
+          if (payNote) payNote.hidden = true;
+        } else {
+          payBtn.hidden = true;
+          if (payNote) payNote.hidden = false;
+        }
+      }
+
+      var waBtn = form.querySelector('[data-whatsapp-btn]');
+      if (waBtn) {
+        var msg = 'Olá! Acabei de me associar à Diamba Sagrada.' +
+          (voucher ? ' Meu voucher é ' + voucher + '.' : '') +
+          ' Podem me passar os próximos passos?';
+        waBtn.href = whatsappUrl(msg);
+      }
+    }
 
     function goToStep(index) {
       if (index < 0 || index >= steps.length) return;
@@ -683,6 +744,14 @@
         if (modalCategory) modalCategory.textContent = card.querySelector('.product-card__category').textContent;
         if (modalPrice) modalPrice.textContent = card.querySelector('.product-card__price').textContent;
         if (modalDesc) modalDesc.textContent = card.getAttribute('data-description') || '';
+
+        // Links de compra/interesse por produto (decisão da reunião: Comprar + Saiba mais)
+        var prodNome = card.querySelector('.product-card__name').textContent;
+        var prodPreco = card.querySelector('.product-card__price').textContent;
+        var buyBtn = modal.querySelector('[data-buy]');
+        var interestBtn = modal.querySelector('[data-interest]');
+        if (buyBtn) buyBtn.href = whatsappUrl('Olá! Quero comprar: ' + prodNome + ' (' + prodPreco + ').');
+        if (interestBtn) interestBtn.href = whatsappUrl('Olá! Quero saber mais sobre: ' + prodNome + '.');
         if (modalImage) {
           modalImage.style.background = card.querySelector('.product-card__image').style.background;
         }
@@ -785,6 +854,43 @@
   }
 
   /* ------------------------------------------------------------------------
+     X. DOAÇÃO — chave Pix (copiar) + agradecimento no WhatsApp
+     ------------------------------------------------------------------------ */
+  function initDonation() {
+    var keyEl = document.querySelector('[data-pix-key]');
+    if (!keyEl) return;
+
+    var copyBtn = document.querySelector('[data-pix-copy]');
+    var note = document.querySelector('[data-pix-note]');
+
+    if (PIX_KEY) {
+      keyEl.textContent = PIX_KEY;
+      if (copyBtn) {
+        copyBtn.hidden = false;
+        copyBtn.addEventListener('click', function () {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(PIX_KEY).then(function () {
+              var original = copyBtn.textContent;
+              copyBtn.textContent = 'Copiado ✓';
+              setTimeout(function () { copyBtn.textContent = original; }, 2200);
+            }).catch(function () {});
+          }
+        });
+      }
+      if (note) note.hidden = true;
+    } else {
+      keyEl.textContent = 'em configuração';
+      if (copyBtn) copyBtn.hidden = true;
+      if (note) note.hidden = false;
+    }
+
+    var waBtn = document.querySelector('[data-doar-whatsapp]');
+    if (waBtn) {
+      waBtn.href = whatsappUrl('Olá! Acabei de fazer uma doação para a Diamba Sagrada. Quero apoiar a causa. 🌿');
+    }
+  }
+
+  /* ------------------------------------------------------------------------
      16. INIT — Run all modules on DOMContentLoaded
      ------------------------------------------------------------------------ */
   document.addEventListener('DOMContentLoaded', function () {
@@ -802,5 +908,6 @@
     initBlogSearch();
     initArticleTOC();
     initSkeletonLoading();
+    initDonation();
   });
 })();

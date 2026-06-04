@@ -4130,3 +4130,195 @@ textarea.form-input {
     animation: none;
   }
 }
+
+/* --------------------------------------------------------------------------
+   X. ASSOCIAÇÃO — etapas, documentos, voucher (adicionado p/ fluxo completo)
+   -------------------------------------------------------------------------- */
+.form-step__title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-xs);
+}
+.form-step__hint {
+  color: var(--color-text-light);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xl);
+}
+
+/* Caixa rolável de documento (Regulamento) */
+.doc-scroll {
+  max-height: 360px;
+  overflow-y: auto;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  border: 1px solid var(--color-green-pale);
+  border-left: 3px solid var(--color-green-mid);
+  border-radius: var(--border-radius);
+  background: rgba(216, 243, 220, 0.25);
+}
+.doc-scroll p { margin-bottom: var(--space-md); font-size: var(--text-sm); color: var(--color-text-light); }
+.doc-scroll__cap {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-green-deep);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+.doc-scroll__note { font-style: italic; }
+
+/* Listas de declarações dos termos */
+.doc-list {
+  counter-reset: decl;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.doc-list li {
+  counter-increment: decl;
+  position: relative;
+  padding-left: 2.2rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+.doc-list li::before {
+  content: counter(decl);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  color: var(--color-green-deep);
+  background: var(--color-green-pale);
+  border-radius: 50%;
+}
+.doc-fecho {
+  font-style: italic;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xl);
+}
+
+/* Fieldsets dentro do formulário */
+.form-fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: var(--space-xl);
+  border-top: 1px solid var(--color-green-pale);
+  padding-top: var(--space-lg);
+}
+.form-legend {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-green-deep);
+  margin-bottom: var(--space-md);
+  padding: 0;
+}
+.form-legend span { color: var(--color-text-light); font-size: var(--text-xs); font-style: italic; }
+.form-radios { display: flex; flex-wrap: wrap; gap: var(--space-lg); }
+.form-radio { display: inline-flex; align-items: center; gap: var(--space-xs); cursor: pointer; }
+.form-radio input { accent-color: var(--color-green-deep); }
+
+/* Conclusão — voucher opt-in e taxa */
+.voucher-optin {
+  border: 1px solid var(--color-gold-soft);
+  background: rgba(232, 212, 139, 0.18);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+.fee-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-green-pale);
+  border-bottom: 1px solid var(--color-green-pale);
+  margin-bottom: var(--space-lg);
+}
+.fee-row__label { font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-green-deep); }
+.fee-row__value { font-style: italic; color: var(--color-text-light); }
+
+/* Caixa de voucher na tela de sucesso */
+.voucher-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-width: 380px;
+  margin: var(--space-xl) auto;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--border-radius);
+  background: rgba(232, 212, 139, 0.2);
+  text-align: center;
+}
+.voucher-box__label {
+  font-size: var(--text-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-green-deep);
+}
+.voucher-box__code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-2xl);
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  user-select: all;
+}
+.voucher-box__hint { font-size: var(--text-xs); color: var(--color-text-light); }
+.payment-note { color: var(--color-text-light); font-size: var(--text-sm); max-width: 460px; margin: var(--space-md) auto 0; }
+.confirmation__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+}
+
+/* Conexão com médico (área médica) */
+.conn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+.conn-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-2xl);
+  border: 1px solid var(--color-green-pale);
+  border-radius: var(--border-radius-lg);
+  background: var(--color-offwhite);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+}
+.conn-card:hover { border-color: var(--color-gold); box-shadow: var(--shadow-md); }
+.conn-card__tag {
+  font-style: italic;
+  color: var(--color-green-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: var(--text-xs);
+  margin-bottom: var(--space-sm);
+}
+.conn-card h3 { font-size: var(--text-2xl); margin-bottom: var(--space-md); }
+.conn-card p { color: var(--color-text-light); margin-bottom: var(--space-xl); }
+.conn-card .btn { margin-top: auto; align-self: flex-start; }
+.conn-parceiro {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-green-pale);
+}
+.conn-parceiro p { max-width: 46ch; color: var(--color-text-light); }
+.conn-parceiro strong { display: block; color: var(--color-green-deep); font-family: var(--font-display); font-size: var(--text-lg); }
+@media (max-width: 768px) { .conn-grid { grid-template-columns: 1fr; } }
