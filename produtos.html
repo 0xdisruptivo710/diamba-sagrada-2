@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Loja da Diamba Sagrada — produtos que apoiam a causa da cannabis medicinal. Chás medicinais, vestuário e materiais educativos.">
-  <title>Loja — Diamba Sagrada</title>
+  <meta name="description" content="Loja da Diamba Sagrada — produtos que apoiam a causa da cannabis medicinal. Chás medicinais, vestuário e materiais educativos." data-en-content="Diamba Sagrada Shop — products that support the medical cannabis cause. Medicinal teas, apparel and educational materials.">
+  <title data-en="Shop — Diamba Sagrada">Loja — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +21,43 @@
        ======================================================================== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link nav__link--active" aria-current="page">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link nav__link--active" aria-current="page" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html" aria-current="page">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" aria-current="page" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -64,14 +72,14 @@
       <div class="hero__content">
         <!-- Breadcrumb -->
         <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Loja</span>
+          <span aria-current="page" data-en="Shop">Loja</span>
         </nav>
 
-        <span class="section__overline page-enter page-enter--delay-1">Apoie a Causa</span>
-        <h1 class="hero__title page-enter page-enter--delay-1">Nossa Loja</h1>
-        <p class="hero__subtitle page-enter page-enter--delay-2">Cada produto fortalece o movimento pela cannabis medicinal acessível. Ao comprar, você apoia diretamente a nossa causa.</p>
+        <span class="section__overline page-enter page-enter--delay-1" data-en="Support the Cause">Apoie a Causa</span>
+        <h1 class="hero__title page-enter page-enter--delay-1" data-en="Our Shop">Nossa Loja</h1>
+        <p class="hero__subtitle page-enter page-enter--delay-2" data-en="Every product strengthens the movement for accessible medical cannabis. When you buy, you directly support our cause.">Cada produto fortalece o movimento pela cannabis medicinal acessível. Ao comprar, você apoia diretamente a nossa causa.</p>
       </div>
     </section>
 
@@ -92,7 +100,7 @@
             </svg>
           </div>
           <div class="shop-banner__text">
-            <p><strong>Nossa loja apoia a causa.</strong> Aqui você encontra produtos físicos que fortalecem o movimento. Derivados de cannabis não estão disponíveis neste momento.</p>
+            <p data-en="<strong>Our shop supports the cause.</strong> Here you'll find physical products that strengthen the movement. Cannabis derivatives are not available at this time."><strong>Nossa loja apoia a causa.</strong> Aqui você encontra produtos físicos que fortalecem o movimento. Derivados de cannabis não estão disponíveis neste momento.</p>
           </div>
         </div>
       </div>
@@ -104,11 +112,11 @@
          ======================================================================== -->
     <section class="section section--sm">
       <div class="container">
-        <div class="product-categories" role="group" aria-label="Filtrar produtos por categoria">
-          <button class="product-categories__btn product-categories__btn--active" data-filter="todos" aria-pressed="true">Todos</button>
-          <button class="product-categories__btn" data-filter="chas" aria-pressed="false">Chás Medicinais</button>
-          <button class="product-categories__btn" data-filter="vestuario" aria-pressed="false">Vestuário</button>
-          <button class="product-categories__btn" data-filter="educativos" aria-pressed="false">Materiais Educativos</button>
+        <div class="product-categories" role="group" aria-label="Filtrar produtos por categoria" data-en-aria-label="Filter products by category">
+          <button class="product-categories__btn product-categories__btn--active" data-filter="todos" aria-pressed="true" data-en="All">Todos</button>
+          <button class="product-categories__btn" data-filter="chas" aria-pressed="false" data-en="Medicinal Teas">Chás Medicinais</button>
+          <button class="product-categories__btn" data-filter="vestuario" aria-pressed="false" data-en="Apparel">Vestuário</button>
+          <button class="product-categories__btn" data-filter="educativos" aria-pressed="false" data-en="Educational Materials">Materiais Educativos</button>
         </div>
       </div>
     </section>
@@ -119,7 +127,7 @@
          ======================================================================== -->
     <section class="section" aria-labelledby="products-title">
       <div class="container">
-        <h2 class="sr-only" id="products-title">Produtos disponíveis</h2>
+        <h2 class="sr-only" id="products-title" data-en="Available products">Produtos disponíveis</h2>
 
         <div class="product-grid">
 
@@ -136,12 +144,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Chás Medicinais</span>
-              <h3 class="product-card__name">Chá Calmante Noturno</h3>
-              <p class="product-card__desc">Blend de ervas para relaxamento</p>
+              <span class="product-card__category" data-en="Medicinal Teas">Chás Medicinais</span>
+              <h3 class="product-card__name" data-en="Nighttime Calming Tea">Chá Calmante Noturno</h3>
+              <p class="product-card__desc" data-en="Herbal blend for relaxation">Blend de ervas para relaxamento</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 35,00</span>
-                <button class="btn btn--primary btn--sm product-card__btn" data-open-product>Saiba mais</button>
+                <button class="btn btn--primary btn--sm product-card__btn" data-open-product data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -160,12 +168,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Chás Medicinais</span>
-              <h3 class="product-card__name">Chá Equilíbrio Diário</h3>
-              <p class="product-card__desc">Blend energizante e equilibrante</p>
+              <span class="product-card__category" data-en="Medicinal Teas">Chás Medicinais</span>
+              <h3 class="product-card__name" data-en="Daily Balance Tea">Chá Equilíbrio Diário</h3>
+              <p class="product-card__desc" data-en="Energizing and balancing blend">Blend energizante e equilibrante</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 32,00</span>
-                <button class="btn btn--primary btn--sm product-card__btn" data-open-product>Saiba mais</button>
+                <button class="btn btn--primary btn--sm product-card__btn" data-open-product data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -182,12 +190,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Vestuário</span>
-              <h3 class="product-card__name">Camiseta Cultivar é Direito</h3>
-              <p class="product-card__desc">Algodão orgânico, estampa exclusiva</p>
+              <span class="product-card__category" data-en="Apparel">Vestuário</span>
+              <h3 class="product-card__name" data-en="&quot;Cultivating is a Right&quot; T-Shirt">Camiseta Cultivar é Direito</h3>
+              <p class="product-card__desc" data-en="Organic cotton, exclusive print">Algodão orgânico, estampa exclusiva</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 79,90</span>
-                <button class="btn btn--primary btn--sm product-card__btn" data-open-product>Saiba mais</button>
+                <button class="btn btn--primary btn--sm product-card__btn" data-open-product data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -204,12 +212,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Vestuário</span>
-              <h3 class="product-card__name">Boné Diamba Sagrada</h3>
-              <p class="product-card__desc">Boné trucker com logo bordado</p>
+              <span class="product-card__category" data-en="Apparel">Vestuário</span>
+              <h3 class="product-card__name" data-en="Diamba Sagrada Cap">Boné Diamba Sagrada</h3>
+              <p class="product-card__desc" data-en="Trucker cap with embroidered logo">Boné trucker com logo bordado</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 59,90</span>
-                <button class="btn btn--primary btn--sm product-card__btn" data-open-product>Saiba mais</button>
+                <button class="btn btn--primary btn--sm product-card__btn" data-open-product data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -229,12 +237,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Materiais Educativos</span>
-              <h3 class="product-card__name">Guia do Paciente</h3>
-              <p class="product-card__desc">Manual completo sobre cannabis medicinal</p>
+              <span class="product-card__category" data-en="Educational Materials">Materiais Educativos</span>
+              <h3 class="product-card__name" data-en="Patient Guide">Guia do Paciente</h3>
+              <p class="product-card__desc" data-en="Complete manual on medical cannabis">Manual completo sobre cannabis medicinal</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 45,00</span>
-                <button class="btn btn--primary btn--sm product-card__btn" data-open-product>Saiba mais</button>
+                <button class="btn btn--primary btn--sm product-card__btn" data-open-product data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -242,7 +250,7 @@
           <!-- Card 6: Curso Online (Em breve) -->
           <article class="product-card product-card--coming-soon reveal" data-category="educativos" data-description="Formação online completa para pacientes e cuidadores sobre cannabis medicinal. Módulos sobre legislação, farmacologia, formas de uso e acompanhamento terapêutico. Em desenvolvimento.">
             <div class="product-card__image" style="background: linear-gradient(135deg, #DEC4A6, #F9F6F0);">
-              <span class="coming-soon">Em breve</span>
+              <span class="coming-soon" data-en="Coming soon">Em breve</span>
               <svg viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="8" y="10" width="48" height="32" rx="3"/>
                 <polygon points="28,18 28,36 42,27"/>
@@ -251,12 +259,12 @@
               </svg>
             </div>
             <div class="product-card__body">
-              <span class="product-card__category">Materiais Educativos</span>
-              <h3 class="product-card__name">Curso Online</h3>
-              <p class="product-card__desc">Formação para pacientes e cuidadores</p>
+              <span class="product-card__category" data-en="Educational Materials">Materiais Educativos</span>
+              <h3 class="product-card__name" data-en="Online Course">Curso Online</h3>
+              <p class="product-card__desc" data-en="Training for patients and caregivers">Formação para pacientes e cuidadores</p>
               <div class="product-card__footer">
-                <span class="product-card__price">Em breve</span>
-                <button class="btn btn--primary btn--sm product-card__btn" disabled aria-disabled="true">Saiba mais</button>
+                <span class="product-card__price" data-en="Coming soon">Em breve</span>
+                <button class="btn btn--primary btn--sm product-card__btn" disabled aria-disabled="true" data-en="Learn more">Saiba mais</button>
               </div>
             </div>
           </article>
@@ -269,10 +277,10 @@
     <!-- ========================================================================
          6. PRODUCT MODAL
          ======================================================================== -->
-    <div class="product-modal" role="dialog" aria-modal="true" aria-label="Detalhes do produto" hidden>
+    <div class="product-modal" role="dialog" aria-modal="true" aria-label="Detalhes do produto" data-en-aria-label="Product details" hidden>
       <div class="product-modal__overlay"></div>
       <div class="product-modal__content">
-        <button class="product-modal__close" aria-label="Fechar detalhes do produto">
+        <button class="product-modal__close" aria-label="Fechar detalhes do produto" data-en-aria-label="Close product details">
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="18" y1="6" x2="6" y2="18"/>
             <line x1="6" y1="6" x2="18" y2="18"/>
@@ -292,14 +300,14 @@
               </svg>
               Comprar
             </a>
-            <a href="https://wa.me/553598848060?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20um%20produto%20da%20loja." class="btn btn--secondary" data-interest target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/553598848060?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20um%20produto%20da%20loja." class="btn btn--secondary" data-interest target="_blank" rel="noopener noreferrer" data-en="<svg viewBox='0 0 24 24' width='18' height='18' fill='currentColor' aria-hidden='true'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z'/><path d='M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 0 1-4.243-1.215l-.304-.18-2.871.853.81-2.871-.198-.314A7.96 7.96 0 0 1 4 12a8 8 0 1 1 16 0 8 8 0 0 1-8 8z'/></svg> I'm interested (WhatsApp)">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                 <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 0 1-4.243-1.215l-.304-.18-2.871.853.81-2.871-.198-.314A7.96 7.96 0 0 1 4 12a8 8 0 1 1 16 0 8 8 0 0 1-8 8z"/>
               </svg>
               Tenho interesse (WhatsApp)
             </a>
-            <a href="mailto:contato@diambasagrada.org.br?subject=Interesse%20em%20produto%20da%20loja" class="btn btn--secondary">
+            <a href="mailto:contato@diambasagrada.org.br?subject=Interesse%20em%20produto%20da%20loja" class="btn btn--secondary" data-en="<svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><rect x='2' y='4' width='20' height='16' rx='2'/><path d='M22 4L12 13 2 4'/></svg> Send email">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="M22 4L12 13 2 4"/>
@@ -325,9 +333,9 @@
             </svg>
           </div>
           <div class="coming-soon-banner__content">
-            <h2 id="coming-soon-title">Novos produtos em breve</h2>
-            <p>Estamos preparando novos produtos exclusivos para associados. Camisetas, acessórios, materiais educativos e muito mais. Fique atento e acompanhe nossas redes sociais para ser o primeiro a saber das novidades.</p>
-            <a href="seja-associado.html" class="btn btn--primary">Seja associado e saiba primeiro</a>
+            <h2 id="coming-soon-title" data-en="New products coming soon">Novos produtos em breve</h2>
+            <p data-en="We're preparing new products exclusively for members. T-shirts, accessories, educational materials and much more. Stay tuned and follow our social media to be the first to hear the news.">Estamos preparando novos produtos exclusivos para associados. Camisetas, acessórios, materiais educativos e muito mais. Fique atento e acompanhe nossas redes sociais para ser o primeiro a saber das novidades.</p>
+            <a href="seja-associado.html" class="btn btn--primary" data-en="Become a member and be the first to know">Seja associado e saiba primeiro</a>
           </div>
         </div>
       </div>
@@ -344,9 +352,9 @@
       </div>
       <div class="container">
         <div class="cta-final__content reveal">
-          <h2 id="cta-loja-title">Cada compra fortalece o movimento</h2>
-          <p>Ao adquirir nossos produtos, você apoia diretamente o acesso de pacientes à cannabis medicinal.</p>
-          <a href="seja-associado.html" class="btn btn--gold btn--lg">Quero fazer parte</a>
+          <h2 id="cta-loja-title" data-en="Every purchase strengthens the movement">Cada compra fortalece o movimento</h2>
+          <p data-en="By purchasing our products, you directly support patients' access to medical cannabis.">Ao adquirir nossos produtos, você apoia diretamente o acesso de pacientes à cannabis medicinal.</p>
+          <a href="seja-associado.html" class="btn btn--gold btn--lg" data-en="I want to take part">Quero fazer parte</a>
         </div>
       </div>
     </section>
@@ -363,44 +371,44 @@
 
         <!-- Brand -->
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <!-- Navegação -->
         <div>
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <!-- Áreas -->
         <div>
-          <h4 class="footer__heading">Áreas</h4>
+          <h4 class="footer__heading" data-en="Areas">Áreas</h4>
           <ul class="footer__list">
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Jurídico</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Jurídico</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
           </ul>
         </div>
 
         <!-- Legal -->
         <div>
-          <h4 class="footer__heading">Legal</h4>
+          <h4 class="footer__heading" data-en="Legal">Legal</h4>
           <ul class="footer__list">
-            <li><a href="privacidade.html" class="footer__link">Política de Privacidade</a></li>
-            <li><a href="termos.html" class="footer__link">Termos de Uso</a></li>
-            <li><a href="privacidade.html" class="footer__link">LGPD</a></li>
+            <li><a href="privacidade.html" class="footer__link" data-en="Privacy Policy">Política de Privacidade</a></li>
+            <li><a href="termos.html" class="footer__link" data-en="Terms of Use">Termos de Uso</a></li>
+            <li><a href="privacidade.html" class="footer__link" data-en="LGPD">LGPD</a></li>
           </ul>
         </div>
 
@@ -408,10 +416,10 @@
 
       <div class="footer__bottom">
         <span>&copy; 2024 Diamba Sagrada</span>
-        <span>Cultivar é direito. Tratar é dignidade.</span>
+        <span data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</span>
         <span>
-          <a href="privacidade.html" class="footer__link">Privacidade</a> &middot;
-          <a href="termos.html" class="footer__link">Termos</a>
+          <a href="privacidade.html" class="footer__link" data-en="Privacy">Privacidade</a> &middot;
+          <a href="termos.html" class="footer__link" data-en="Terms">Termos</a>
         </span>
       </div>
     </div>
@@ -423,31 +431,32 @@
        ======================================================================== -->
 
   <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top" hidden>
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
   </button>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" data-en-aria-label="Chat with us on WhatsApp">
     <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff" aria-hidden="true">
       <path d="M16 3C9.373 3 4 8.373 4 15c0 2.127.553 4.12 1.52 5.855L4 29l8.145-1.52A11.94 11.94 0 0 0 16 29c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22a9.94 9.94 0 0 1-5.074-1.384l-.364-.216-3.772.988.988-3.772-.216-.364A9.94 9.94 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.422-7.518c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.174.199-.348.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.174-.008-.372-.01-.57-.01-.199 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.57-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     </svg>
   </a>
 
   <!-- Cookie Consent -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" hidden>
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" data-en-aria-label="Cookie consent" hidden>
     <div class="cookie-consent__content">
-      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+      <p data-en="We use cookies to improve your experience. By continuing to browse, you agree to our <a href='privacidade.html'>Privacy Policy</a>.">Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
       <div class="cookie-consent__actions">
-        <button class="btn btn--primary btn--sm cookie-consent__accept">Aceitar</button>
-        <button class="btn btn--secondary btn--sm cookie-consent__reject">Recusar</button>
+        <button class="btn btn--primary btn--sm cookie-consent__accept" data-en="Accept">Aceitar</button>
+        <button class="btn btn--secondary btn--sm cookie-consent__reject" data-en="Decline">Recusar</button>
       </div>
     </div>
   </div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

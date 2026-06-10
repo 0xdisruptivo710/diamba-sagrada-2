@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça a história, os valores e as pessoas por trás da Diamba Sagrada — associação brasileira de pacientes de cannabis medicinal.">
-  <title>Quem Somos — Diamba Sagrada</title>
+  <meta name="description" content="Conheça a história, os valores e as pessoas por trás da Diamba Sagrada — associação brasileira de pacientes de cannabis medicinal." data-en-content="Get to know the history, values and people behind Diamba Sagrada — a Brazilian medical cannabis patient association.">
+  <title data-en="About Us — Diamba Sagrada">Quem Somos — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,28 +23,33 @@
     <div class="nav__inner">
 
       <!-- Logo -->
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         Diamba Sagrada
       </a>
 
       <!-- Desktop Links -->
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link nav__link--active" aria-current="page">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link nav__link--active" aria-current="page" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
+      </div>
+
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
       </div>
 
       <!-- Desktop CTA -->
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
 
       <!-- Mobile Toggle -->
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile" data-en-aria-label="Open menu">
         <span></span>
         <span></span>
         <span></span>
@@ -52,16 +57,20 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html" aria-current="page">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="nav-mobile" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" aria-current="page" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </nav>
 
@@ -75,13 +84,13 @@
     <div class="hero__content">
       <!-- Breadcrumb -->
       <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-        <a href="index.html">Início</a>
+        <a href="index.html" data-en="Home">Início</a>
         <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-        <span aria-current="page">Quem Somos</span>
+        <span aria-current="page" data-en="About Us">Quem Somos</span>
       </nav>
 
-      <h1 class="hero__title page-enter page-enter--delay-1">Quem Somos</h1>
-      <p class="hero__subtitle page-enter page-enter--delay-2">Conheça a história, os valores e as pessoas por trás da Diamba Sagrada.</p>
+      <h1 class="hero__title page-enter page-enter--delay-1" data-en="About Us">Quem Somos</h1>
+      <p class="hero__subtitle page-enter page-enter--delay-2" data-en="Get to know the history, values and people behind Diamba Sagrada.">Conheça a história, os valores e as pessoas por trás da Diamba Sagrada.</p>
     </div>
   </header>
 
@@ -93,52 +102,52 @@
     <div class="container">
 
       <div class="section__header reveal">
-        <span class="section__overline">Nossa Trajetória</span>
-        <h2 class="section__title" id="our-story-title">Como tudo começou</h2>
-        <p class="section__desc">A Diamba Sagrada nasceu da dor transformada em propósito. Um grupo de pacientes e familiares, cansados da burocracia e do preconceito, decidiu unir forças para garantir que ninguém mais precisasse lutar sozinho pelo direito ao tratamento com cannabis medicinal. O que começou como uma rede informal de apoio, hoje é uma associação comprometida com o acolhimento, a legalidade e a dignidade de cada paciente.</p>
+        <span class="section__overline" data-en="Our Journey">Nossa Trajetória</span>
+        <h2 class="section__title" id="our-story-title" data-en="How it all began">Como tudo começou</h2>
+        <p class="section__desc" data-en="Diamba Sagrada was born from pain transformed into purpose. A group of patients and families, weary of bureaucracy and prejudice, decided to join forces to ensure that no one else would have to fight alone for the right to treatment with medical cannabis. What began as an informal support network is today an association committed to welcoming, legality and the dignity of every patient.">A Diamba Sagrada nasceu da dor transformada em propósito. Um grupo de pacientes e familiares, cansados da burocracia e do preconceito, decidiu unir forças para garantir que ninguém mais precisasse lutar sozinho pelo direito ao tratamento com cannabis medicinal. O que começou como uma rede informal de apoio, hoje é uma associação comprometida com o acolhimento, a legalidade e a dignidade de cada paciente.</p>
       </div>
 
       <!-- Visual Timeline -->
-      <div class="history-timeline reveal" role="list" aria-label="Linha do tempo da associação">
+      <div class="history-timeline reveal" role="list" aria-label="Linha do tempo da associação" data-en-aria-label="Timeline of the association">
 
         <!-- 2023 -->
         <div class="history__item" role="listitem">
           <div class="history__dot" aria-hidden="true"></div>
           <span class="history__year">2023</span>
-          <h3 class="history__title">A semente</h3>
-          <p class="history__text">Fundadores começam a pesquisar sobre cannabis medicinal após experiências pessoais com pacientes próximos que não encontravam acesso a tratamentos adequados.</p>
+          <h3 class="history__title" data-en="The seed">A semente</h3>
+          <p class="history__text" data-en="Founders begin researching medical cannabis after personal experiences with people close to them who could not find access to adequate treatment.">Fundadores começam a pesquisar sobre cannabis medicinal após experiências pessoais com pacientes próximos que não encontravam acesso a tratamentos adequados.</p>
         </div>
 
         <!-- 2024 — Primeiras raízes -->
         <div class="history__item" role="listitem">
           <div class="history__dot" aria-hidden="true"></div>
           <span class="history__year">2024</span>
-          <h3 class="history__title">Primeiras raízes</h3>
-          <p class="history__text">Formação do grupo de apoio e início das consultorias jurídicas para orientar pacientes sobre seus direitos e caminhos legais de acesso.</p>
+          <h3 class="history__title" data-en="First roots">Primeiras raízes</h3>
+          <p class="history__text" data-en="Formation of the support group and the start of legal consultations to guide patients on their rights and lawful paths to access.">Formação do grupo de apoio e início das consultorias jurídicas para orientar pacientes sobre seus direitos e caminhos legais de acesso.</p>
         </div>
 
         <!-- 2024 — Formalização -->
         <div class="history__item" role="listitem">
           <div class="history__dot" aria-hidden="true"></div>
           <span class="history__year">2024</span>
-          <h3 class="history__title">Formalização</h3>
-          <p class="history__text">Registro oficial como associação sem fins lucrativos, consolidando a estrutura jurídica e administrativa para atuar de forma transparente e legal.</p>
+          <h3 class="history__title" data-en="Formalization">Formalização</h3>
+          <p class="history__text" data-en="Official registration as a non-profit association, consolidating the legal and administrative structure to operate transparently and lawfully.">Registro oficial como associação sem fins lucrativos, consolidando a estrutura jurídica e administrativa para atuar de forma transparente e legal.</p>
         </div>
 
         <!-- 2025 — Crescimento -->
         <div class="history__item" role="listitem">
           <div class="history__dot" aria-hidden="true"></div>
           <span class="history__year">2025</span>
-          <h3 class="history__title">Crescimento</h3>
-          <p class="history__text">Ampliação da rede de médicos parceiros e início do acolhimento estruturado, com protocolos de atendimento humanizado e suporte contínuo aos associados.</p>
+          <h3 class="history__title" data-en="Growth">Crescimento</h3>
+          <p class="history__text" data-en="Expansion of the network of partner physicians and the start of structured welcoming, with humane care protocols and ongoing support for members.">Ampliação da rede de médicos parceiros e início do acolhimento estruturado, com protocolos de atendimento humanizado e suporte contínuo aos associados.</p>
         </div>
 
         <!-- Futuro -->
         <div class="history__item" role="listitem">
           <div class="history__dot" aria-hidden="true"></div>
-          <span class="history__year">Futuro</span>
-          <h3 class="history__title">A florada</h3>
-          <p class="history__text">Cultivo associativo e produção própria de fitoterápicos — nosso objetivo futuro para garantir acesso a produtos seguros e acessíveis a todos os associados.</p>
+          <span class="history__year" data-en="Future">Futuro</span>
+          <h3 class="history__title" data-en="The bloom">A florada</h3>
+          <p class="history__text" data-en="Associative cultivation and our own production of herbal medicines — our future goal to ensure access to safe, affordable products for all members.">Cultivo associativo e produção própria de fitoterápicos — nosso objetivo futuro para garantir acesso a produtos seguros e acessíveis a todos os associados.</p>
         </div>
 
       </div>
@@ -153,8 +162,8 @@
     <div class="container">
 
       <div class="section__header reveal">
-        <span class="section__overline">Nosso propósito</span>
-        <h2 class="section__title" id="mvv-title">Missão, Visão e Valores</h2>
+        <span class="section__overline" data-en="Our purpose">Nosso propósito</span>
+        <h2 class="section__title" id="mvv-title" data-en="Mission, Vision and Values">Missão, Visão e Valores</h2>
       </div>
 
       <div class="mvv-grid stagger">
@@ -168,8 +177,8 @@
               <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
             </svg>
           </div>
-          <h3 class="mvv-card__title">Missão</h3>
-          <p class="mvv-card__text">Promover o acesso à cannabis medicinal de forma segura, legal e acessível, garantindo acolhimento, orientação e suporte a todos que precisam.</p>
+          <h3 class="mvv-card__title" data-en="Mission">Missão</h3>
+          <p class="mvv-card__text" data-en="To promote access to medical cannabis in a safe, legal and affordable way, ensuring welcoming, guidance and support to everyone who needs it.">Promover o acesso à cannabis medicinal de forma segura, legal e acessível, garantindo acolhimento, orientação e suporte a todos que precisam.</p>
         </div>
 
         <!-- Visão -->
@@ -181,8 +190,8 @@
               <circle cx="12" cy="12" r="3"/>
             </svg>
           </div>
-          <h3 class="mvv-card__title">Visão</h3>
-          <p class="mvv-card__text">Ser referência nacional em cuidado integrativo com cannabis medicinal, construindo uma rede de apoio que une ciência, humanidade e sabedoria ancestral.</p>
+          <h3 class="mvv-card__title" data-en="Vision">Visão</h3>
+          <p class="mvv-card__text" data-en="To be a national reference in integrative care with medical cannabis, building a support network that unites science, humanity and ancestral wisdom.">Ser referência nacional em cuidado integrativo com cannabis medicinal, construindo uma rede de apoio que une ciência, humanidade e sabedoria ancestral.</p>
         </div>
 
         <!-- Valores -->
@@ -196,8 +205,8 @@
               <path d="M7.5 22l4.5-5 4.5 5"/>
             </svg>
           </div>
-          <h3 class="mvv-card__title">Valores</h3>
-          <p class="mvv-card__text">Acolhimento sem julgamento. Transparência em tudo. Respeito pela lei e pelos direitos. Cuidado integral. Compromisso com a dignidade.</p>
+          <h3 class="mvv-card__title" data-en="Values">Valores</h3>
+          <p class="mvv-card__text" data-en="Welcoming without judgment. Transparency in everything. Respect for the law and for rights. Integral care. A commitment to dignity.">Acolhimento sem julgamento. Transparência em tudo. Respeito pela lei e pelos direitos. Cuidado integral. Compromisso com a dignidade.</p>
         </div>
 
       </div>
@@ -215,64 +224,64 @@
 
           <!-- Left column: Text -->
           <div>
-            <h3 id="transparency-title">Onde estamos agora</h3>
-            <p>Acreditamos que a transparência é a base de qualquer relação de confiança. Por isso, queremos ser honestos com você: ainda estamos em fase de construção. Não cultivamos cannabis e não fornecemos óleo — ainda. Nosso foco atual é construir uma rede sólida de profissionais, estruturar o suporte jurídico e, acima de tudo, acolher cada paciente que chega até nós com respeito e orientação de qualidade.</p>
-            <p>Cada etapa é construída com responsabilidade, dentro da lei e com o compromisso de entregar o melhor para nossos associados. Estamos plantando as sementes certas para que, no futuro, possamos oferecer acesso completo e digno ao tratamento com cannabis medicinal.</p>
+            <h3 id="transparency-title" data-en="Where we are now">Onde estamos agora</h3>
+            <p data-en="We believe transparency is the foundation of any relationship of trust. That is why we want to be honest with you: we are still under construction. We do not cultivate cannabis and we do not supply oil — yet. Our current focus is to build a solid network of professionals, structure legal support and, above all, welcome every patient who comes to us with respect and quality guidance.">Acreditamos que a transparência é a base de qualquer relação de confiança. Por isso, queremos ser honestos com você: ainda estamos em fase de construção. Não cultivamos cannabis e não fornecemos óleo — ainda. Nosso foco atual é construir uma rede sólida de profissionais, estruturar o suporte jurídico e, acima de tudo, acolher cada paciente que chega até nós com respeito e orientação de qualidade.</p>
+            <p data-en="Each step is built with responsibility, within the law and with a commitment to deliver the best for our members. We are planting the right seeds so that, in the future, we can offer complete and dignified access to treatment with medical cannabis.">Cada etapa é construída com responsabilidade, dentro da lei e com o compromisso de entregar o melhor para nossos associados. Estamos plantando as sementes certas para que, no futuro, possamos oferecer acesso completo e digno ao tratamento com cannabis medicinal.</p>
           </div>
 
           <!-- Right column: Checklist -->
           <div>
             <!-- Active items -->
-            <h4 class="text-gold" style="font-size:var(--text-sm);margin-bottom:var(--space-md);text-transform:uppercase;letter-spacing:0.05em;">Ativo agora</h4>
-            <ul class="transparency__list" aria-label="Serviços ativos atualmente">
+            <h4 class="text-gold" style="font-size:var(--text-sm);margin-bottom:var(--space-md);text-transform:uppercase;letter-spacing:0.05em;" data-en="Active now">Ativo agora</h4>
+            <ul class="transparency__list" aria-label="Serviços ativos atualmente" data-en-aria-label="Currently active services">
               <li>
                 <!-- Green checkmark SVG -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
-                <span>Acolhimento e orientação de pacientes</span>
+                <span data-en="Welcoming and guidance for patients">Acolhimento e orientação de pacientes</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
-                <span>Rede de médicos parceiros</span>
+                <span data-en="Network of partner physicians">Rede de médicos parceiros</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                   <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
-                <span>Suporte jurídico básico</span>
+                <span data-en="Basic legal support">Suporte jurídico básico</span>
               </li>
             </ul>
 
             <!-- Coming soon items -->
-            <h4 class="text-light" style="font-size:var(--text-sm);margin-bottom:var(--space-md);margin-top:var(--space-xl);text-transform:uppercase;letter-spacing:0.05em;">Em breve</h4>
-            <ul class="transparency__list" aria-label="Serviços planejados para o futuro">
+            <h4 class="text-light" style="font-size:var(--text-sm);margin-bottom:var(--space-md);margin-top:var(--space-xl);text-transform:uppercase;letter-spacing:0.05em;" data-en="Coming soon">Em breve</h4>
+            <ul class="transparency__list" aria-label="Serviços planejados para o futuro" data-en-aria-label="Services planned for the future">
               <li>
                 <!-- Clock/hourglass SVG -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--color-earth)">
                   <circle cx="12" cy="12" r="10"/>
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
-                <span>Cultivo associativo</span>
+                <span data-en="Associative cultivation">Cultivo associativo</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--color-earth)">
                   <circle cx="12" cy="12" r="10"/>
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
-                <span>Produção de fitoterápicos</span>
+                <span data-en="Production of herbal medicines">Produção de fitoterápicos</span>
               </li>
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--color-earth)">
                   <circle cx="12" cy="12" r="10"/>
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
-                <span>Programa de acesso solidário</span>
+                <span data-en="Solidarity access program">Programa de acesso solidário</span>
               </li>
             </ul>
           </div>
@@ -293,11 +302,11 @@
 
         <!-- Left column: Text -->
         <div class="vision__text reveal reveal--left">
-          <span class="section__overline">Nossa filosofia</span>
-          <h2 id="integrative-title">Nossa abordagem integrativa</h2>
-          <p>Na Diamba Sagrada, acreditamos que saúde verdadeira vai além do corpo. Nossa abordagem integrativa combina o rigor da medicina convencional com a sabedoria ancestral de práticas de cuidado que reconhecem o ser humano em sua totalidade — corpo, mente e espírito.</p>
-          <p>Isso não significa rejeitar a ciência ou substituir tratamentos médicos convencionais. Pelo contrário: trabalhamos lado a lado com profissionais de saúde para garantir que cada paciente receba um acompanhamento completo, personalizado e baseado em evidências.</p>
-          <p>A cannabis medicinal é uma ponte entre esses mundos. Uma planta usada há milênios por diferentes culturas, hoje validada pela ciência moderna, capaz de oferecer alívio e qualidade de vida a quem mais precisa. Nosso papel é facilitar esse encontro — com responsabilidade, respeito e humanidade.</p>
+          <span class="section__overline" data-en="Our philosophy">Nossa filosofia</span>
+          <h2 id="integrative-title" data-en="Our integrative approach">Nossa abordagem integrativa</h2>
+          <p data-en="At Diamba Sagrada, we believe true health goes beyond the body. Our integrative approach combines the rigor of conventional medicine with the ancestral wisdom of care practices that recognize the human being in their entirety — body, mind and spirit.">Na Diamba Sagrada, acreditamos que saúde verdadeira vai além do corpo. Nossa abordagem integrativa combina o rigor da medicina convencional com a sabedoria ancestral de práticas de cuidado que reconhecem o ser humano em sua totalidade — corpo, mente e espírito.</p>
+          <p data-en="This does not mean rejecting science or replacing conventional medical treatments. On the contrary: we work side by side with health professionals to ensure that every patient receives complete, personalized and evidence-based care.">Isso não significa rejeitar a ciência ou substituir tratamentos médicos convencionais. Pelo contrário: trabalhamos lado a lado com profissionais de saúde para garantir que cada paciente receba um acompanhamento completo, personalizado e baseado em evidências.</p>
+          <p data-en="Medical cannabis is a bridge between these worlds. A plant used for millennia by different cultures, today validated by modern science, capable of offering relief and quality of life to those who need it most. Our role is to facilitate this encounter — with responsibility, respect and humanity.">A cannabis medicinal é uma ponte entre esses mundos. Uma planta usada há milênios por diferentes culturas, hoje validada pela ciência moderna, capaz de oferecer alívio e qualidade de vida a quem mais precisa. Nosso papel é facilitar esse encontro — com responsabilidade, respeito e humanidade.</p>
         </div>
 
         <!-- Right column: Triad graphic -->
@@ -312,7 +321,7 @@
                   <path d="M12 14v2"/>
                 </svg>
               </div>
-              <span class="triad__label">Corpo</span>
+              <span class="triad__label" data-en="Body">Corpo</span>
             </div>
 
             <div class="triad__item">
@@ -324,7 +333,7 @@
                   <path d="M10 12h4"/>
                 </svg>
               </div>
-              <span class="triad__label">Mente</span>
+              <span class="triad__label" data-en="Mind">Mente</span>
             </div>
 
             <div class="triad__item">
@@ -334,7 +343,7 @@
                   <path d="M12 2L9 9l-7 1 5 5-1.5 7L12 18.5 18.5 22 17 15l5-5-7-1-3-7z"/>
                 </svg>
               </div>
-              <span class="triad__label">Espírito</span>
+              <span class="triad__label" data-en="Spirit">Espírito</span>
             </div>
           </div>
         </div>
@@ -354,9 +363,9 @@
     </div>
     <div class="container">
       <div class="cta-final__content reveal">
-        <h2 id="cta-title">Quer fazer parte dessa história?</h2>
-        <p>Junte-se a nós e ajude a construir um futuro mais justo para pacientes de cannabis medicinal.</p>
-        <a href="seja-associado.html" class="btn btn--gold btn--lg">Seja Associado</a>
+        <h2 id="cta-title" data-en="Want to be part of this story?">Quer fazer parte dessa história?</h2>
+        <p data-en="Join us and help build a fairer future for medical cannabis patients.">Junte-se a nós e ajude a construir um futuro mais justo para pacientes de cannabis medicinal.</p>
+        <a href="seja-associado.html" class="btn btn--gold btn--lg" data-en="Become a Member">Seja Associado</a>
       </div>
     </div>
   </section>
@@ -375,23 +384,23 @@
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             Diamba Sagrada
           </div>
-          <p class="footer__desc">Associação de pacientes de cannabis medicinal. Acolhimento, orientação e luta por acesso digno ao tratamento.</p>
+          <p class="footer__desc" data-en="A medical cannabis patient association. Welcoming, guidance and the fight for dignified access to treatment.">Associação de pacientes de cannabis medicinal. Acolhimento, orientação e luta por acesso digno ao tratamento.</p>
         </div>
 
         <!-- Nav Links -->
         <div>
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="quem-somos.html">Quem Somos</a></li>
-            <li><a href="o-que-fazemos.html">O Que Fazemos</a></li>
-            <li><a href="seja-associado.html">Seja Associado</a></li>
+            <li><a href="index.html" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" data-en="About Us">Quem Somos</a></li>
+            <li><a href="o-que-fazemos.html" data-en="What We Do">O Que Fazemos</a></li>
+            <li><a href="seja-associado.html" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div>
-          <h4 class="footer__heading">Contato</h4>
+          <h4 class="footer__heading" data-en="Contact">Contato</h4>
           <ul class="footer__list">
             <li><a href="mailto:contato@diambasagrada.org.br">contato@diambasagrada.org.br</a></li>
             <li><a href="https://wa.me/553598848060" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
@@ -403,8 +412,8 @@
 
       <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <span>&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
-        <span>Associação sem fins lucrativos</span>
+        <span data-en="&copy; 2025 Diamba Sagrada. All rights reserved.">&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
+        <span data-en="Non-profit association">Associação sem fins lucrativos</span>
       </div>
     </div>
   </footer>
@@ -412,5 +421,6 @@
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

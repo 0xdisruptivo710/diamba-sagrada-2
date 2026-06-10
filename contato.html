@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entre em contato com a Diamba Sagrada. Envie sua mensagem, tire dúvidas ou fale conosco pelo WhatsApp.">
-  <title>Contato — Diamba Sagrada</title>
+  <meta name="description" content="Entre em contato com a Diamba Sagrada. Envie sua mensagem, tire dúvidas ou fale conosco pelo WhatsApp." data-en-content="Get in touch with Diamba Sagrada. Send us your message, ask questions or reach us on WhatsApp.">
+  <title data-en="Contact — Diamba Sagrada">Contato — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +21,43 @@
        ======================================================================== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link nav__link--active" aria-current="page">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link nav__link--active" aria-current="page" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html" aria-current="page">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" aria-current="page" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -64,14 +72,14 @@
       <div class="hero__content">
         <!-- Breadcrumb -->
         <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Contato</span>
+          <span aria-current="page" data-en="Contact">Contato</span>
         </nav>
 
-        <span class="section__overline page-enter page-enter--delay-1">Fale Conosco</span>
-        <h1 class="hero__title page-enter page-enter--delay-1">Contato</h1>
-        <p class="hero__subtitle page-enter page-enter--delay-2">Estamos aqui para ouvir você. Envie sua mensagem, tire dúvidas ou entre em contato pelo canal que preferir.</p>
+        <span class="section__overline page-enter page-enter--delay-1" data-en="Get in touch">Fale Conosco</span>
+        <h1 class="hero__title page-enter page-enter--delay-1" data-en="Contact">Contato</h1>
+        <p class="hero__subtitle page-enter page-enter--delay-2" data-en="We're here to listen to you. Send your message, ask questions or reach out through the channel you prefer.">Estamos aqui para ouvir você. Envie sua mensagem, tire dúvidas ou entre em contato pelo canal que preferir.</p>
       </div>
     </section>
 
@@ -81,20 +89,20 @@
          ======================================================================== -->
     <section class="section" aria-labelledby="contact-section-title">
       <div class="container">
-        <h2 class="sr-only" id="contact-section-title">Formulário e informações de contato</h2>
+        <h2 class="sr-only" id="contact-section-title" data-en="Contact form and information">Formulário e informações de contato</h2>
 
         <div class="contact-layout">
 
           <!-- ====== LEFT COLUMN — FORM ====== -->
           <div class="contact-form reveal">
-            <h2 class="contact-form__title">Envie sua mensagem</h2>
+            <h2 class="contact-form__title" data-en="Send your message">Envie sua mensagem</h2>
 
             <form id="contact-form" novalidate>
 
               <!-- Nome -->
               <div class="form-group">
-                <label for="contact-name" class="form-label">Nome completo</label>
-                <input type="text" id="contact-name" name="name" class="form-input" data-validate="name" required placeholder="Seu nome completo" autocomplete="name">
+                <label for="contact-name" class="form-label" data-en="Full name">Nome completo</label>
+                <input type="text" id="contact-name" name="name" class="form-input" data-validate="name" required placeholder="Seu nome completo" data-en-placeholder="Your full name" autocomplete="name">
                 <div class="form-feedback">
                   <span class="form-feedback__icon form-feedback__icon--success" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -116,17 +124,17 @@
               <!-- E-mail -->
               <div class="form-group">
                 <div class="form-label-wrap">
-                  <label for="contact-email" class="form-label">E-mail</label>
+                  <label for="contact-email" class="form-label" data-en="Email">E-mail</label>
                   <span class="tooltip-wrap">
                     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                       <circle cx="12" cy="12" r="10"/>
                       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
                       <line x1="12" y1="17" x2="12.01" y2="17"/>
                     </svg>
-                    <span class="tooltip" role="tooltip">Usaremos apenas para responder sua mensagem</span>
+                    <span class="tooltip" role="tooltip" data-en="We'll only use it to reply to your message">Usaremos apenas para responder sua mensagem</span>
                   </span>
                 </div>
-                <input type="email" id="contact-email" name="email" class="form-input" data-validate="email" required placeholder="seu@email.com" autocomplete="email">
+                <input type="email" id="contact-email" name="email" class="form-input" data-validate="email" required placeholder="seu@email.com" data-en-placeholder="you@email.com" autocomplete="email">
                 <div class="form-feedback">
                   <span class="form-feedback__icon form-feedback__icon--success" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -147,21 +155,21 @@
 
               <!-- Assunto -->
               <div class="form-group">
-                <label for="contact-subject" class="form-label">Assunto</label>
+                <label for="contact-subject" class="form-label" data-en="Subject">Assunto</label>
                 <select id="contact-subject" name="subject" class="form-input" required>
-                  <option value="">Selecione...</option>
-                  <option value="associacao">Quero me associar</option>
-                  <option value="duvida-medica">Dúvida médica</option>
-                  <option value="suporte-juridico">Suporte jurídico</option>
-                  <option value="parceria">Parceria</option>
-                  <option value="outro">Outro</option>
+                  <option value="" data-en="Select...">Selecione...</option>
+                  <option value="associacao" data-en="I want to join">Quero me associar</option>
+                  <option value="duvida-medica" data-en="Medical question">Dúvida médica</option>
+                  <option value="suporte-juridico" data-en="Legal support">Suporte jurídico</option>
+                  <option value="parceria" data-en="Partnership">Parceria</option>
+                  <option value="outro" data-en="Other">Outro</option>
                 </select>
               </div>
 
               <!-- Mensagem -->
               <div class="form-group">
-                <label for="contact-message" class="form-label">Mensagem</label>
-                <textarea id="contact-message" name="message" class="form-input" data-validate="message" required rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <label for="contact-message" class="form-label" data-en="Message">Mensagem</label>
+                <textarea id="contact-message" name="message" class="form-input" data-validate="message" required rows="5" placeholder="Escreva sua mensagem aqui..." data-en-placeholder="Write your message here..."></textarea>
                 <div class="form-feedback">
                   <span class="form-feedback__icon form-feedback__icon--success" aria-hidden="true">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -184,7 +192,7 @@
               <div class="form-group">
                 <div class="form-checkbox">
                   <input type="checkbox" id="lgpd-consent" name="lgpd" required>
-                  <label for="lgpd-consent">Li e concordo com a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> (LGPD)</label>
+                  <label for="lgpd-consent" data-en="I have read and agree to the <a href='privacidade.html' target='_blank' rel='noopener noreferrer'>Privacy Policy</a> (LGPD)">Li e concordo com a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> (LGPD)</label>
                 </div>
                 <div class="form-feedback">
                   <span class="form-feedback__icon form-feedback__icon--error" aria-hidden="true">
@@ -199,7 +207,7 @@
               </div>
 
               <!-- Submit -->
-              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;" data-en="<svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M22 2L11 13'/><path d='M22 2l-7 20-4-9-9-4 20-7z'/></svg> Send message">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22 2L11 13"/>
                   <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
@@ -216,7 +224,7 @@
 
             <!-- Contact Info Card -->
             <div class="contact-info-card">
-              <h3 class="contact-info-card__title">Informações</h3>
+              <h3 class="contact-info-card__title" data-en="Information">Informações</h3>
 
               <div class="contact-info-card__item">
                 <div class="contact-info-card__icon" aria-hidden="true">
@@ -226,7 +234,7 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="contact-info-card__label">E-mail</span>
+                  <span class="contact-info-card__label" data-en="Email">E-mail</span>
                   <a href="mailto:contato@diambasagrada.org.br" class="contact-info-card__value">contato@diambasagrada.org.br</a>
                 </div>
               </div>
@@ -238,7 +246,7 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="contact-info-card__label">Telefone</span>
+                  <span class="contact-info-card__label" data-en="Phone">Telefone</span>
                   <a href="tel:+550000000000" class="contact-info-card__value">(00) 0000-0000</a>
                 </div>
               </div>
@@ -251,8 +259,8 @@
                   </svg>
                 </div>
                 <div>
-                  <span class="contact-info-card__label">Endereço</span>
-                  <span class="contact-info-card__value">São Tomé das Letras — Sul de Minas, MG</span>
+                  <span class="contact-info-card__label" data-en="Address">Endereço</span>
+                  <span class="contact-info-card__value" data-en="São Tomé das Letras — South of Minas, MG">São Tomé das Letras — Sul de Minas, MG</span>
                 </div>
               </div>
             </div>
@@ -265,14 +273,14 @@
                 </svg>
               </div>
               <div class="whatsapp-cta__text">
-                <strong>Prefere falar diretamente?</strong>
-                <span>Clique aqui e converse pelo WhatsApp</span>
+                <strong data-en="Prefer to talk directly?">Prefere falar diretamente?</strong>
+                <span data-en="Click here and chat on WhatsApp">Clique aqui e converse pelo WhatsApp</span>
               </div>
             </a>
 
             <!-- Social Cards (2x2) -->
             <div class="social-cards">
-              <a href="https://www.instagram.com/diambasagrada/" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Diamba Sagrada">
+              <a href="https://www.instagram.com/diambasagrada/" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Instagram">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <circle cx="12" cy="12" r="5"/>
@@ -280,19 +288,19 @@
                 </svg>
                 <span>Instagram</span>
               </a>
-              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Diamba Sagrada">
+              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Facebook">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                 </svg>
                 <span>Facebook</span>
               </a>
-              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) da Diamba Sagrada">
+              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on X (Twitter)">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M4 4l6.6 8.4L4 20h2l5.4-6.3L16 20h4l-7-8.9L19.6 4H18l-5 5.8L9 4H4z"/>
                 </svg>
                 <span>X (Twitter)</span>
               </a>
-              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="YouTube da Diamba Sagrada">
+              <a href="#" class="social-card" target="_blank" rel="noopener noreferrer" aria-label="YouTube da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on YouTube">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.35 29 29 0 0 0-.46-5.33z"/>
                   <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
@@ -302,7 +310,7 @@
             </div>
 
             <!-- Map Placeholder -->
-            <div class="map-placeholder" aria-label="Localização: São Tomé das Letras, MG">
+            <div class="map-placeholder" aria-label="Localização: São Tomé das Letras, MG" data-en-aria-label="Location: São Tomé das Letras, MG">
               <div class="map-placeholder__inner">
                 <svg viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M24 4C16.268 4 10 10.268 10 18c0 10 14 26 14 26s14-16 14-26c0-7.732-6.268-14-14-14z"/>
@@ -329,9 +337,9 @@
       </div>
       <div class="container">
         <div class="cta-final__content reveal">
-          <h2 id="cta-contato-title">Junte-se à nossa comunidade</h2>
-          <p>Faça parte de uma rede de apoio que luta pelo acesso digno à cannabis medicinal no Brasil.</p>
-          <a href="seja-associado.html" class="btn btn--gold btn--lg">Seja Associado</a>
+          <h2 id="cta-contato-title" data-en="Join our community">Junte-se à nossa comunidade</h2>
+          <p data-en="Be part of a support network fighting for dignified access to medical cannabis in Brazil.">Faça parte de uma rede de apoio que luta pelo acesso digno à cannabis medicinal no Brasil.</p>
+          <a href="seja-associado.html" class="btn btn--gold btn--lg" data-en="Become a Member">Seja Associado</a>
         </div>
       </div>
     </section>
@@ -348,44 +356,44 @@
 
         <!-- Brand -->
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <!-- Navegação -->
         <div>
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <!-- Áreas -->
         <div>
-          <h4 class="footer__heading">Áreas</h4>
+          <h4 class="footer__heading" data-en="Areas">Áreas</h4>
           <ul class="footer__list">
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Jurídico</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Jurídico</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
           </ul>
         </div>
 
         <!-- Legal -->
         <div>
-          <h4 class="footer__heading">Legal</h4>
+          <h4 class="footer__heading" data-en="Legal">Legal</h4>
           <ul class="footer__list">
-            <li><a href="privacidade.html" class="footer__link">Política de Privacidade</a></li>
-            <li><a href="termos.html" class="footer__link">Termos de Uso</a></li>
-            <li><a href="privacidade.html" class="footer__link">LGPD</a></li>
+            <li><a href="privacidade.html" class="footer__link" data-en="Privacy Policy">Política de Privacidade</a></li>
+            <li><a href="termos.html" class="footer__link" data-en="Terms of Use">Termos de Uso</a></li>
+            <li><a href="privacidade.html" class="footer__link" data-en="LGPD">LGPD</a></li>
           </ul>
         </div>
 
@@ -393,8 +401,8 @@
 
       <div class="footer__bottom">
         <span>&copy; 2024 Diamba Sagrada</span>
-        <span>Cultivar é direito. Tratar é dignidade.</span>
-        <span>
+        <span data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</span>
+        <span data-en="<a href='privacidade.html' class='footer__link'>Privacy</a> &middot; <a href='termos.html' class='footer__link'>Terms</a>">
           <a href="privacidade.html" class="footer__link">Privacidade</a> &middot;
           <a href="termos.html" class="footer__link">Termos</a>
         </span>
@@ -408,31 +416,32 @@
        ======================================================================== -->
 
   <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top" hidden>
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
   </button>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" data-en-aria-label="Get in touch on WhatsApp">
     <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff" aria-hidden="true">
       <path d="M16 3C9.373 3 4 8.373 4 15c0 2.127.553 4.12 1.52 5.855L4 29l8.145-1.52A11.94 11.94 0 0 0 16 29c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22a9.94 9.94 0 0 1-5.074-1.384l-.364-.216-3.772.988.988-3.772-.216-.364A9.94 9.94 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.422-7.518c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.174.199-.348.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.174-.008-.372-.01-.57-.01-.199 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.57-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     </svg>
   </a>
 
   <!-- Cookie Consent -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" hidden>
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" data-en-aria-label="Cookie consent" hidden>
     <div class="cookie-consent__content">
-      <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+      <p data-en="We use cookies to improve your experience. By continuing to browse, you agree to our <a href='privacidade.html'>Privacy Policy</a>.">Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
       <div class="cookie-consent__actions">
-        <button class="btn btn--primary btn--sm cookie-consent__accept">Aceitar</button>
-        <button class="btn btn--secondary btn--sm cookie-consent__reject">Recusar</button>
+        <button class="btn btn--primary btn--sm cookie-consent__accept" data-en="Accept">Aceitar</button>
+        <button class="btn btn--secondary btn--sm cookie-consent__reject" data-en="Decline">Recusar</button>
       </div>
     </div>
   </div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

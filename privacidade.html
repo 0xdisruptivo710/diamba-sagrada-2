@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Política de Privacidade da Diamba Sagrada. Saiba como coletamos, utilizamos e protegemos seus dados pessoais em conformidade com a LGPD.">
-  <title>Política de Privacidade — Diamba Sagrada</title>
+  <meta name="description" content="Política de Privacidade da Diamba Sagrada. Saiba como coletamos, utilizamos e protegemos seus dados pessoais em conformidade com a LGPD." data-en-content="Diamba Sagrada Privacy Policy. Learn how we collect, use and protect your personal data in compliance with the LGPD (Brazil's General Data Protection Law).">
+  <title data-en="Privacy Policy — Diamba Sagrada">Política de Privacidade — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +21,43 @@
        ======================================================================== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link nav__link--active">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link nav__link--active" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -63,17 +71,17 @@
 
       <div class="hero__content">
         <!-- Breadcrumb -->
-        <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+        <nav class="breadcrumb page-enter" aria-label="Breadcrumb" data-en-aria-label="Breadcrumb">
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <a href="area-juridica.html">Jurídico</a>
+          <a href="area-juridica.html" data-en="Legal">Jurídico</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Política de Privacidade</span>
+          <span aria-current="page" data-en="Privacy Policy">Política de Privacidade</span>
         </nav>
 
-        <span class="section__overline page-enter page-enter--delay-1">Proteção de Dados</span>
-        <h1 class="hero__title page-enter page-enter--delay-1">Política de Privacidade</h1>
-        <p class="hero__subtitle page-enter page-enter--delay-2">Última atualização: Janeiro de 2026</p>
+        <span class="section__overline page-enter page-enter--delay-1" data-en="Data Protection">Proteção de Dados</span>
+        <h1 class="hero__title page-enter page-enter--delay-1" data-en="Privacy Policy">Política de Privacidade</h1>
+        <p class="hero__subtitle page-enter page-enter--delay-2" data-en="Last updated: January 2026">Última atualização: Janeiro de 2026</p>
       </div>
     </section>
 
@@ -86,7 +94,7 @@
 
         <!-- Texto introdutório -->
         <div class="legal-page__intro reveal">
-          <p>A <strong>Diamba Sagrada — Associação de Pacientes de Cannabis Medicinal</strong> está comprometida com a proteção dos dados pessoais de seus associados, pacientes, visitantes e usuários da plataforma. Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)</strong> e demais normas aplicáveis do ordenamento jurídico brasileiro. Ao acessar nosso site, utilizar nossos serviços ou se associar à Diamba Sagrada, você declara estar ciente e de acordo com as práticas descritas neste documento.</p>
+          <p data-en="The <strong>Diamba Sagrada — Medical Cannabis Patient Association</strong> is committed to protecting the personal data of its members, patients, visitors and platform users. This Privacy Policy describes how we collect, use, store and protect your personal information, in compliance with the <strong>Brazilian General Data Protection Law (LGPD — Law No. 13.709/2018)</strong> and other applicable rules of the Brazilian legal system. By accessing our website, using our services or becoming a member of Diamba Sagrada, you declare that you are aware of and agree to the practices described in this document.">A <strong>Diamba Sagrada — Associação de Pacientes de Cannabis Medicinal</strong> está comprometida com a proteção dos dados pessoais de seus associados, pacientes, visitantes e usuários da plataforma. Esta Política de Privacidade descreve como coletamos, utilizamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)</strong> e demais normas aplicáveis do ordenamento jurídico brasileiro. Ao acessar nosso site, utilizar nossos serviços ou se associar à Diamba Sagrada, você declara estar ciente e de acordo com as práticas descritas neste documento.</p>
         </div>
 
         <!-- Accordion -->
@@ -95,51 +103,51 @@
           <!-- Seção A — Dados que coletamos -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Dados que coletamos</span>
+              <span data-en="Data we collect">Dados que coletamos</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A Diamba Sagrada coleta diferentes categorias de dados pessoais, sempre limitando-se ao mínimo necessário para a prestação de seus serviços:</p>
+                <p data-en="Diamba Sagrada collects different categories of personal data, always limited to the minimum necessary to provide its services:">A Diamba Sagrada coleta diferentes categorias de dados pessoais, sempre limitando-se ao mínimo necessário para a prestação de seus serviços:</p>
 
-                <h4>Dados de identificação pessoal</h4>
+                <h4 data-en="Personal identification data">Dados de identificação pessoal</h4>
                 <ul>
-                  <li>Nome completo e nome social (quando aplicável)</li>
-                  <li>CPF e RG</li>
-                  <li>Data de nascimento</li>
-                  <li>Endereço residencial completo</li>
-                  <li>Endereço de e-mail</li>
-                  <li>Número de telefone e WhatsApp</li>
-                  <li>Fotografia para identificação (quando necessário)</li>
+                  <li data-en="Full name and social name (where applicable)">Nome completo e nome social (quando aplicável)</li>
+                  <li data-en="CPF (taxpayer ID) and RG (identity card)">CPF e RG</li>
+                  <li data-en="Date of birth">Data de nascimento</li>
+                  <li data-en="Full residential address">Endereço residencial completo</li>
+                  <li data-en="E-mail address">Endereço de e-mail</li>
+                  <li data-en="Telephone and WhatsApp number">Número de telefone e WhatsApp</li>
+                  <li data-en="Photograph for identification (where necessary)">Fotografia para identificação (quando necessário)</li>
                 </ul>
 
-                <h4>Dados médicos e de saúde (dados sensíveis)</h4>
+                <h4 data-en="Medical and health data (sensitive data)">Dados médicos e de saúde (dados sensíveis)</h4>
                 <ul>
-                  <li>Condições de saúde e diagnósticos clínicos</li>
-                  <li>Prescrições médicas e receitas de cannabis medicinal</li>
-                  <li>Laudos, exames e relatórios médicos</li>
-                  <li>Histórico de tratamento com cannabis medicinal</li>
-                  <li>Informações sobre médico prescritor (nome e CRM)</li>
-                  <li>Autorizações da Anvisa para importação de produtos</li>
+                  <li data-en="Health conditions and clinical diagnoses">Condições de saúde e diagnósticos clínicos</li>
+                  <li data-en="Medical prescriptions and medical cannabis prescriptions">Prescrições médicas e receitas de cannabis medicinal</li>
+                  <li data-en="Medical reports, test results and clinical records">Laudos, exames e relatórios médicos</li>
+                  <li data-en="Medical cannabis treatment history">Histórico de tratamento com cannabis medicinal</li>
+                  <li data-en="Information about the prescribing physician (name and CRM medical license number)">Informações sobre médico prescritor (nome e CRM)</li>
+                  <li data-en="Anvisa authorizations for the import of products">Autorizações da Anvisa para importação de produtos</li>
                 </ul>
 
-                <h4>Dados de navegação e uso da plataforma</h4>
+                <h4 data-en="Browsing and platform usage data">Dados de navegação e uso da plataforma</h4>
                 <ul>
-                  <li>Endereço IP e geolocalização aproximada</li>
-                  <li>Tipo de navegador e sistema operacional</li>
-                  <li>Páginas visitadas e tempo de permanência</li>
-                  <li>Cookies e identificadores de sessão</li>
-                  <li>Dados de interação com formulários e ferramentas do site</li>
-                  <li>Origem do acesso (referrer)</li>
+                  <li data-en="IP address and approximate geolocation">Endereço IP e geolocalização aproximada</li>
+                  <li data-en="Browser type and operating system">Tipo de navegador e sistema operacional</li>
+                  <li data-en="Pages visited and time spent">Páginas visitadas e tempo de permanência</li>
+                  <li data-en="Cookies and session identifiers">Cookies e identificadores de sessão</li>
+                  <li data-en="Data from interactions with forms and site tools">Dados de interação com formulários e ferramentas do site</li>
+                  <li data-en="Source of access (referrer)">Origem do acesso (referrer)</li>
                 </ul>
 
-                <h4>Dados financeiros</h4>
+                <h4 data-en="Financial data">Dados financeiros</h4>
                 <ul>
-                  <li>Informações de pagamento de contribuições associativas</li>
-                  <li>Dados de compra de produtos na loja</li>
-                  <li>Histórico de transações (os dados de cartão são processados diretamente pelo gateway de pagamento e não são armazenados em nossos servidores)</li>
+                  <li data-en="Payment information for membership contributions">Informações de pagamento de contribuições associativas</li>
+                  <li data-en="Product purchase data from the shop">Dados de compra de produtos na loja</li>
+                  <li data-en="Transaction history (card data is processed directly by the payment gateway and is not stored on our servers)">Histórico de transações (os dados de cartão são processados diretamente pelo gateway de pagamento e não são armazenados em nossos servidores)</li>
                 </ul>
               </div>
             </div>
@@ -148,52 +156,52 @@
           <!-- Seção B — Como utilizamos seus dados -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Como utilizamos seus dados</span>
+              <span data-en="How we use your data">Como utilizamos seus dados</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>Utilizamos seus dados pessoais para as seguintes finalidades, sempre respaldados em bases legais previstas na LGPD:</p>
+                <p data-en="We use your personal data for the following purposes, always supported by legal bases provided for in the LGPD:">Utilizamos seus dados pessoais para as seguintes finalidades, sempre respaldados em bases legais previstas na LGPD:</p>
 
-                <h4>Prestação de serviços (Art. 7º, V — Execução de contrato)</h4>
+                <h4 data-en="Provision of services (Art. 7, V — Performance of a contract)">Prestação de serviços (Art. 7º, V — Execução de contrato)</h4>
                 <ul>
-                  <li>Gerenciar sua associação e cadastro na plataforma</li>
-                  <li>Encaminhamento a médicos prescritores parceiros</li>
-                  <li>Processamento de pedidos na loja de produtos</li>
-                  <li>Suporte ao processo de importação junto à Anvisa</li>
-                  <li>Atendimento e acolhimento ao paciente</li>
+                  <li data-en="Manage your membership and registration on the platform">Gerenciar sua associação e cadastro na plataforma</li>
+                  <li data-en="Referral to partner prescribing physicians">Encaminhamento a médicos prescritores parceiros</li>
+                  <li data-en="Processing of orders in the product shop">Processamento de pedidos na loja de produtos</li>
+                  <li data-en="Support for the import process with Anvisa">Suporte ao processo de importação junto à Anvisa</li>
+                  <li data-en="Patient care and welcoming">Atendimento e acolhimento ao paciente</li>
                 </ul>
 
-                <h4>Orientação jurídica (Art. 7º, V e IX — Execução de contrato e interesse legítimo)</h4>
+                <h4 data-en="Legal guidance (Art. 7, V and IX — Performance of a contract and legitimate interest)">Orientação jurídica (Art. 7º, V e IX — Execução de contrato e interesse legítimo)</h4>
                 <ul>
-                  <li>Prestação de suporte jurídico relacionado ao acesso legal à cannabis medicinal</li>
-                  <li>Orientação sobre direitos do paciente e legislação vigente</li>
-                  <li>Auxílio em processos de habeas corpus preventivo, quando aplicável</li>
+                  <li data-en="Provision of legal support related to lawful access to medical cannabis">Prestação de suporte jurídico relacionado ao acesso legal à cannabis medicinal</li>
+                  <li data-en="Guidance on patient rights and current legislation">Orientação sobre direitos do paciente e legislação vigente</li>
+                  <li data-en="Assistance in preventive habeas corpus proceedings, where applicable">Auxílio em processos de habeas corpus preventivo, quando aplicável</li>
                 </ul>
 
-                <h4>Comunicação (Art. 7º, I — Consentimento)</h4>
+                <h4 data-en="Communication (Art. 7, I — Consent)">Comunicação (Art. 7º, I — Consentimento)</h4>
                 <ul>
-                  <li>Envio de informativos sobre cannabis medicinal e atividades da associação</li>
-                  <li>Notificações sobre alterações em legislação relevante</li>
-                  <li>Comunicação sobre eventos, palestras e encontros</li>
-                  <li>Resposta a dúvidas e solicitações de contato</li>
+                  <li data-en="Sending newsletters about medical cannabis and the association's activities">Envio de informativos sobre cannabis medicinal e atividades da associação</li>
+                  <li data-en="Notifications about changes in relevant legislation">Notificações sobre alterações em legislação relevante</li>
+                  <li data-en="Communication about events, lectures and meetings">Comunicação sobre eventos, palestras e encontros</li>
+                  <li data-en="Responses to questions and contact requests">Resposta a dúvidas e solicitações de contato</li>
                 </ul>
 
-                <h4>Melhoria dos serviços (Art. 7º, IX — Interesse legítimo)</h4>
+                <h4 data-en="Improvement of services (Art. 7, IX — Legitimate interest)">Melhoria dos serviços (Art. 7º, IX — Interesse legítimo)</h4>
                 <ul>
-                  <li>Análise estatística de uso da plataforma (dados anonimizados)</li>
-                  <li>Aprimoramento da experiência do usuário no site</li>
-                  <li>Desenvolvimento de novos serviços e conteúdos</li>
-                  <li>Pesquisas de satisfação (participação voluntária)</li>
+                  <li data-en="Statistical analysis of platform usage (anonymized data)">Análise estatística de uso da plataforma (dados anonimizados)</li>
+                  <li data-en="Enhancement of the user experience on the website">Aprimoramento da experiência do usuário no site</li>
+                  <li data-en="Development of new services and content">Desenvolvimento de novos serviços e conteúdos</li>
+                  <li data-en="Satisfaction surveys (voluntary participation)">Pesquisas de satisfação (participação voluntária)</li>
                 </ul>
 
-                <h4>Obrigações legais e regulatórias (Art. 7º, II — Cumprimento de obrigação legal)</h4>
+                <h4 data-en="Legal and regulatory obligations (Art. 7, II — Compliance with a legal obligation)">Obrigações legais e regulatórias (Art. 7º, II — Cumprimento de obrigação legal)</h4>
                 <ul>
-                  <li>Cumprimento de obrigações fiscais e tributárias</li>
-                  <li>Atendimento a requisições de autoridades competentes</li>
-                  <li>Manutenção de registros conforme legislação aplicável</li>
+                  <li data-en="Compliance with tax and fiscal obligations">Cumprimento de obrigações fiscais e tributárias</li>
+                  <li data-en="Responding to requests from competent authorities">Atendimento a requisições de autoridades competentes</li>
+                  <li data-en="Maintenance of records in accordance with applicable legislation">Manutenção de registros conforme legislação aplicável</li>
                 </ul>
               </div>
             </div>
@@ -202,33 +210,33 @@
           <!-- Seção C — Compartilhamento de dados -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Compartilhamento de dados</span>
+              <span data-en="Data sharing">Compartilhamento de dados</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A Diamba Sagrada <strong>não comercializa, não vende e não aluga</strong> dados pessoais de seus associados, pacientes ou visitantes a terceiros, sob nenhuma circunstância. O compartilhamento de dados ocorre apenas nas seguintes situações:</p>
+                <p data-en="Diamba Sagrada <strong>does not trade, sell or rent</strong> the personal data of its members, patients or visitors to third parties under any circumstances. Data sharing occurs only in the following situations:">A Diamba Sagrada <strong>não comercializa, não vende e não aluga</strong> dados pessoais de seus associados, pacientes ou visitantes a terceiros, sob nenhuma circunstância. O compartilhamento de dados ocorre apenas nas seguintes situações:</p>
 
-                <h4>Médicos prescritores parceiros</h4>
-                <p>Mediante <strong>consentimento expresso</strong> do titular, compartilhamos dados necessários para o agendamento e realização de consultas médicas, incluindo informações de saúde relevantes para o atendimento. O compartilhamento é limitado ao estritamente necessário para a prestação do serviço médico.</p>
+                <h4 data-en="Partner prescribing physicians">Médicos prescritores parceiros</h4>
+                <p data-en="Subject to the data subject's <strong>express consent</strong>, we share the data necessary to schedule and carry out medical appointments, including health information relevant to care. Sharing is limited to what is strictly necessary to provide the medical service.">Mediante <strong>consentimento expresso</strong> do titular, compartilhamos dados necessários para o agendamento e realização de consultas médicas, incluindo informações de saúde relevantes para o atendimento. O compartilhamento é limitado ao estritamente necessário para a prestação do serviço médico.</p>
 
-                <h4>Equipe jurídica</h4>
-                <p>Quando o associado solicita orientação jurídica, os dados pertinentes ao caso são compartilhados com nossa equipe de advogados parceiros, sempre sob sigilo profissional e apenas na medida necessária para a análise e orientação legal.</p>
+                <h4 data-en="Legal team">Equipe jurídica</h4>
+                <p data-en="When a member requests legal guidance, the data relevant to the case is shared with our team of partner lawyers, always under professional confidentiality and only to the extent necessary for legal analysis and guidance.">Quando o associado solicita orientação jurídica, os dados pertinentes ao caso são compartilhados com nossa equipe de advogados parceiros, sempre sob sigilo profissional e apenas na medida necessária para a análise e orientação legal.</p>
 
-                <h4>Prestadores de serviços essenciais</h4>
+                <h4 data-en="Essential service providers">Prestadores de serviços essenciais</h4>
                 <ul>
-                  <li><strong>Gateway de pagamento:</strong> para processamento seguro de pagamentos de contribuições e compras</li>
-                  <li><strong>Serviço de hospedagem:</strong> nossos servidores são hospedados em provedores que atendem a padrões internacionais de segurança</li>
-                  <li><strong>Ferramentas de comunicação:</strong> plataformas de e-mail e mensagens utilizadas para atendimento ao associado</li>
+                  <li data-en="<strong>Payment gateway:</strong> for the secure processing of payments for contributions and purchases"><strong>Gateway de pagamento:</strong> para processamento seguro de pagamentos de contribuições e compras</li>
+                  <li data-en="<strong>Hosting service:</strong> our servers are hosted with providers that meet international security standards"><strong>Serviço de hospedagem:</strong> nossos servidores são hospedados em provedores que atendem a padrões internacionais de segurança</li>
+                  <li data-en="<strong>Communication tools:</strong> e-mail and messaging platforms used for member support"><strong>Ferramentas de comunicação:</strong> plataformas de e-mail e mensagens utilizadas para atendimento ao associado</li>
                 </ul>
 
-                <h4>Autoridades públicas</h4>
-                <p>Podemos compartilhar dados quando exigido por lei, decisão judicial ou requisição de autoridade competente, sempre respeitando os limites legais e comunicando o titular quando possível e permitido.</p>
+                <h4 data-en="Public authorities">Autoridades públicas</h4>
+                <p data-en="We may share data when required by law, court order or request from a competent authority, always respecting legal limits and notifying the data subject when possible and permitted.">Podemos compartilhar dados quando exigido por lei, decisão judicial ou requisição de autoridade competente, sempre respeitando os limites legais e comunicando o titular quando possível e permitido.</p>
 
-                <h4>Transferência internacional</h4>
-                <p>Alguns de nossos prestadores de serviço podem estar localizados fora do Brasil. Nesses casos, garantimos que a transferência internacional de dados está em conformidade com o Art. 33 da LGPD, adotando cláusulas contratuais específicas e verificando que o país de destino oferece nível adequado de proteção.</p>
+                <h4 data-en="International transfer">Transferência internacional</h4>
+                <p data-en="Some of our service providers may be located outside Brazil. In such cases, we ensure that the international transfer of data complies with Art. 33 of the LGPD, adopting specific contractual clauses and verifying that the destination country offers an adequate level of protection.">Alguns de nossos prestadores de serviço podem estar localizados fora do Brasil. Nesses casos, garantimos que a transferência internacional de dados está em conformidade com o Art. 33 da LGPD, adotando cláusulas contratuais específicas e verificando que o país de destino oferece nível adequado de proteção.</p>
               </div>
             </div>
           </div>
@@ -236,42 +244,42 @@
           <!-- Seção D — Armazenamento e segurança -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Armazenamento e segurança</span>
+              <span data-en="Storage and security">Armazenamento e segurança</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A segurança dos seus dados é uma prioridade para nós. Implementamos medidas técnicas e administrativas adequadas para proteger suas informações pessoais:</p>
+                <p data-en="The security of your data is a priority for us. We implement appropriate technical and administrative measures to protect your personal information:">A segurança dos seus dados é uma prioridade para nós. Implementamos medidas técnicas e administrativas adequadas para proteger suas informações pessoais:</p>
 
-                <h4>Medidas de segurança técnicas</h4>
+                <h4 data-en="Technical security measures">Medidas de segurança técnicas</h4>
                 <ul>
-                  <li><strong>Criptografia SSL/TLS:</strong> todas as comunicações entre seu navegador e nossos servidores são criptografadas</li>
-                  <li><strong>Criptografia em repouso:</strong> dados sensíveis armazenados em nossos bancos de dados são criptografados com algoritmos AES-256</li>
-                  <li><strong>Controle de acesso:</strong> acesso aos dados pessoais restrito a colaboradores autorizados, com autenticação multifator (MFA)</li>
-                  <li><strong>Firewall e monitoramento:</strong> proteção contra acessos não autorizados e monitoramento contínuo de atividades suspeitas</li>
-                  <li><strong>Backups regulares:</strong> cópias de segurança automatizadas e armazenadas em ambiente seguro e separado</li>
+                  <li data-en="<strong>SSL/TLS encryption:</strong> all communications between your browser and our servers are encrypted"><strong>Criptografia SSL/TLS:</strong> todas as comunicações entre seu navegador e nossos servidores são criptografadas</li>
+                  <li data-en="<strong>Encryption at rest:</strong> sensitive data stored in our databases is encrypted with AES-256 algorithms"><strong>Criptografia em repouso:</strong> dados sensíveis armazenados em nossos bancos de dados são criptografados com algoritmos AES-256</li>
+                  <li data-en="<strong>Access control:</strong> access to personal data restricted to authorized staff, with multi-factor authentication (MFA)"><strong>Controle de acesso:</strong> acesso aos dados pessoais restrito a colaboradores autorizados, com autenticação multifator (MFA)</li>
+                  <li data-en="<strong>Firewall and monitoring:</strong> protection against unauthorized access and continuous monitoring of suspicious activity"><strong>Firewall e monitoramento:</strong> proteção contra acessos não autorizados e monitoramento contínuo de atividades suspeitas</li>
+                  <li data-en="<strong>Regular backups:</strong> automated backup copies stored in a secure and separate environment"><strong>Backups regulares:</strong> cópias de segurança automatizadas e armazenadas em ambiente seguro e separado</li>
                 </ul>
 
-                <h4>Medidas administrativas</h4>
+                <h4 data-en="Administrative measures">Medidas administrativas</h4>
                 <ul>
-                  <li>Política interna de segurança da informação</li>
-                  <li>Treinamento periódico da equipe sobre proteção de dados</li>
-                  <li>Acordos de confidencialidade com todos os colaboradores e prestadores</li>
-                  <li>Procedimento de resposta a incidentes de segurança</li>
-                  <li>Auditorias internas periódicas</li>
+                  <li data-en="Internal information security policy">Política interna de segurança da informação</li>
+                  <li data-en="Periodic team training on data protection">Treinamento periódico da equipe sobre proteção de dados</li>
+                  <li data-en="Confidentiality agreements with all staff and service providers">Acordos de confidencialidade com todos os colaboradores e prestadores</li>
+                  <li data-en="Security incident response procedure">Procedimento de resposta a incidentes de segurança</li>
+                  <li data-en="Periodic internal audits">Auditorias internas periódicas</li>
                 </ul>
 
-                <h4>Períodos de retenção</h4>
+                <h4 data-en="Retention periods">Períodos de retenção</h4>
                 <ul>
-                  <li><strong>Dados cadastrais:</strong> mantidos durante toda a vigência da associação e por até 5 anos após o cancelamento, conforme obrigações legais</li>
-                  <li><strong>Dados médicos:</strong> mantidos pelo prazo mínimo de 20 anos, conforme Resolução CFM nº 1.821/2007</li>
-                  <li><strong>Dados de navegação:</strong> mantidos por até 6 meses para fins de análise e segurança</li>
-                  <li><strong>Dados financeiros:</strong> mantidos pelo prazo legal de 5 anos para fins fiscais</li>
+                  <li data-en="<strong>Registration data:</strong> kept throughout the duration of the membership and for up to 5 years after cancellation, in accordance with legal obligations"><strong>Dados cadastrais:</strong> mantidos durante toda a vigência da associação e por até 5 anos após o cancelamento, conforme obrigações legais</li>
+                  <li data-en="<strong>Medical data:</strong> kept for a minimum period of 20 years, in accordance with CFM Resolution No. 1.821/2007"><strong>Dados médicos:</strong> mantidos pelo prazo mínimo de 20 anos, conforme Resolução CFM nº 1.821/2007</li>
+                  <li data-en="<strong>Browsing data:</strong> kept for up to 6 months for analysis and security purposes"><strong>Dados de navegação:</strong> mantidos por até 6 meses para fins de análise e segurança</li>
+                  <li data-en="<strong>Financial data:</strong> kept for the legal period of 5 years for tax purposes"><strong>Dados financeiros:</strong> mantidos pelo prazo legal de 5 anos para fins fiscais</li>
                 </ul>
 
-                <p>Após o término do período de retenção, os dados são eliminados de forma segura ou anonimizados de forma irreversível.</p>
+                <p data-en="After the end of the retention period, the data is securely deleted or irreversibly anonymized.">Após o término do período de retenção, os dados são eliminados de forma segura ou anonimizados de forma irreversível.</p>
               </div>
             </div>
           </div>
@@ -279,31 +287,31 @@
           <!-- Seção E — Seus direitos como titular -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Seus direitos como titular</span>
+              <span data-en="Your rights as a data subject">Seus direitos como titular</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>Em conformidade com os artigos 17 a 22 da LGPD, você possui os seguintes direitos em relação aos seus dados pessoais:</p>
+                <p data-en="In accordance with Articles 17 to 22 of the LGPD, you have the following rights regarding your personal data:">Em conformidade com os artigos 17 a 22 da LGPD, você possui os seguintes direitos em relação aos seus dados pessoais:</p>
 
                 <ul>
-                  <li><strong>Confirmação e acesso:</strong> você pode solicitar a confirmação da existência de tratamento de seus dados e acessar as informações que mantemos sobre você</li>
-                  <li><strong>Correção:</strong> você tem direito a solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
-                  <li><strong>Anonimização, bloqueio ou eliminação:</strong> você pode solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
-                  <li><strong>Portabilidade:</strong> você pode solicitar a portabilidade dos seus dados a outro fornecedor de serviço, mediante requisição expressa</li>
-                  <li><strong>Eliminação de dados tratados com consentimento:</strong> você pode solicitar a eliminação dos dados pessoais tratados com base no seu consentimento, exceto nas hipóteses de conservação previstas em lei</li>
-                  <li><strong>Informação sobre compartilhamento:</strong> você tem direito a saber com quais entidades públicas e privadas seus dados foram compartilhados</li>
-                  <li><strong>Revogação do consentimento:</strong> você pode revogar seu consentimento a qualquer momento, de forma gratuita e facilitada, ficando ciente de que a revogação não afeta a licitude do tratamento realizado anteriormente</li>
-                  <li><strong>Oposição:</strong> você pode se opor ao tratamento realizado com fundamento em uma das hipóteses de dispensa de consentimento, caso haja descumprimento da LGPD</li>
-                  <li><strong>Revisão de decisões automatizadas:</strong> você pode solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais</li>
+                  <li data-en="<strong>Confirmation and access:</strong> you may request confirmation of the existence of processing of your data and access the information we hold about you"><strong>Confirmação e acesso:</strong> você pode solicitar a confirmação da existência de tratamento de seus dados e acessar as informações que mantemos sobre você</li>
+                  <li data-en="<strong>Correction:</strong> you have the right to request the correction of incomplete, inaccurate or outdated data"><strong>Correção:</strong> você tem direito a solicitar a correção de dados incompletos, inexatos ou desatualizados</li>
+                  <li data-en="<strong>Anonymization, blocking or deletion:</strong> you may request the anonymization, blocking or deletion of data that is unnecessary, excessive or processed in non-compliance with the LGPD"><strong>Anonimização, bloqueio ou eliminação:</strong> você pode solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD</li>
+                  <li data-en="<strong>Portability:</strong> you may request the portability of your data to another service provider, upon express request"><strong>Portabilidade:</strong> você pode solicitar a portabilidade dos seus dados a outro fornecedor de serviço, mediante requisição expressa</li>
+                  <li data-en="<strong>Deletion of data processed with consent:</strong> you may request the deletion of personal data processed on the basis of your consent, except in the cases of retention provided for by law"><strong>Eliminação de dados tratados com consentimento:</strong> você pode solicitar a eliminação dos dados pessoais tratados com base no seu consentimento, exceto nas hipóteses de conservação previstas em lei</li>
+                  <li data-en="<strong>Information about sharing:</strong> you have the right to know with which public and private entities your data has been shared"><strong>Informação sobre compartilhamento:</strong> você tem direito a saber com quais entidades públicas e privadas seus dados foram compartilhados</li>
+                  <li data-en="<strong>Withdrawal of consent:</strong> you may withdraw your consent at any time, free of charge and through a facilitated process, being aware that withdrawal does not affect the lawfulness of processing carried out previously"><strong>Revogação do consentimento:</strong> você pode revogar seu consentimento a qualquer momento, de forma gratuita e facilitada, ficando ciente de que a revogação não afeta a licitude do tratamento realizado anteriormente</li>
+                  <li data-en="<strong>Objection:</strong> you may object to processing carried out on the basis of one of the grounds that waive consent, in the event of non-compliance with the LGPD"><strong>Oposição:</strong> você pode se opor ao tratamento realizado com fundamento em uma das hipóteses de dispensa de consentimento, caso haja descumprimento da LGPD</li>
+                  <li data-en="<strong>Review of automated decisions:</strong> you may request the review of decisions made solely on the basis of automated processing of personal data"><strong>Revisão de decisões automatizadas:</strong> você pode solicitar a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais</li>
                 </ul>
 
-                <h4>Como exercer seus direitos</h4>
-                <p>Para exercer qualquer um dos direitos acima, entre em contato com nosso Encarregado de Proteção de Dados (DPO) por meio do e-mail <strong>encarregado@diambasagrada.org.br</strong>. Sua solicitação será analisada e respondida no prazo máximo de <strong>15 dias úteis</strong>, conforme previsto na legislação. Para sua segurança, poderemos solicitar a confirmação da sua identidade antes de atender à requisição.</p>
+                <h4 data-en="How to exercise your rights">Como exercer seus direitos</h4>
+                <p data-en="To exercise any of the rights above, contact our Data Protection Officer (DPO) via the e-mail <strong>encarregado@diambasagrada.org.br</strong>. Your request will be reviewed and answered within a maximum of <strong>15 business days</strong>, as provided for by law. For your security, we may request confirmation of your identity before fulfilling the request.">Para exercer qualquer um dos direitos acima, entre em contato com nosso Encarregado de Proteção de Dados (DPO) por meio do e-mail <strong>encarregado@diambasagrada.org.br</strong>. Sua solicitação será analisada e respondida no prazo máximo de <strong>15 dias úteis</strong>, conforme previsto na legislação. Para sua segurança, poderemos solicitar a confirmação da sua identidade antes de atender à requisição.</p>
 
-                <p>Caso considere que o tratamento de seus dados pessoais viola a legislação vigente, você também tem o direito de apresentar reclamação junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>.</p>
+                <p data-en="If you consider that the processing of your personal data violates current legislation, you also have the right to file a complaint with the <strong>National Data Protection Authority (ANPD)</strong>.">Caso considere que o tratamento de seus dados pessoais viola a legislação vigente, você também tem o direito de apresentar reclamação junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>.</p>
               </div>
             </div>
           </div>
@@ -311,36 +319,36 @@
           <!-- Seção F — Cookies e tecnologias -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Cookies e tecnologias</span>
+              <span data-en="Cookies and technologies">Cookies e tecnologias</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>Nosso site utiliza cookies e tecnologias semelhantes para oferecer uma experiência melhor e mais personalizada. Abaixo, explicamos os tipos de cookies utilizados:</p>
+                <p data-en="Our website uses cookies and similar technologies to offer a better and more personalized experience. Below, we explain the types of cookies used:">Nosso site utiliza cookies e tecnologias semelhantes para oferecer uma experiência melhor e mais personalizada. Abaixo, explicamos os tipos de cookies utilizados:</p>
 
-                <h4>Cookies estritamente necessários</h4>
-                <p>Essenciais para o funcionamento básico do site. Permitem a navegação e o uso de funcionalidades fundamentais, como áreas seguras e preferências de privacidade. Não podem ser desativados sem comprometer o uso do site.</p>
+                <h4 data-en="Strictly necessary cookies">Cookies estritamente necessários</h4>
+                <p data-en="Essential for the basic operation of the website. They enable navigation and the use of fundamental features, such as secure areas and privacy preferences. They cannot be disabled without compromising the use of the website.">Essenciais para o funcionamento básico do site. Permitem a navegação e o uso de funcionalidades fundamentais, como áreas seguras e preferências de privacidade. Não podem ser desativados sem comprometer o uso do site.</p>
 
-                <h4>Cookies de desempenho e análise</h4>
-                <p>Coletam informações anônimas sobre como os visitantes utilizam o site, como páginas mais visitadas e eventuais mensagens de erro. Esses dados nos ajudam a melhorar o funcionamento e o conteúdo da plataforma. Utilizamos ferramentas como Google Analytics com anonimização de IP ativada.</p>
+                <h4 data-en="Performance and analytics cookies">Cookies de desempenho e análise</h4>
+                <p data-en="They collect anonymous information about how visitors use the website, such as the most visited pages and any error messages. This data helps us improve the operation and content of the platform. We use tools such as Google Analytics with IP anonymization enabled.">Coletam informações anônimas sobre como os visitantes utilizam o site, como páginas mais visitadas e eventuais mensagens de erro. Esses dados nos ajudam a melhorar o funcionamento e o conteúdo da plataforma. Utilizamos ferramentas como Google Analytics com anonimização de IP ativada.</p>
 
-                <h4>Cookies de funcionalidade</h4>
-                <p>Permitem que o site lembre suas escolhas (como idioma, região ou preferências de acessibilidade) para oferecer funcionalidades aprimoradas e mais personalizadas.</p>
+                <h4 data-en="Functionality cookies">Cookies de funcionalidade</h4>
+                <p data-en="They allow the website to remember your choices (such as language, region or accessibility preferences) in order to offer enhanced and more personalized features.">Permitem que o site lembre suas escolhas (como idioma, região ou preferências de acessibilidade) para oferecer funcionalidades aprimoradas e mais personalizadas.</p>
 
-                <h4>Cookies de marketing</h4>
-                <p>Podem ser utilizados para exibir conteúdo relevante com base em seus interesses. Atualmente, a Diamba Sagrada não utiliza cookies de marketing de terceiros, mas caso venha a utilizá-los, solicitaremos seu consentimento prévio.</p>
+                <h4 data-en="Marketing cookies">Cookies de marketing</h4>
+                <p data-en="They may be used to display relevant content based on your interests. Currently, Diamba Sagrada does not use third-party marketing cookies, but should it come to use them, we will request your prior consent.">Podem ser utilizados para exibir conteúdo relevante com base em seus interesses. Atualmente, a Diamba Sagrada não utiliza cookies de marketing de terceiros, mas caso venha a utilizá-los, solicitaremos seu consentimento prévio.</p>
 
-                <h4>Como gerenciar seus cookies</h4>
-                <p>Ao acessar nosso site pela primeira vez, você verá um banner de consentimento de cookies, onde poderá aceitar ou recusar o uso de cookies não essenciais. Além disso, você pode gerenciar suas preferências de cookies a qualquer momento através das configurações do seu navegador:</p>
+                <h4 data-en="How to manage your cookies">Como gerenciar seus cookies</h4>
+                <p data-en="When you access our website for the first time, you will see a cookie consent banner, where you can accept or refuse the use of non-essential cookies. In addition, you can manage your cookie preferences at any time through your browser settings:">Ao acessar nosso site pela primeira vez, você verá um banner de consentimento de cookies, onde poderá aceitar ou recusar o uso de cookies não essenciais. Além disso, você pode gerenciar suas preferências de cookies a qualquer momento através das configurações do seu navegador:</p>
                 <ul>
-                  <li><strong>Google Chrome:</strong> Configurações &gt; Privacidade e segurança &gt; Cookies</li>
-                  <li><strong>Mozilla Firefox:</strong> Configurações &gt; Privacidade e Segurança &gt; Cookies</li>
-                  <li><strong>Safari:</strong> Preferências &gt; Privacidade &gt; Cookies e dados do site</li>
-                  <li><strong>Microsoft Edge:</strong> Configurações &gt; Cookies e permissões do site</li>
+                  <li data-en="<strong>Google Chrome:</strong> Settings &gt; Privacy and security &gt; Cookies"><strong>Google Chrome:</strong> Configurações &gt; Privacidade e segurança &gt; Cookies</li>
+                  <li data-en="<strong>Mozilla Firefox:</strong> Settings &gt; Privacy &amp; Security &gt; Cookies"><strong>Mozilla Firefox:</strong> Configurações &gt; Privacidade e Segurança &gt; Cookies</li>
+                  <li data-en="<strong>Safari:</strong> Preferences &gt; Privacy &gt; Cookies and website data"><strong>Safari:</strong> Preferências &gt; Privacidade &gt; Cookies e dados do site</li>
+                  <li data-en="<strong>Microsoft Edge:</strong> Settings &gt; Cookies and site permissions"><strong>Microsoft Edge:</strong> Configurações &gt; Cookies e permissões do site</li>
                 </ul>
-                <p>A desativação de cookies pode afetar a funcionalidade de algumas áreas do site.</p>
+                <p data-en="Disabling cookies may affect the functionality of some areas of the website.">A desativação de cookies pode afetar a funcionalidade de algumas áreas do site.</p>
               </div>
             </div>
           </div>
@@ -348,32 +356,32 @@
           <!-- Seção G — Dados sensíveis -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Dados sensíveis</span>
+              <span data-en="Sensitive data">Dados sensíveis</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A LGPD classifica dados referentes à saúde como <strong>dados pessoais sensíveis</strong> (Art. 5º, II), merecendo tratamento especial e proteção reforçada. Como associação voltada ao acesso à cannabis medicinal, tratamos dados de saúde com o máximo cuidado e responsabilidade.</p>
+                <p data-en="The LGPD classifies data relating to health as <strong>sensitive personal data</strong> (Art. 5, II), warranting special treatment and enhanced protection. As an association dedicated to access to medical cannabis, we process health data with the utmost care and responsibility.">A LGPD classifica dados referentes à saúde como <strong>dados pessoais sensíveis</strong> (Art. 5º, II), merecendo tratamento especial e proteção reforçada. Como associação voltada ao acesso à cannabis medicinal, tratamos dados de saúde com o máximo cuidado e responsabilidade.</p>
 
-                <h4>Consentimento específico e destacado</h4>
-                <p>O tratamento de seus dados de saúde é realizado com base no seu <strong>consentimento específico e destacado</strong> (Art. 11, I da LGPD), coletado de forma clara e inequívoca no momento do cadastro ou quando necessário para a prestação de um serviço específico. Você será sempre informado sobre quais dados sensíveis estão sendo coletados e para qual finalidade.</p>
+                <h4 data-en="Specific and highlighted consent">Consentimento específico e destacado</h4>
+                <p data-en="The processing of your health data is carried out on the basis of your <strong>specific and highlighted consent</strong> (Art. 11, I of the LGPD), collected in a clear and unequivocal manner at the time of registration or when necessary to provide a specific service. You will always be informed about which sensitive data is being collected and for what purpose.">O tratamento de seus dados de saúde é realizado com base no seu <strong>consentimento específico e destacado</strong> (Art. 11, I da LGPD), coletado de forma clara e inequívoca no momento do cadastro ou quando necessário para a prestação de um serviço específico. Você será sempre informado sobre quais dados sensíveis estão sendo coletados e para qual finalidade.</p>
 
-                <h4>Finalidade exclusiva</h4>
-                <p>Seus dados médicos e de saúde são utilizados exclusivamente para:</p>
+                <h4 data-en="Exclusive purpose">Finalidade exclusiva</h4>
+                <p data-en="Your medical and health data is used exclusively for:">Seus dados médicos e de saúde são utilizados exclusivamente para:</p>
                 <ul>
-                  <li>Encaminhamento a médicos prescritores e agendamento de consultas</li>
-                  <li>Suporte ao processo de obtenção de prescrição e autorização da Anvisa</li>
-                  <li>Orientação jurídica relacionada ao acesso legal ao tratamento</li>
-                  <li>Acompanhamento do histórico de tratamento do associado</li>
+                  <li data-en="Referral to prescribing physicians and scheduling of appointments">Encaminhamento a médicos prescritores e agendamento de consultas</li>
+                  <li data-en="Support for the process of obtaining a prescription and Anvisa authorization">Suporte ao processo de obtenção de prescrição e autorização da Anvisa</li>
+                  <li data-en="Legal guidance related to lawful access to treatment">Orientação jurídica relacionada ao acesso legal ao tratamento</li>
+                  <li data-en="Monitoring of the member's treatment history">Acompanhamento do histórico de tratamento do associado</li>
                 </ul>
 
-                <h4>Proteção reforçada</h4>
-                <p>Dados sensíveis recebem camada adicional de proteção em nossos sistemas, incluindo criptografia de ponta a ponta, acesso restrito apenas a profissionais de saúde e membros autorizados da equipe, e registro de todos os acessos (logs de auditoria). Esses dados jamais são utilizados para finalidades de marketing, perfilamento comercial ou qualquer outro propósito não relacionado ao atendimento ao paciente.</p>
+                <h4 data-en="Enhanced protection">Proteção reforçada</h4>
+                <p data-en="Sensitive data receives an additional layer of protection in our systems, including end-to-end encryption, access restricted only to healthcare professionals and authorized team members, and logging of all accesses (audit logs). This data is never used for marketing purposes, commercial profiling or any other purpose unrelated to patient care.">Dados sensíveis recebem camada adicional de proteção em nossos sistemas, incluindo criptografia de ponta a ponta, acesso restrito apenas a profissionais de saúde e membros autorizados da equipe, e registro de todos os acessos (logs de auditoria). Esses dados jamais são utilizados para finalidades de marketing, perfilamento comercial ou qualquer outro propósito não relacionado ao atendimento ao paciente.</p>
 
-                <h4>Menores de idade</h4>
-                <p>Quando o paciente for menor de 18 anos, o tratamento de dados sensíveis será realizado com o consentimento específico de pelo menos um dos pais ou responsável legal, conforme Art. 14 da LGPD.</p>
+                <h4 data-en="Minors">Menores de idade</h4>
+                <p data-en="When the patient is under 18 years of age, the processing of sensitive data will be carried out with the specific consent of at least one of the parents or legal guardian, in accordance with Art. 14 of the LGPD.">Quando o paciente for menor de 18 anos, o tratamento de dados sensíveis será realizado com o consentimento específico de pelo menos um dos pais ou responsável legal, conforme Art. 14 da LGPD.</p>
               </div>
             </div>
           </div>
@@ -381,25 +389,25 @@
           <!-- Seção H — Alterações nesta política -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Alterações nesta política</span>
+              <span data-en="Changes to this policy">Alterações nesta política</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A Diamba Sagrada reserva-se o direito de atualizar esta Política de Privacidade periodicamente, de modo a refletir melhorias em nossos processos, mudanças na legislação ou atualizações tecnológicas. Quando isso ocorrer:</p>
+                <p data-en="Diamba Sagrada reserves the right to update this Privacy Policy periodically, in order to reflect improvements in our processes, changes in legislation or technological updates. When this occurs:">A Diamba Sagrada reserva-se o direito de atualizar esta Política de Privacidade periodicamente, de modo a refletir melhorias em nossos processos, mudanças na legislação ou atualizações tecnológicas. Quando isso ocorrer:</p>
 
                 <ul>
-                  <li>A data de "Última atualização" no topo desta página será alterada</li>
-                  <li>Alterações significativas serão comunicadas por e-mail aos associados cadastrados</li>
-                  <li>Um aviso destacado será exibido no site por pelo menos 30 dias após a alteração</li>
-                  <li>Para alterações que afetem o tratamento de dados sensíveis, solicitaremos novo consentimento quando necessário</li>
+                  <li data-en="The &quot;Last updated&quot; date at the top of this page will be changed">A data de "Última atualização" no topo desta página será alterada</li>
+                  <li data-en="Significant changes will be communicated by e-mail to registered members">Alterações significativas serão comunicadas por e-mail aos associados cadastrados</li>
+                  <li data-en="A prominent notice will be displayed on the website for at least 30 days after the change">Um aviso destacado será exibido no site por pelo menos 30 dias após a alteração</li>
+                  <li data-en="For changes that affect the processing of sensitive data, we will request new consent when necessary">Para alterações que afetem o tratamento de dados sensíveis, solicitaremos novo consentimento quando necessário</li>
                 </ul>
 
-                <p>Recomendamos que você revise esta política periodicamente para estar ciente de como estamos protegendo suas informações. O uso continuado dos nossos serviços após a publicação de alterações constitui aceitação da política atualizada.</p>
+                <p data-en="We recommend that you review this policy periodically to stay aware of how we are protecting your information. Continued use of our services after the publication of changes constitutes acceptance of the updated policy.">Recomendamos que você revise esta política periodicamente para estar ciente de como estamos protegendo suas informações. O uso continuado dos nossos serviços após a publicação de alterações constitui aceitação da política atualizada.</p>
 
-                <p>Versões anteriores desta política podem ser solicitadas ao nosso Encarregado de Proteção de Dados pelo e-mail indicado na seção de contato abaixo.</p>
+                <p data-en="Previous versions of this policy may be requested from our Data Protection Officer via the e-mail indicated in the contact section below.">Versões anteriores desta política podem ser solicitadas ao nosso Encarregado de Proteção de Dados pelo e-mail indicado na seção de contato abaixo.</p>
               </div>
             </div>
           </div>
@@ -407,25 +415,25 @@
           <!-- Seção I — Contato do DPO -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Contato do Encarregado de Proteção de Dados (DPO)</span>
+              <span data-en="Data Protection Officer (DPO) contact">Contato do Encarregado de Proteção de Dados (DPO)</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
               <div class="accordion__inner">
-                <p>A Diamba Sagrada nomeou um Encarregado de Proteção de Dados Pessoais (DPO), conforme exigido pelo Art. 41 da LGPD, responsável por atuar como canal de comunicação entre a associação, os titulares de dados e a Autoridade Nacional de Proteção de Dados (ANPD).</p>
+                <p data-en="Diamba Sagrada has appointed a Personal Data Protection Officer (DPO), as required by Art. 41 of the LGPD, responsible for acting as a channel of communication between the association, data subjects and the National Data Protection Authority (ANPD).">A Diamba Sagrada nomeou um Encarregado de Proteção de Dados Pessoais (DPO), conforme exigido pelo Art. 41 da LGPD, responsável por atuar como canal de comunicação entre a associação, os titulares de dados e a Autoridade Nacional de Proteção de Dados (ANPD).</p>
 
-                <p>Para exercer seus direitos, esclarecer dúvidas sobre o tratamento de seus dados ou registrar reclamações, entre em contato:</p>
+                <p data-en="To exercise your rights, clarify questions about the processing of your data or file complaints, please contact:">Para exercer seus direitos, esclarecer dúvidas sobre o tratamento de seus dados ou registrar reclamações, entre em contato:</p>
 
                 <ul>
-                  <li><strong>Cargo:</strong> Encarregado de Proteção de Dados (DPO)</li>
-                  <li><strong>E-mail:</strong> <a href="mailto:encarregado@diambasagrada.org.br">encarregado@diambasagrada.org.br</a></li>
-                  <li><strong>Endereço:</strong> Diamba Sagrada — Associação de Pacientes de Cannabis Medicinal, São Paulo/SP, Brasil</li>
-                  <li><strong>Prazo de resposta:</strong> até 15 dias úteis a partir do recebimento da solicitação</li>
+                  <li data-en="<strong>Role:</strong> Data Protection Officer (DPO)"><strong>Cargo:</strong> Encarregado de Proteção de Dados (DPO)</li>
+                  <li data-en="<strong>E-mail:</strong> <a href='mailto:encarregado@diambasagrada.org.br'>encarregado@diambasagrada.org.br</a>"><strong>E-mail:</strong> <a href="mailto:encarregado@diambasagrada.org.br">encarregado@diambasagrada.org.br</a></li>
+                  <li data-en="<strong>Address:</strong> Diamba Sagrada — Medical Cannabis Patient Association, São Paulo/SP, Brazil"><strong>Endereço:</strong> Diamba Sagrada — Associação de Pacientes de Cannabis Medicinal, São Paulo/SP, Brasil</li>
+                  <li data-en="<strong>Response time:</strong> up to 15 business days from receipt of the request"><strong>Prazo de resposta:</strong> até 15 dias úteis a partir do recebimento da solicitação</li>
                 </ul>
 
-                <p>Caso não obtenha resposta satisfatória, você poderá registrar reclamação junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> pelo site <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">www.gov.br/anpd</a>.</p>
+                <p data-en="If you do not obtain a satisfactory response, you may file a complaint with the <strong>National Data Protection Authority (ANPD)</strong> via the website <a href='https://www.gov.br/anpd' target='_blank' rel='noopener noreferrer'>www.gov.br/anpd</a>.">Caso não obtenha resposta satisfatória, você poderá registrar reclamação junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong> pelo site <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">www.gov.br/anpd</a>.</p>
               </div>
             </div>
           </div>
@@ -445,11 +453,11 @@
       </div>
       <div class="container">
         <div class="cta-final__content reveal">
-          <h2 id="cta-privacidade-title">Dúvidas sobre seus dados?</h2>
-          <p>Nossa equipe está disponível para esclarecer qualquer questão sobre como tratamos suas informações pessoais. Sua privacidade é nosso compromisso.</p>
+          <h2 id="cta-privacidade-title" data-en="Questions about your data?">Dúvidas sobre seus dados?</h2>
+          <p data-en="Our team is available to clarify any question about how we process your personal information. Your privacy is our commitment.">Nossa equipe está disponível para esclarecer qualquer questão sobre como tratamos suas informações pessoais. Sua privacidade é nosso compromisso.</p>
           <div class="btn-group" style="justify-content:center;">
-            <a href="contato.html" class="btn btn--gold btn--lg">Fale Conosco</a>
-            <a href="mailto:encarregado@diambasagrada.org.br" class="btn btn--secondary btn--lg">Contatar DPO</a>
+            <a href="contato.html" class="btn btn--gold btn--lg" data-en="Contact Us">Fale Conosco</a>
+            <a href="mailto:encarregado@diambasagrada.org.br" class="btn btn--secondary btn--lg" data-en="Contact the DPO">Contatar DPO</a>
           </div>
         </div>
       </div>
@@ -467,40 +475,40 @@
 
         <!-- Brand + Slogan -->
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <!-- Navegação -->
         <div class="footer__nav">
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
           </ul>
         </div>
 
         <!-- Áreas -->
         <div class="footer__areas">
-          <h4 class="footer__heading">Áreas</h4>
+          <h4 class="footer__heading" data-en="Areas">Áreas</h4>
           <ul class="footer__list">
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Área Jurídica</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Área Jurídica</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <!-- Contato -->
         <div class="footer__contact">
-          <h4 class="footer__heading">Contato</h4>
+          <h4 class="footer__heading" data-en="Contact">Contato</h4>
           <ul class="footer__list">
             <li>
               <a href="mailto:contato@diambasagrada.org.br" class="footer__link">
@@ -520,7 +528,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada">
+              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Instagram">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.5rem;">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <circle cx="12" cy="12" r="5"/>
@@ -536,11 +544,11 @@
 
       <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <span>&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
+        <span data-en="&copy; 2025 Diamba Sagrada. All rights reserved.">&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
         <div class="footer__legal">
-          <a href="termos.html" class="footer__link">Termos de Uso</a>
-          <a href="privacidade.html" class="footer__link">Política de Privacidade</a>
-          <a href="privacidade.html#lgpd" class="footer__link">LGPD</a>
+          <a href="termos.html" class="footer__link" data-en="Terms of Use">Termos de Uso</a>
+          <a href="privacidade.html" class="footer__link" data-en="Privacy Policy">Política de Privacidade</a>
+          <a href="privacidade.html#lgpd" class="footer__link" data-en="LGPD">LGPD</a>
         </div>
       </div>
     </div>
@@ -552,34 +560,35 @@
        ======================================================================== -->
 
   <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Voltar ao topo">
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
   </button>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" data-en-aria-label="Contact us on WhatsApp">
     <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
       <path d="M16.01 2.64C8.65 2.64 2.67 8.6 2.67 15.94c0 2.35.62 4.64 1.8 6.66L2.5 29.36l7.01-1.84a13.28 13.28 0 0 0 6.5 1.7c7.36 0 13.33-5.96 13.33-13.3S23.37 2.64 16.01 2.64zm0 24.33c-2.1 0-4.15-.57-5.93-1.64l-.43-.25-4.42 1.16 1.18-4.31-.28-.45a11.04 11.04 0 0 1-1.7-5.88c0-6.1 4.97-11.06 11.08-11.06 6.1 0 11.07 4.96 11.07 11.06 0 6.1-4.97 11.07-11.07 11.07h-.5zm6.07-8.28c-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.05 1.3-.19.22-.38.25-.72.08-.33-.17-1.4-.52-2.67-1.64-.99-.88-1.65-1.96-1.85-2.29-.19-.33-.02-.51.15-.68.15-.15.33-.39.5-.58.17-.2.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.74-1.78-1.01-2.43-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.42-.3.33-1.16 1.13-1.16 2.77 0 1.63 1.19 3.21 1.35 3.43.17.22 2.34 3.57 5.67 5 .79.34 1.41.55 1.89.7.8.25 1.52.22 2.09.13.64-.1 1.97-.8 2.24-1.58.28-.78.28-1.44.2-1.58-.09-.14-.31-.22-.64-.39z"/>
     </svg>
   </a>
 
   <!-- Cookie Consent Banner -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies">
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" data-en-aria-label="Cookie consent">
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">
+      <p class="cookie-consent__text" data-en="This website uses cookies to improve your experience. By continuing to browse, you agree to our <a href='privacidade.html' class='cookie-consent__link'>Privacy Policy</a> and to the use of cookies in accordance with the LGPD.">
         Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="privacidade.html" class="cookie-consent__link">Política de Privacidade</a> e com o uso de cookies conforme a LGPD.
       </p>
       <div class="cookie-consent__actions">
-        <button class="btn btn--primary cookie-consent__accept">Aceitar</button>
-        <button class="btn btn--secondary cookie-consent__decline">Recusar</button>
+        <button class="btn btn--primary cookie-consent__accept" data-en="Accept">Aceitar</button>
+        <button class="btn btn--secondary cookie-consent__decline" data-en="Decline">Recusar</button>
       </div>
     </div>
   </div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

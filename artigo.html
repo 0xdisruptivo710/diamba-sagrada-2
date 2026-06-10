@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema Endocanabinoide: O que a ciência já sabe — Diamba Sagrada</title>
-  <meta name="description" content="Descubra como o sistema endocanabinoide funciona no corpo humano e por que a cannabis medicinal tem se mostrado uma aliada terapêutica promissora.">
+  <title data-en="Endocannabinoid System: What science already knows — Diamba Sagrada">Sistema Endocanabinoide: O que a ciência já sabe — Diamba Sagrada</title>
+  <meta name="description" content="Descubra como o sistema endocanabinoide funciona no corpo humano e por que a cannabis medicinal tem se mostrado uma aliada terapêutica promissora." data-en-content="Discover how the endocannabinoid system works in the human body and why medical cannabis has shown itself to be a promising therapeutic ally.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,35 +19,43 @@
   <!-- ========== NAVIGATION ========== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link">Jurídico</a>
-        <a href="blog.html" class="nav__link nav__link--active" aria-current="page">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link nav__link--active" aria-current="page" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -58,11 +66,11 @@
       <div class="hero__bg"></div>
       <div class="container hero__content">
         <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">/</span>
-          <a href="blog.html">Blog</a>
+          <a href="blog.html" data-en="Blog">Blog</a>
           <span class="breadcrumb__sep" aria-hidden="true">/</span>
-          <span aria-current="page">Artigo</span>
+          <span aria-current="page" data-en="Article">Artigo</span>
         </nav>
       </div>
     </section>
@@ -71,17 +79,17 @@
     <section class="section" style="padding-top: 0;">
       <div class="container">
         <header class="article-header reveal">
-          <span class="article-header__badge badge--ciencia">Ciência &amp; Pesquisas</span>
-          <h1 class="article-header__title">Sistema Endocanabinoide: O que a ciência já sabe sobre o potencial terapêutico da cannabis</h1>
+          <span class="article-header__badge badge--ciencia" data-en="Science &amp; Research">Ciência &amp; Pesquisas</span>
+          <h1 class="article-header__title" data-en="Endocannabinoid System: What science already knows about the therapeutic potential of cannabis">Sistema Endocanabinoide: O que a ciência já sabe sobre o potencial terapêutico da cannabis</h1>
           <div class="article-header__meta">
-            <span>
+            <span data-en="&lt;svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'&gt;&lt;path d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/&gt;&lt;circle cx='12' cy='7' r='4'/&gt;&lt;/svg&gt; Diamba Sagrada Team">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                 <circle cx="12" cy="7" r="4"/>
               </svg>
               Equipe Diamba Sagrada
             </span>
-            <span>
+            <span data-en="&lt;svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'&gt;&lt;rect x='3' y='4' width='18' height='18' rx='2' ry='2'/&gt;&lt;line x1='16' y1='2' x2='16' y2='6'/&gt;&lt;line x1='8' y1='2' x2='8' y2='6'/&gt;&lt;line x1='3' y1='10' x2='21' y2='10'/&gt;&lt;/svg&gt; April 12, 2026">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>
@@ -90,7 +98,7 @@
               </svg>
               12 de Abril, 2026
             </span>
-            <span>
+            <span data-en="&lt;svg viewBox='0 0 24 24' width='16' height='16' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'&gt;&lt;circle cx='12' cy='12' r='10'/&gt;&lt;polyline points='12 6 12 12 16 14'/&gt;&lt;/svg&gt; 8 min read">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"/>
                 <polyline points="12 6 12 12 16 14"/>
@@ -107,83 +115,83 @@
           <!-- Main Content -->
           <article class="article-content reveal">
 
-            <h2 id="o-que-e">O que é o Sistema Endocanabinoide?</h2>
-            <p>
+            <h2 id="o-que-e" data-en="What is the Endocannabinoid System?">O que é o Sistema Endocanabinoide?</h2>
+            <p data-en="The endocannabinoid system (ECS) is a complex cell-signaling system present in all mammals. Discovered in the early 1990s by researchers investigating the effects of THC on the body, it is today recognized as one of the most important mechanisms of physiological regulation in the human body. The ECS is made up of endocannabinoids (molecules produced naturally by our bodies), cannabinoid receptors and enzymes responsible for the synthesis and breakdown of these molecules.">
               O sistema endocanabinoide (SEC) é um complexo sistema de sinalização celular presente em todos os mamíferos. Descoberto no início da década de 1990 por pesquisadores que investigavam os efeitos do THC no organismo, ele é hoje reconhecido como um dos mais importantes mecanismos de regulação fisiológica do corpo humano. O SEC é composto por endocanabinoides (moléculas produzidas naturalmente pelo nosso corpo), receptores canabinoides e enzimas responsáveis pela síntese e degradação dessas moléculas.
             </p>
-            <p>
+            <p data-en="The primary function of the endocannabinoid system is to maintain homeostasis — that is, the body's internal balance. It acts in the regulation of mood, appetite, sleep, pain, the immune response and various other vital functions. When this system is dysregulated, pathological conditions may arise that science increasingly associates with what is known as &quot;clinical endocannabinoid deficiency&quot;.">
               A principal função do sistema endocanabinoide é manter a homeostase, ou seja, o equilíbrio interno do organismo. Ele atua na regulação do humor, do apetite, do sono, da dor, da resposta imunológica e de diversas outras funções vitais. Quando esse sistema é desregulado, podem surgir condições patológicas que, cada vez mais, a ciência associa à chamada "deficiência clínica de endocanabinoides".
             </p>
 
-            <h2 id="receptores">Receptores CB1 e CB2</h2>
-            <p>
+            <h2 id="receptores" data-en="CB1 and CB2 Receptors">Receptores CB1 e CB2</h2>
+            <p data-en="The two main receptors of the endocannabinoid system are the CB1 and CB2 receptors. Each performs distinct functions and is distributed differently throughout the body, which explains the diversity of therapeutic effects observed with the use of medical cannabis.">
               Os dois principais receptores do sistema endocanabinoide são os receptores CB1 e CB2. Cada um desempenha funções distintas e está distribuído de maneira diferente pelo organismo, o que explica a diversidade de efeitos terapêuticos observados com o uso da cannabis medicinal.
             </p>
             <ul>
-              <li><strong>Receptores CB1:</strong> estão concentrados no sistema nervoso central, especialmente em áreas do cérebro relacionadas à memória, cognição, dor, humor e coordenação motora. São os principais responsáveis pelos efeitos psicoativos do THC.</li>
-              <li><strong>Receptores CB2:</strong> predominam no sistema imunológico, no baço, nas amígdalas e em células do sistema gastrointestinal. Sua ativação está associada a efeitos anti-inflamatórios e imunomoduladores, sem os efeitos psicoativos típicos.</li>
-              <li><strong>Endocanabinoides endógenos:</strong> a anandamida (AEA) e o 2-araquidonoilglicerol (2-AG) são os principais endocanabinoides produzidos pelo nosso corpo, atuando como mensageiros químicos que se ligam aos receptores CB1 e CB2.</li>
-              <li><strong>Enzimas reguladoras:</strong> a FAAH (ácido graxo amida hidrolase) e a MAGL (monoacilglicerol lipase) são responsáveis pela degradação dos endocanabinoides, controlando a duração e a intensidade da sua ação.</li>
+              <li data-en="&lt;strong&gt;CB1 receptors:&lt;/strong&gt; are concentrated in the central nervous system, especially in areas of the brain related to memory, cognition, pain, mood and motor coordination. They are mainly responsible for the psychoactive effects of THC."><strong>Receptores CB1:</strong> estão concentrados no sistema nervoso central, especialmente em áreas do cérebro relacionadas à memória, cognição, dor, humor e coordenação motora. São os principais responsáveis pelos efeitos psicoativos do THC.</li>
+              <li data-en="&lt;strong&gt;CB2 receptors:&lt;/strong&gt; predominate in the immune system, the spleen, the tonsils and in cells of the gastrointestinal system. Their activation is associated with anti-inflammatory and immunomodulatory effects, without the typical psychoactive effects."><strong>Receptores CB2:</strong> predominam no sistema imunológico, no baço, nas amígdalas e em células do sistema gastrointestinal. Sua ativação está associada a efeitos anti-inflamatórios e imunomoduladores, sem os efeitos psicoativos típicos.</li>
+              <li data-en="&lt;strong&gt;Endogenous endocannabinoids:&lt;/strong&gt; anandamide (AEA) and 2-arachidonoylglycerol (2-AG) are the main endocannabinoids produced by our bodies, acting as chemical messengers that bind to the CB1 and CB2 receptors."><strong>Endocanabinoides endógenos:</strong> a anandamida (AEA) e o 2-araquidonoilglicerol (2-AG) são os principais endocanabinoides produzidos pelo nosso corpo, atuando como mensageiros químicos que se ligam aos receptores CB1 e CB2.</li>
+              <li data-en="&lt;strong&gt;Regulatory enzymes:&lt;/strong&gt; FAAH (fatty acid amide hydrolase) and MAGL (monoacylglycerol lipase) are responsible for the breakdown of endocannabinoids, controlling the duration and intensity of their action."><strong>Enzimas reguladoras:</strong> a FAAH (ácido graxo amida hidrolase) e a MAGL (monoacilglicerol lipase) são responsáveis pela degradação dos endocanabinoides, controlando a duração e a intensidade da sua ação.</li>
             </ul>
 
-            <blockquote>
+            <blockquote data-en="&quot;The endocannabinoid system can be regarded as one of the most important signaling systems in the human body. Understanding it is essential to unlocking the therapeutic potential of cannabis in a safe, evidence-based way.&quot; &lt;br&gt;&lt;cite&gt;— Dr. Ethan Russo, neurologist and medical cannabis researcher&lt;/cite&gt;">
               "O sistema endocanabinoide pode ser considerado um dos sistemas de sinalização mais importantes do corpo humano. Compreendê-lo é fundamental para desbloquear o potencial terapêutico da cannabis de forma segura e baseada em evidências."
               <br><cite>— Dr. Ethan Russo, neurologista e pesquisador em cannabis medicinal</cite>
             </blockquote>
 
-            <h2 id="evidencias">Evidências Clínicas</h2>
-            <p>
+            <h2 id="evidencias" data-en="Clinical Evidence">Evidências Clínicas</h2>
+            <p data-en="Over the past two decades, clinical studies have shown that modulating the endocannabinoid system through phytocannabinoids (compounds from the cannabis plant) can offer significant therapeutic benefits in various conditions. Below, we list some of the areas with the most consistent evidence in the medical literature:">
               Nas últimas duas décadas, estudos clínicos têm demonstrado que a modulação do sistema endocanabinoide por meio de fitocanabinoides (compostos da planta cannabis) pode oferecer benefícios terapêuticos significativos em diversas condições. Abaixo, listamos algumas das áreas com evidências mais consistentes na literatura médica:
             </p>
             <ol>
-              <li><strong>Epilepsias refratárias:</strong> o CBD (canabidiol) foi aprovado pela FDA em 2018 para o tratamento da síndrome de Dravet e da síndrome de Lennox-Gastaut, formas graves de epilepsia infantil.</li>
-              <li><strong>Dor crônica:</strong> estudos demonstram que canabinoides podem reduzir significativamente a dor neuropática e a dor associada à esclerose múltipla.</li>
-              <li><strong>Espasticidade na esclerose múltipla:</strong> o medicamento nabiximols (Sativex) é utilizado em diversos países para o alívio da espasticidade em pacientes com EM.</li>
-              <li><strong>Náuseas e vômitos:</strong> canabinoides sintéticos como o dronabinol e a nabilona são utilizados para controlar náuseas e vômitos induzidos por quimioterapia.</li>
-              <li><strong>Transtornos de ansiedade:</strong> estudos pré-clínicos e clínicos sugerem que o CBD possui propriedades ansiolíticas, com potencial para o tratamento do transtorno de ansiedade generalizada e do TEPT.</li>
-              <li><strong>Distúrbios do sono:</strong> evidências preliminares indicam que certos canabinoides podem auxiliar na melhora da qualidade do sono, especialmente em pacientes com dor crônica.</li>
+              <li data-en="&lt;strong&gt;Refractory epilepsies:&lt;/strong&gt; CBD (cannabidiol) was approved by the FDA in 2018 for the treatment of Dravet syndrome and Lennox-Gastaut syndrome, severe forms of childhood epilepsy."><strong>Epilepsias refratárias:</strong> o CBD (canabidiol) foi aprovado pela FDA em 2018 para o tratamento da síndrome de Dravet e da síndrome de Lennox-Gastaut, formas graves de epilepsia infantil.</li>
+              <li data-en="&lt;strong&gt;Chronic pain:&lt;/strong&gt; studies show that cannabinoids can significantly reduce neuropathic pain and pain associated with multiple sclerosis."><strong>Dor crônica:</strong> estudos demonstram que canabinoides podem reduzir significativamente a dor neuropática e a dor associada à esclerose múltipla.</li>
+              <li data-en="&lt;strong&gt;Spasticity in multiple sclerosis:&lt;/strong&gt; the medication nabiximols (Sativex) is used in several countries to relieve spasticity in patients with MS."><strong>Espasticidade na esclerose múltipla:</strong> o medicamento nabiximols (Sativex) é utilizado em diversos países para o alívio da espasticidade em pacientes com EM.</li>
+              <li data-en="&lt;strong&gt;Nausea and vomiting:&lt;/strong&gt; synthetic cannabinoids such as dronabinol and nabilone are used to control chemotherapy-induced nausea and vomiting."><strong>Náuseas e vômitos:</strong> canabinoides sintéticos como o dronabinol e a nabilona são utilizados para controlar náuseas e vômitos induzidos por quimioterapia.</li>
+              <li data-en="&lt;strong&gt;Anxiety disorders:&lt;/strong&gt; preclinical and clinical studies suggest that CBD has anxiolytic properties, with potential for treating generalized anxiety disorder and PTSD."><strong>Transtornos de ansiedade:</strong> estudos pré-clínicos e clínicos sugerem que o CBD possui propriedades ansiolíticas, com potencial para o tratamento do transtorno de ansiedade generalizada e do TEPT.</li>
+              <li data-en="&lt;strong&gt;Sleep disorders:&lt;/strong&gt; preliminary evidence indicates that certain cannabinoids may help improve sleep quality, especially in patients with chronic pain."><strong>Distúrbios do sono:</strong> evidências preliminares indicam que certos canabinoides podem auxiliar na melhora da qualidade do sono, especialmente em pacientes com dor crônica.</li>
             </ol>
 
-            <h2 id="cbd-thc">O papel do CBD e THC</h2>
-            <p>
+            <h2 id="cbd-thc" data-en="The role of CBD and THC">O papel do CBD e THC</h2>
+            <p data-en="Cannabidiol (CBD) and delta-9-tetrahydrocannabinol (THC) are the two most studied and most abundant phytocannabinoids in the cannabis plant. Although both interact with the endocannabinoid system, their mechanisms of action and effects are quite distinct. THC is a partial agonist of the CB1 receptors, which explains its psychoactive effects, while CBD does not bind directly to these receptors and acts through indirect mechanisms, modulating the activity of the endocannabinoid system and interacting with other signaling systems.">
               O canabidiol (CBD) e o delta-9-tetrahidrocanabinol (THC) são os dois fitocanabinoides mais estudados e mais abundantes na planta cannabis. Embora ambos interajam com o sistema endocanabinoide, seus mecanismos de ação e efeitos são bastante distintos. O THC é um agonista parcial dos receptores CB1, o que explica seus efeitos psicoativos, enquanto o CBD não se liga diretamente a esses receptores e atua por meio de mecanismos indiretos, modulando a atividade do sistema endocanabinoide e interagindo com outros sistemas de sinalização.
             </p>
-            <p>
+            <p data-en="An important concept in medical cannabis is the so-called &quot;entourage effect&quot;, which suggests that the combination of different cannabinoids, terpenes and flavonoids from the plant can produce therapeutic effects superior to those of isolated compounds. This synergistic interaction among the plant's components is one of the reasons why many physicians and researchers advocate the use of full-spectrum extracts over isolated compounds for certain conditions.">
               Um conceito importante na cannabis medicinal é o chamado "efeito entourage" ou efeito comitiva, que sugere que a combinação de diferentes canabinoides, terpenos e flavonoides da planta pode produzir efeitos terapêuticos superiores aos de compostos isolados. Essa interação sinérgica entre os componentes da planta é uma das razões pelas quais muitos médicos e pesquisadores defendem o uso de extratos de espectro completo (full spectrum) em detrimento de compostos isolados para determinadas condições.
             </p>
 
-            <h2 id="perspectivas">Perspectivas Futuras</h2>
-            <p>
+            <h2 id="perspectivas" data-en="Future Perspectives">Perspectivas Futuras</h2>
+            <p data-en="Research on the endocannabinoid system and medical cannabis is advancing rapidly. Ongoing clinical trials are investigating the therapeutic potential of cannabinoids for conditions such as Alzheimer's disease, Parkinson's, fibromyalgia, inflammatory bowel disease and autism spectrum disorders. As science advances and regulation evolves, it is expected that more patients will be able to benefit from cannabinoid-based treatments, with protocols that are increasingly personalized and grounded in robust evidence. Diamba Sagrada follows these discoveries closely and is committed to keeping its community informed with up-to-date, accessible content.">
               A pesquisa sobre o sistema endocanabinoide e a cannabis medicinal avança rapidamente. Ensaios clínicos em andamento investigam o potencial terapêutico dos canabinoides para condições como doença de Alzheimer, Parkinson, fibromialgia, doença inflamatória intestinal e transtornos do espectro autista. À medida que a ciência avança e a regulamentação evolui, espera-se que mais pacientes possam se beneficiar de tratamentos baseados em canabinoides, com protocolos cada vez mais personalizados e baseados em evidências robustas. A Diamba Sagrada acompanha essas descobertas de perto e se compromete a manter sua comunidade informada com conteúdo atualizado e acessível.
             </p>
 
             <!-- ========== ARTICLE SHARE ========== -->
             <div class="article-share">
-              <span class="article-share__label">Compartilhar:</span>
+              <span class="article-share__label" data-en="Share:">Compartilhar:</span>
 
               <!-- Twitter/X -->
-              <a href="https://twitter.com/intent/tweet?text=Sistema+Endocanabinoide&url=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Twitter/X">
+              <a href="https://twitter.com/intent/tweet?text=Sistema+Endocanabinoide&url=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Twitter/X" data-en-aria-label="Share on Twitter/X">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
 
               <!-- Facebook -->
-              <a href="https://www.facebook.com/sharer/sharer.php?u=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Facebook">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no Facebook" data-en-aria-label="Share on Facebook">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
 
               <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/shareArticle?mini=true&url=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no LinkedIn">
+              <a href="https://www.linkedin.com/shareArticle?mini=true&url=" class="article-share__btn" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar no LinkedIn" data-en-aria-label="Share on LinkedIn">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
 
               <!-- Copy Link -->
-              <button class="article-share__btn" aria-label="Copiar link do artigo" onclick="navigator.clipboard.writeText(window.location.href)">
+              <button class="article-share__btn" aria-label="Copiar link do artigo" data-en-aria-label="Copy article link" onclick="navigator.clipboard.writeText(window.location.href)">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
@@ -193,7 +201,7 @@
 
             <!-- ========== ARTICLE SOURCES ========== -->
             <div class="article-sources">
-              <h3 class="article-sources__title">
+              <h3 class="article-sources__title" data-en="&lt;svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'&gt;&lt;path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/&gt;&lt;path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/&gt;&lt;path d='M8 7h8M8 11h6'/&gt;&lt;/svg&gt; Sources &amp; References">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
@@ -212,14 +220,14 @@
           </article>
 
           <!-- Sidebar TOC -->
-          <aside class="article-toc reveal" aria-label="Sumário do artigo">
-            <h3 class="article-toc__title">Sumário</h3>
+          <aside class="article-toc reveal" aria-label="Sumário do artigo" data-en-aria-label="Article contents">
+            <h3 class="article-toc__title" data-en="Contents">Sumário</h3>
             <nav class="article-toc__list">
-              <a href="#o-que-e" class="article-toc__link article-toc__link--active">O que é o Sistema Endocanabinoide?</a>
-              <a href="#receptores" class="article-toc__link">Receptores CB1 e CB2</a>
-              <a href="#evidencias" class="article-toc__link">Evidências Clínicas</a>
-              <a href="#cbd-thc" class="article-toc__link">O papel do CBD e THC</a>
-              <a href="#perspectivas" class="article-toc__link">Perspectivas Futuras</a>
+              <a href="#o-que-e" class="article-toc__link article-toc__link--active" data-en="What is the Endocannabinoid System?">O que é o Sistema Endocanabinoide?</a>
+              <a href="#receptores" class="article-toc__link" data-en="CB1 and CB2 Receptors">Receptores CB1 e CB2</a>
+              <a href="#evidencias" class="article-toc__link" data-en="Clinical Evidence">Evidências Clínicas</a>
+              <a href="#cbd-thc" class="article-toc__link" data-en="The role of CBD and THC">O papel do CBD e THC</a>
+              <a href="#perspectivas" class="article-toc__link" data-en="Future Perspectives">Perspectivas Futuras</a>
             </nav>
           </aside>
 
@@ -231,7 +239,7 @@
     <section class="section section--sm">
       <div class="container">
         <div class="related-articles reveal">
-          <h2 class="related-articles__title">Artigos Relacionados</h2>
+          <h2 class="related-articles__title" data-en="Related Articles">Artigos Relacionados</h2>
           <div class="blog-grid">
 
             <!-- Related Card 1 -->
@@ -246,12 +254,12 @@
                 </svg>
               </div>
               <div class="blog-card__body">
-                <span class="blog-card__badge badge--ciencia">Ciência &amp; Pesquisas</span>
-                <h3 class="blog-card__title">CBD e epilepsia: revisão dos estudos clínicos mais recentes</h3>
-                <p class="blog-card__excerpt">Uma análise das evidências científicas sobre o uso do canabidiol no tratamento de epilepsias refratárias.</p>
+                <span class="blog-card__badge badge--ciencia" data-en="Science &amp; Research">Ciência &amp; Pesquisas</span>
+                <h3 class="blog-card__title" data-en="CBD and epilepsy: a review of the latest clinical studies">CBD e epilepsia: revisão dos estudos clínicos mais recentes</h3>
+                <p class="blog-card__excerpt" data-en="An analysis of the scientific evidence on the use of cannabidiol in the treatment of refractory epilepsies.">Uma análise das evidências científicas sobre o uso do canabidiol no tratamento de epilepsias refratárias.</p>
                 <div class="blog-card__meta">
-                  <span>8 Abr 2026</span>
-                  <span>6 min de leitura</span>
+                  <span data-en="Apr 8, 2026">8 Abr 2026</span>
+                  <span data-en="6 min read">6 min de leitura</span>
                 </div>
               </div>
             </article>
@@ -268,12 +276,12 @@
                 </svg>
               </div>
               <div class="blog-card__body">
-                <span class="blog-card__badge badge--saude">Saúde &amp; Bem-estar</span>
-                <h3 class="blog-card__title">Cannabis e qualidade do sono: mitos e verdades</h3>
-                <p class="blog-card__excerpt">O que a ciência diz sobre a relação entre cannabis medicinal e os distúrbios do sono.</p>
+                <span class="blog-card__badge badge--saude" data-en="Health &amp; Wellness">Saúde &amp; Bem-estar</span>
+                <h3 class="blog-card__title" data-en="Cannabis and sleep quality: myths and truths">Cannabis e qualidade do sono: mitos e verdades</h3>
+                <p class="blog-card__excerpt" data-en="What science says about the relationship between medical cannabis and sleep disorders.">O que a ciência diz sobre a relação entre cannabis medicinal e os distúrbios do sono.</p>
                 <div class="blog-card__meta">
-                  <span>3 Abr 2026</span>
-                  <span>5 min de leitura</span>
+                  <span data-en="Apr 3, 2026">3 Abr 2026</span>
+                  <span data-en="5 min read">5 min de leitura</span>
                 </div>
               </div>
             </article>
@@ -289,12 +297,12 @@
                 </svg>
               </div>
               <div class="blog-card__body">
-                <span class="blog-card__badge badge--guia">Guia do Associado</span>
-                <h3 class="blog-card__title">Primeiro passo: como iniciar seu tratamento com cannabis medicinal</h3>
-                <p class="blog-card__excerpt">Guia prático para quem está começando a jornada com cannabis medicinal.</p>
+                <span class="blog-card__badge badge--guia" data-en="Member's Guide">Guia do Associado</span>
+                <h3 class="blog-card__title" data-en="First step: how to begin your medical cannabis treatment">Primeiro passo: como iniciar seu tratamento com cannabis medicinal</h3>
+                <p class="blog-card__excerpt" data-en="A practical guide for those starting their journey with medical cannabis.">Guia prático para quem está começando a jornada com cannabis medicinal.</p>
                 <div class="blog-card__meta">
-                  <span>15 Mar 2026</span>
-                  <span>9 min de leitura</span>
+                  <span data-en="Mar 15, 2026">15 Mar 2026</span>
+                  <span data-en="9 min read">9 min de leitura</span>
                 </div>
               </div>
             </article>
@@ -311,38 +319,38 @@
     <div class="container">
       <div class="footer__grid footer__grid--expanded">
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">
             Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.
           </p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <div class="footer__nav">
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Jurídico</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Jurídico</a></li>
           </ul>
         </div>
 
         <div class="footer__nav">
-          <h4 class="footer__heading">Conteúdo</h4>
+          <h4 class="footer__heading" data-en="Content">Conteúdo</h4>
           <ul class="footer__list">
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <div class="footer__contact">
-          <h4 class="footer__heading">Contato</h4>
+          <h4 class="footer__heading" data-en="Contact">Contato</h4>
           <ul class="footer__list">
             <li>
               <a href="mailto:contato@diambasagrada.org.br" class="footer__link">
@@ -354,7 +362,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada">
+              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Instagram">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.5rem;">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <circle cx="12" cy="12" r="5"/>
@@ -368,17 +376,17 @@
       </div>
 
       <div class="footer__bottom">
-        <p>&copy; 2026 Diamba Sagrada. Todos os direitos reservados.</p>
+        <p data-en="&copy; 2026 Diamba Sagrada. All rights reserved.">&copy; 2026 Diamba Sagrada. Todos os direitos reservados.</p>
         <div class="footer__bottom-links">
-          <a href="politica-privacidade.html">Política de Privacidade</a>
-          <a href="termos-de-uso.html">Termos de Uso</a>
+          <a href="politica-privacidade.html" data-en="Privacy Policy">Política de Privacidade</a>
+          <a href="termos-de-uso.html" data-en="Terms of Use">Termos de Uso</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ========== BACK TO TOP ========== -->
-  <button class="back-to-top" aria-label="Voltar ao topo">
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
@@ -386,28 +394,29 @@
 
   <!-- ========== WHATSAPP FLOAT ========== -->
   <div class="whatsapp-float">
-    <a href="https://wa.me/553598848060?text=Olá! Gostaria de saber mais sobre a Diamba Sagrada." class="whatsapp-float__btn" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp">
+    <a href="https://wa.me/553598848060?text=Olá! Gostaria de saber mais sobre a Diamba Sagrada." class="whatsapp-float__btn" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo WhatsApp" data-en-aria-label="Chat on WhatsApp">
       <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
     </a>
-    <span class="whatsapp-float__label">Fale conosco</span>
+    <span class="whatsapp-float__label" data-en="Talk to us">Fale conosco</span>
   </div>
 
   <!-- ========== COOKIE CONSENT ========== -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies">
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" data-en-aria-label="Cookie consent">
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">
+      <p class="cookie-consent__text" data-en="We use cookies to improve your experience. By continuing to browse, you agree to our &lt;a href='politica-privacidade.html'&gt;Privacy Policy&lt;/a&gt;.">
         Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="politica-privacidade.html">Política de Privacidade</a>.
       </p>
       <div class="cookie-consent__actions">
-        <button class="cookie-consent__btn cookie-consent__btn--accept">Aceitar</button>
-        <button class="cookie-consent__btn cookie-consent__btn--customize">Configurar</button>
+        <button class="cookie-consent__btn cookie-consent__btn--accept" data-en="Accept">Aceitar</button>
+        <button class="cookie-consent__btn cookie-consent__btn--customize" data-en="Customize">Configurar</button>
       </div>
     </div>
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

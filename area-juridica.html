@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça seus direitos como paciente de cannabis medicinal. A Diamba Sagrada oferece orientação jurídica, proteção legal e apoio em processos administrativos e judiciais.">
-  <title>Área Jurídica — Diamba Sagrada</title>
+  <meta name="description" content="Conheça seus direitos como paciente de cannabis medicinal. A Diamba Sagrada oferece orientação jurídica, proteção legal e apoio em processos administrativos e judiciais." data-en-content="Know your rights as a medical cannabis patient. Diamba Sagrada offers legal guidance, legal protection and support in administrative and judicial proceedings.">
+  <title data-en="Legal Area — Diamba Sagrada">Área Jurídica — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +21,45 @@
        ======================================================================== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link nav__link--active" aria-current="page">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link nav__link--active" aria-current="page" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -64,14 +74,14 @@
       <div class="hero__content">
         <!-- Breadcrumb -->
         <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Área Jurídica</span>
+          <span aria-current="page" data-en="Legal Area">Área Jurídica</span>
         </nav>
 
-        <span class="section__overline page-enter page-enter--delay-1">Proteção e Direito</span>
-        <h1 class="hero__title page-enter page-enter--delay-1">Área Jurídica</h1>
-        <p class="hero__subtitle page-enter page-enter--delay-2">Orientação jurídica especializada para proteger seus direitos como paciente de cannabis medicinal. Atuamos para que você tenha acesso seguro, legal e digno ao tratamento.</p>
+        <span class="section__overline page-enter page-enter--delay-1" data-en="Protection and Rights">Proteção e Direito</span>
+        <h1 class="hero__title page-enter page-enter--delay-1" data-en="Legal Area">Área Jurídica</h1>
+        <p class="hero__subtitle page-enter page-enter--delay-2" data-en="Specialized legal guidance to protect your rights as a medical cannabis patient. We work to ensure you have safe, legal and dignified access to treatment.">Orientação jurídica especializada para proteger seus direitos como paciente de cannabis medicinal. Atuamos para que você tenha acesso seguro, legal e digno ao tratamento.</p>
       </div>
     </section>
 
@@ -81,8 +91,8 @@
     <section class="section" aria-labelledby="direitos-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__overline">Conheça seus direitos</span>
-          <h2 class="section__title" id="direitos-title">Seus Direitos como Paciente</h2>
+          <span class="section__overline" data-en="Know your rights">Conheça seus direitos</span>
+          <h2 class="section__title" id="direitos-title" data-en="Your Rights as a Patient">Seus Direitos como Paciente</h2>
         </div>
 
         <div class="direitos-grid stagger">
@@ -95,8 +105,8 @@
                 <circle cx="12" cy="12" r="10"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Direito ao Tratamento</h3>
-            <p class="direito-card__text">Pacientes com prescrição médica têm direito ao acesso legal a produtos à base de cannabis para fins terapêuticos, conforme regulamentação vigente.</p>
+            <h3 class="direito-card__title" data-en="Right to Treatment">Direito ao Tratamento</h3>
+            <p class="direito-card__text" data-en="Patients with a medical prescription have the right to legal access to cannabis-based products for therapeutic purposes, in accordance with the regulations in force.">Pacientes com prescrição médica têm direito ao acesso legal a produtos à base de cannabis para fins terapêuticos, conforme regulamentação vigente.</p>
           </article>
 
           <!-- Direito 2: Habeas Corpus Preventivo -->
@@ -107,8 +117,8 @@
                 <path d="M9 12l2 2 4-4"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Habeas Corpus Preventivo</h3>
-            <p class="direito-card__text">Proteção legal para cultivo autorizado judicialmente. Decisões judiciais reconhecem o direito ao cultivo próprio para uso medicinal em diversos casos.</p>
+            <h3 class="direito-card__title" data-en="Preventive Habeas Corpus">Habeas Corpus Preventivo</h3>
+            <p class="direito-card__text" data-en="Legal protection for court-authorized cultivation. Court rulings recognize the right to grow your own plants for medicinal use in many cases.">Proteção legal para cultivo autorizado judicialmente. Decisões judiciais reconhecem o direito ao cultivo próprio para uso medicinal em diversos casos.</p>
           </article>
 
           <!-- Direito 3: Importação de Produtos -->
@@ -121,8 +131,8 @@
                 <path d="M10 14h4"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Importação de Produtos</h3>
-            <p class="direito-card__text">A ANVISA permite a importação de produtos à base de cannabis com receita médica e laudo técnico, garantindo acesso a tratamentos de qualidade.</p>
+            <h3 class="direito-card__title" data-en="Importing Products">Importação de Produtos</h3>
+            <p class="direito-card__text" data-en="Anvisa (Brazil's health regulatory agency) permits the import of cannabis-based products with a medical prescription and a technical report, ensuring access to quality treatments.">A ANVISA permite a importação de produtos à base de cannabis com receita médica e laudo técnico, garantindo acesso a tratamentos de qualidade.</p>
           </article>
 
           <!-- Direito 4: Sigilo Médico -->
@@ -135,8 +145,8 @@
                 <path d="M12 17.5V20"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Sigilo Médico</h3>
-            <p class="direito-card__text">Seus dados médicos são protegidos por lei. O sigilo entre paciente e profissional de saúde é garantido pelo Código de Ética Médica e pela LGPD.</p>
+            <h3 class="direito-card__title" data-en="Medical Confidentiality">Sigilo Médico</h3>
+            <p class="direito-card__text" data-en="Your medical data is protected by law. Confidentiality between patient and healthcare professional is guaranteed by the Código de Ética Médica (Code of Medical Ethics) and by the LGPD (Brazil's data protection law).">Seus dados médicos são protegidos por lei. O sigilo entre paciente e profissional de saúde é garantido pelo Código de Ética Médica e pela LGPD.</p>
           </article>
 
           <!-- Direito 5: Associação Legal -->
@@ -151,8 +161,8 @@
                 <path d="M10 13h4"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Associação Legal</h3>
-            <p class="direito-card__text">Participar de uma associação de pacientes de cannabis medicinal é legal e amparado pela Constituição Federal, que garante a liberdade de associação.</p>
+            <h3 class="direito-card__title" data-en="Lawful Association">Associação Legal</h3>
+            <p class="direito-card__text" data-en="Taking part in a medical cannabis patient association is lawful and protected by the Constituição Federal (Brazil's Federal Constitution), which guarantees freedom of association.">Participar de uma associação de pacientes de cannabis medicinal é legal e amparado pela Constituição Federal, que garante a liberdade de associação.</p>
           </article>
 
           <!-- Direito 6: Direito à Informação -->
@@ -164,8 +174,8 @@
                 <path d="M12 8h.01"/>
               </svg>
             </div>
-            <h3 class="direito-card__title">Direito à Informação</h3>
-            <p class="direito-card__text">Acesso a informações claras sobre seu tratamento é um direito fundamental. Você tem o direito de entender cada etapa do processo terapêutico.</p>
+            <h3 class="direito-card__title" data-en="Right to Information">Direito à Informação</h3>
+            <p class="direito-card__text" data-en="Access to clear information about your treatment is a fundamental right. You have the right to understand every stage of the therapeutic process.">Acesso a informações claras sobre seu tratamento é um direito fundamental. Você tem o direito de entender cada etapa do processo terapêutico.</p>
           </article>
 
         </div>
@@ -178,39 +188,39 @@
     <section class="section" aria-labelledby="lei-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__overline">Legislação</span>
-          <h2 class="section__title" id="lei-title">O que a lei permite</h2>
+          <span class="section__overline" data-en="Legislation">Legislação</span>
+          <h2 class="section__title" id="lei-title" data-en="What the law allows">O que a lei permite</h2>
         </div>
 
         <div class="lei-table-wrap reveal">
           <table class="lei-table" role="table">
             <thead>
               <tr>
-                <th scope="col">Permitido</th>
-                <th scope="col">Requer Cuidado</th>
-                <th scope="col">Não Permitido</th>
+                <th scope="col" data-en="Allowed">Permitido</th>
+                <th scope="col" data-en="Requires Care">Requer Cuidado</th>
+                <th scope="col" data-en="Not Allowed">Não Permitido</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Usar cannabis com prescrição médica</td>
-                <td>Transportar sem documentação</td>
-                <td>Vender ou comercializar</td>
+                <td data-en="Using cannabis with a medical prescription">Usar cannabis com prescrição médica</td>
+                <td data-en="Transporting it without documentation">Transportar sem documentação</td>
+                <td data-en="Selling or trading it">Vender ou comercializar</td>
               </tr>
               <tr>
-                <td>Importar via ANVISA com receita</td>
-                <td>Cultivo sem autorização judicial</td>
-                <td>Portar sem receita médica</td>
+                <td data-en="Importing via Anvisa with a prescription">Importar via ANVISA com receita</td>
+                <td data-en="Cultivation without court authorization">Cultivo sem autorização judicial</td>
+                <td data-en="Carrying it without a medical prescription">Portar sem receita médica</td>
               </tr>
               <tr>
-                <td>Participar de associação de pacientes</td>
-                <td>Compartilhar com outros pacientes</td>
-                <td>Propaganda ou incentivo ao uso recreativo</td>
+                <td data-en="Joining a patient association">Participar de associação de pacientes</td>
+                <td data-en="Sharing it with other patients">Compartilhar com outros pacientes</td>
+                <td data-en="Advertising or encouraging recreational use">Propaganda ou incentivo ao uso recreativo</td>
               </tr>
               <tr>
-                <td>Adquirir de associação autorizada</td>
-                <td>Produzir sem acompanhamento técnico</td>
-                <td>Dirigir sob efeito</td>
+                <td data-en="Obtaining it from an authorized association">Adquirir de associação autorizada</td>
+                <td data-en="Producing it without technical supervision">Produzir sem acompanhamento técnico</td>
+                <td data-en="Driving under its effects">Dirigir sob efeito</td>
               </tr>
             </tbody>
           </table>
@@ -224,8 +234,8 @@
     <section class="section" aria-labelledby="atuacao-title">
       <div class="container">
         <div class="section__header reveal">
-          <span class="section__overline">Nossa Atuação</span>
-          <h2 class="section__title" id="atuacao-title">Como atuamos juridicamente</h2>
+          <span class="section__overline" data-en="How We Work">Nossa Atuação</span>
+          <h2 class="section__title" id="atuacao-title" data-en="How we work legally">Como atuamos juridicamente</h2>
         </div>
 
         <div class="atuacao-grid stagger">
@@ -238,8 +248,8 @@
                 <path d="M12 8v4l3 3"/>
               </svg>
             </div>
-            <h3 class="atuacao-item__title">Orientação Preventiva</h3>
-            <p class="atuacao-item__text">Esclarecemos seus direitos antes de qualquer problema. Informação qualificada é a melhor forma de prevenção e segurança jurídica para o paciente.</p>
+            <h3 class="atuacao-item__title" data-en="Preventive Guidance">Orientação Preventiva</h3>
+            <p class="atuacao-item__text" data-en="We clarify your rights before any problem arises. Qualified information is the best form of prevention and legal security for the patient.">Esclarecemos seus direitos antes de qualquer problema. Informação qualificada é a melhor forma de prevenção e segurança jurídica para o paciente.</p>
           </article>
 
           <!-- Atuação 2: Acompanhamento de Casos -->
@@ -253,8 +263,8 @@
                 <polyline points="10 9 9 9 8 9"/>
               </svg>
             </div>
-            <h3 class="atuacao-item__title">Acompanhamento de Casos</h3>
-            <p class="atuacao-item__text">Apoio jurídico em processos administrativos e judiciais. Acompanhamos cada etapa para garantir que seus direitos sejam respeitados integralmente.</p>
+            <h3 class="atuacao-item__title" data-en="Case Monitoring">Acompanhamento de Casos</h3>
+            <p class="atuacao-item__text" data-en="Legal support in administrative and judicial proceedings. We follow every stage to ensure that your rights are fully respected.">Apoio jurídico em processos administrativos e judiciais. Acompanhamos cada etapa para garantir que seus direitos sejam respeitados integralmente.</p>
           </article>
 
           <!-- Atuação 3: Advocacy e Políticas Públicas -->
@@ -268,8 +278,8 @@
                 <line x1="14" y1="1" x2="14" y2="4"/>
               </svg>
             </div>
-            <h3 class="atuacao-item__title">Advocacy e Políticas Públicas</h3>
-            <p class="atuacao-item__text">Atuamos para ampliar o acesso legal à cannabis medicinal no Brasil, participando de discussões legislativas e promovendo mudanças em políticas públicas.</p>
+            <h3 class="atuacao-item__title" data-en="Advocacy and Public Policy">Advocacy e Políticas Públicas</h3>
+            <p class="atuacao-item__text" data-en="We work to broaden legal access to medical cannabis in Brazil, taking part in legislative discussions and promoting changes in public policy.">Atuamos para ampliar o acesso legal à cannabis medicinal no Brasil, participando de discussões legislativas e promovendo mudanças em políticas públicas.</p>
           </article>
 
         </div>
@@ -283,15 +293,15 @@
       <div class="container">
         <div class="compliance-block reveal">
           <div class="compliance-block__content">
-            <span class="compliance-block__overline">
+            <span class="compliance-block__overline" data-en="<svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z'/><path d='M9 12l2 2 4-4'/></svg> Legal Commitment">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
                 <path d="M9 12l2 2 4-4"/>
               </svg>
               Compromisso Legal
             </span>
-            <h3 id="compliance-title">Transparência e responsabilidade em cada ação</h3>
-            <p>A Diamba Sagrada opera rigorosamente dentro da legislação brasileira. Respeitamos todas as regulamentações da ANVISA para produtos à base de cannabis, seguimos os protocolos exigidos para associações de pacientes e garantimos a proteção dos dados pessoais e de saúde de todos os nossos associados em conformidade com a LGPD (Lei Geral de Proteção de Dados). Nosso compromisso é com a transparência, a legalidade e a dignidade de cada paciente que confia em nós.</p>
+            <h3 id="compliance-title" data-en="Transparency and responsibility in every action">Transparência e responsabilidade em cada ação</h3>
+            <p data-en="Diamba Sagrada operates strictly within Brazilian law. We comply with all Anvisa regulations for cannabis-based products, follow the protocols required of patient associations, and ensure the protection of the personal and health data of all our members in compliance with the LGPD (Lei Geral de Proteção de Dados — Brazil's General Data Protection Law). Our commitment is to transparency, legality and the dignity of every patient who trusts us.">A Diamba Sagrada opera rigorosamente dentro da legislação brasileira. Respeitamos todas as regulamentações da ANVISA para produtos à base de cannabis, seguimos os protocolos exigidos para associações de pacientes e garantimos a proteção dos dados pessoais e de saúde de todos os nossos associados em conformidade com a LGPD (Lei Geral de Proteção de Dados). Nosso compromisso é com a transparência, a legalidade e a dignidade de cada paciente que confia em nós.</p>
           </div>
         </div>
       </div>
@@ -307,11 +317,11 @@
       </div>
       <div class="container">
         <div class="cta-final__content reveal">
-          <h2>Conheça nossas políticas</h2>
-          <p>Transparência é a base da nossa relação com você. Consulte nossos documentos legais.</p>
+          <h2 data-en="Get to know our policies">Conheça nossas políticas</h2>
+          <p data-en="Transparency is the foundation of our relationship with you. Consult our legal documents.">Transparência é a base da nossa relação com você. Consulte nossos documentos legais.</p>
           <div class="btn-group" style="justify-content:center">
-            <a href="privacidade.html" class="btn btn--gold btn--lg">Política de Privacidade</a>
-            <a href="termos.html" class="btn btn--light btn--lg">Termos de Uso</a>
+            <a href="privacidade.html" class="btn btn--gold btn--lg" data-en="Privacy Policy">Política de Privacidade</a>
+            <a href="termos.html" class="btn btn--light btn--lg" data-en="Terms of Use">Termos de Uso</a>
           </div>
         </div>
       </div>
@@ -328,41 +338,41 @@
 
         <!-- Brand -->
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <!-- Navegação -->
         <div class="footer__nav">
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Jurídico</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Jurídico</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
           </ul>
         </div>
 
         <!-- Institucional -->
         <div>
-          <h4 class="footer__heading">Institucional</h4>
+          <h4 class="footer__heading" data-en="Institutional">Institucional</h4>
           <ul class="footer__list">
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
-            <li><a href="privacidade.html" class="footer__link">Política de Privacidade</a></li>
-            <li><a href="termos.html" class="footer__link">Termos de Uso</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
+            <li><a href="privacidade.html" class="footer__link" data-en="Privacy Policy">Política de Privacidade</a></li>
+            <li><a href="termos.html" class="footer__link" data-en="Terms of Use">Termos de Uso</a></li>
           </ul>
         </div>
 
         <!-- Contato -->
         <div class="footer__contact">
-          <h4 class="footer__heading">Contato</h4>
+          <h4 class="footer__heading" data-en="Contact">Contato</h4>
           <ul class="footer__list">
             <li>
               <a href="mailto:contato@diambasagrada.org.br" class="footer__link">
@@ -374,7 +384,7 @@
               </a>
             </li>
             <li>
-              <a href="https://wa.me/553598848060" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="WhatsApp da Diamba Sagrada">
+              <a href="https://wa.me/553598848060" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="WhatsApp da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on WhatsApp">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.5rem;">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                 </svg>
@@ -382,7 +392,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada">
+              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Instagram">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.5rem;">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <circle cx="12" cy="12" r="5"/>
@@ -398,8 +408,8 @@
 
       <!-- LGPD Links + Bottom Bar -->
       <div class="footer__bottom">
-        <p>&copy; 2026 Diamba Sagrada. Todos os direitos reservados.</p>
-        <p>
+        <p data-en="&copy; 2026 Diamba Sagrada. All rights reserved.">&copy; 2026 Diamba Sagrada. Todos os direitos reservados.</p>
+        <p data-en="<a href='privacidade.html' class='footer__link'>Privacy</a> &middot; <a href='termos.html' class='footer__link'>Terms</a> &middot; Non-profit association">
           <a href="privacidade.html" class="footer__link">Privacidade</a> &middot;
           <a href="termos.html" class="footer__link">Termos</a> &middot;
           Associação sem fins lucrativos
@@ -413,7 +423,7 @@
        ======================================================================== -->
 
   <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Voltar ao topo">
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
@@ -421,29 +431,30 @@
 
   <!-- WhatsApp Float -->
   <div class="whatsapp-float">
-    <a href="https://wa.me/553598848060" target="_blank" rel="noopener noreferrer" class="whatsapp-float__btn" aria-label="Fale conosco pelo WhatsApp">
+    <a href="https://wa.me/553598848060" target="_blank" rel="noopener noreferrer" class="whatsapp-float__btn" aria-label="Fale conosco pelo WhatsApp" data-en-aria-label="Talk to us on WhatsApp">
       <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
       </svg>
     </a>
-    <span class="whatsapp-float__label">Fale conosco</span>
+    <span class="whatsapp-float__label" data-en="Talk to us">Fale conosco</span>
   </div>
 
   <!-- Cookie Consent -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" aria-describedby="cookie-text">
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" aria-describedby="cookie-text" data-en-aria-label="Cookie consent">
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text" id="cookie-text">
+      <p class="cookie-consent__text" id="cookie-text" data-en="We use cookies to improve your experience. By continuing to browse, you agree to our <a href='privacidade.html'>Privacy Policy</a>.">
         Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="privacidade.html">Política de Privacidade</a>.
       </p>
       <div class="cookie-consent__actions">
-        <button class="cookie-consent__btn cookie-consent__btn--accept" type="button">Aceitar</button>
-        <button class="cookie-consent__btn cookie-consent__btn--customize" type="button">Personalizar</button>
+        <button class="cookie-consent__btn cookie-consent__btn--accept" type="button" data-en="Accept">Aceitar</button>
+        <button class="cookie-consent__btn cookie-consent__btn--customize" type="button" data-en="Customize">Personalizar</button>
       </div>
     </div>
   </div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

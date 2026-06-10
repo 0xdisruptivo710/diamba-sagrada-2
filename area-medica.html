@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conectamos pacientes a médicos prescritores habilitados em cannabis medicinal. Consultas, prescrições e acompanhamento especializado na Diamba Sagrada.">
-  <title>Área Médica — Diamba Sagrada</title>
+  <meta name="description" content="Conectamos pacientes a médicos prescritores habilitados em cannabis medicinal. Consultas, prescrições e acompanhamento especializado na Diamba Sagrada." data-en-content="We connect patients with licensed prescribing physicians for medical cannabis. Appointments, prescriptions and specialized follow-up at Diamba Sagrada.">
+  <title data-en="Medical — Diamba Sagrada">Área Médica — Diamba Sagrada</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +21,43 @@
        ======================================================================== -->
   <header class="nav" role="banner">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial">
+      <a href="index.html" class="nav__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
         <img src="img/logo.png" alt="Logo Diamba Sagrada" width="48" height="48">
         <span>Diamba Sagrada</span>
       </a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Início</a>
-        <a href="quem-somos.html" class="nav__link">Quem Somos</a>
-        <a href="area-medica.html" class="nav__link nav__link--active" aria-current="page">Área Médica</a>
-        <a href="area-juridica.html" class="nav__link">Jurídico</a>
-        <a href="blog.html" class="nav__link">Blog</a>
-        <a href="produtos.html" class="nav__link">Loja</a>
-        <a href="doar.html" class="nav__link">Doar</a>
-        <a href="contato.html" class="nav__link">Contato</a>
+        <a href="index.html" class="nav__link" data-en="Home">Início</a>
+        <a href="quem-somos.html" class="nav__link" data-en="About Us">Quem Somos</a>
+        <a href="area-medica.html" class="nav__link nav__link--active" aria-current="page" data-en="Medical">Área Médica</a>
+        <a href="area-juridica.html" class="nav__link" data-en="Legal">Jurídico</a>
+        <a href="blog.html" class="nav__link" data-en="Blog">Blog</a>
+        <a href="produtos.html" class="nav__link" data-en="Shop">Loja</a>
+        <a href="doar.html" class="nav__link" data-en="Donate">Doar</a>
+        <a href="contato.html" class="nav__link" data-en="Contact">Contato</a>
       </div>
-      <a href="seja-associado.html" class="btn btn--primary nav__cta">Seja Associado</a>
-      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="seja-associado.html" class="btn btn--primary nav__cta" data-en="Become a Member">Seja Associado</a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" data-en-aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
-      <a href="index.html">Início</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="area-medica.html">Área Médica</a>
-      <a href="area-juridica.html">Jurídico</a>
-      <a href="blog.html">Blog</a>
-      <a href="produtos.html">Loja</a>
-      <a href="doar.html">Doar</a>
-      <a href="contato.html">Contato</a>
-      <a href="seja-associado.html" class="btn btn--gold">Seja Associado</a>
+    <div class="nav__mobile" id="mobile-menu" role="dialog" aria-label="Menu de navegação" data-en-aria-label="Navigation menu">
+      <a href="index.html" data-en="Home">Início</a>
+      <a href="quem-somos.html" data-en="About Us">Quem Somos</a>
+      <a href="area-medica.html" data-en="Medical">Área Médica</a>
+      <a href="area-juridica.html" data-en="Legal">Jurídico</a>
+      <a href="blog.html" data-en="Blog">Blog</a>
+      <a href="produtos.html" data-en="Shop">Loja</a>
+      <a href="doar.html" data-en="Donate">Doar</a>
+      <a href="contato.html" data-en="Contact">Contato</a>
+      <a href="seja-associado.html" class="btn btn--gold" data-en="Become a Member">Seja Associado</a>
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-toggle__btn" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </header>
 
@@ -64,14 +72,14 @@
       <div class="hero__content">
         <!-- Breadcrumb -->
         <nav class="breadcrumb page-enter" aria-label="Breadcrumb">
-          <a href="index.html">Início</a>
+          <a href="index.html" data-en="Home">Início</a>
           <span class="breadcrumb__sep" aria-hidden="true">&rsaquo;</span>
-          <span aria-current="page">Área Médica</span>
+          <span aria-current="page" data-en="Medical">Área Médica</span>
         </nav>
 
-        <span class="section__overline page-enter page-enter--delay-1">Cuidado Especializado</span>
-        <h1 class="hero__title page-enter page-enter--delay-1">Área Médica</h1>
-        <p class="hero__subtitle page-enter page-enter--delay-2">Conectamos você a médicos prescritores habilitados, comprometidos com um tratamento seguro, personalizado e baseado em evidências científicas.</p>
+        <span class="section__overline page-enter page-enter--delay-1" data-en="Specialized Care">Cuidado Especializado</span>
+        <h1 class="hero__title page-enter page-enter--delay-1" data-en="Medical">Área Médica</h1>
+        <p class="hero__subtitle page-enter page-enter--delay-2" data-en="We connect you with licensed prescribing physicians committed to safe, personalized treatment grounded in scientific evidence.">Conectamos você a médicos prescritores habilitados, comprometidos com um tratamento seguro, personalizado e baseado em evidências científicas.</p>
       </div>
     </section>
 
@@ -83,26 +91,26 @@
       <div class="container">
 
         <div class="section__header reveal">
-          <span class="section__overline">Conexão com médico</span>
-          <h2 class="section__title" id="parceiros-title">Conecte-se com um médico prescritor</h2>
+          <span class="section__overline" data-en="Connect with a doctor">Conexão com médico</span>
+          <h2 class="section__title" id="parceiros-title" data-en="Connect with a prescribing physician">Conecte-se com um médico prescritor</h2>
         </div>
 
         <div class="conn-grid reveal">
 
           <!-- Caminho 1 — voucher (associado) -->
           <article class="conn-card">
-            <span class="conn-card__tag">Associado</span>
-            <h3>Voucher de 50% na primeira consulta</h3>
-            <p>Ao se associar, você recebe um voucher de desconto para a primeira consulta com médico parceiro e pode anexar sua receita e laudo. Pessoas com deficiência têm consulta gratuita.</p>
-            <a href="seja-associado.html" class="btn btn--gold">Quero meu voucher</a>
+            <span class="conn-card__tag" data-en="Member">Associado</span>
+            <h3 data-en="50% voucher on your first appointment">Voucher de 50% na primeira consulta</h3>
+            <p data-en="When you become a member, you receive a discount voucher for your first appointment with a partner physician and can attach your prescription and medical report. People with disabilities get a free appointment.">Ao se associar, você recebe um voucher de desconto para a primeira consulta com médico parceiro e pode anexar sua receita e laudo. Pessoas com deficiência têm consulta gratuita.</p>
+            <a href="seja-associado.html" class="btn btn--gold" data-en="I want my voucher">Quero meu voucher</a>
           </article>
 
           <!-- Caminho 2 — WhatsApp direto -->
           <article class="conn-card">
-            <span class="conn-card__tag">Direto</span>
-            <h3>Prefere falar agora?</h3>
-            <p>Converse com nossa equipe de acolhimento pelo WhatsApp. Orientamos sobre o atendimento médico e os próximos passos do seu tratamento.</p>
-            <a href="https://wa.me/553598848060?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20para%20uma%20consulta%20m%C3%A9dica%20de%20cannabis%20com%20a%20Diamba%20Sagrada." class="btn btn--primary" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+            <span class="conn-card__tag" data-en="Direct">Direto</span>
+            <h3 data-en="Prefer to talk now?">Prefere falar agora?</h3>
+            <p data-en="Talk to our welcome team on WhatsApp. We provide guidance on medical care and the next steps of your treatment.">Converse com nossa equipe de acolhimento pelo WhatsApp. Orientamos sobre o atendimento médico e os próximos passos do seu tratamento.</p>
+            <a href="https://wa.me/553598848060?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20para%20uma%20consulta%20m%C3%A9dica%20de%20cannabis%20com%20a%20Diamba%20Sagrada." class="btn btn--primary" target="_blank" rel="noopener noreferrer" data-en="Chat on WhatsApp">Falar no WhatsApp</a>
           </article>
 
         </div>
@@ -126,8 +134,8 @@
       <div class="container">
 
         <div class="section__header reveal">
-          <span class="section__overline">Passo a passo</span>
-          <h2 class="section__title" id="atendimento-title">Como funciona o atendimento</h2>
+          <span class="section__overline" data-en="Step by step">Passo a passo</span>
+          <h2 class="section__title" id="atendimento-title" data-en="How the care process works">Como funciona o atendimento</h2>
         </div>
 
         <div class="atendimento-stepper reveal">
@@ -138,8 +146,8 @@
               <span>1</span>
             </div>
             <div class="atendimento-step__content">
-              <h3 class="atendimento-step__title">Primeiro Contato</h3>
-              <p class="atendimento-step__text">Fale conosco e conte sobre sua condição. Nossa equipe de acolhimento vai ouvir sua história e orientar os próximos passos de forma humanizada.</p>
+              <h3 class="atendimento-step__title" data-en="First Contact">Primeiro Contato</h3>
+              <p class="atendimento-step__text" data-en="Reach out and tell us about your condition. Our welcoming team will listen to your story and guide the next steps in a humane way.">Fale conosco e conte sobre sua condição. Nossa equipe de acolhimento vai ouvir sua história e orientar os próximos passos de forma humanizada.</p>
             </div>
           </div>
 
@@ -149,8 +157,8 @@
               <span>2</span>
             </div>
             <div class="atendimento-step__content">
-              <h3 class="atendimento-step__title">Avaliação Médica</h3>
-              <p class="atendimento-step__text">Consulta com médico prescritor habilitado que irá avaliar seu quadro clínico, histórico de saúde e a indicação do tratamento com cannabis medicinal.</p>
+              <h3 class="atendimento-step__title" data-en="Medical Evaluation">Avaliação Médica</h3>
+              <p class="atendimento-step__text" data-en="An appointment with a licensed prescribing physician who will assess your clinical picture, health history and whether medical cannabis treatment is indicated.">Consulta com médico prescritor habilitado que irá avaliar seu quadro clínico, histórico de saúde e a indicação do tratamento com cannabis medicinal.</p>
             </div>
           </div>
 
@@ -160,8 +168,8 @@
               <span>3</span>
             </div>
             <div class="atendimento-step__content">
-              <h3 class="atendimento-step__title">Prescrição</h3>
-              <p class="atendimento-step__text">Receita médica personalizada para seu tratamento, com dosagem, concentração e forma de uso adequados ao seu perfil e necessidades individuais.</p>
+              <h3 class="atendimento-step__title" data-en="Prescription">Prescrição</h3>
+              <p class="atendimento-step__text" data-en="A personalized medical prescription for your treatment, with the dosage, concentration and form of use suited to your profile and individual needs.">Receita médica personalizada para seu tratamento, com dosagem, concentração e forma de uso adequados ao seu perfil e necessidades individuais.</p>
             </div>
           </div>
 
@@ -171,8 +179,8 @@
               <span>4</span>
             </div>
             <div class="atendimento-step__content">
-              <h3 class="atendimento-step__title">Acompanhamento</h3>
-              <p class="atendimento-step__text">Suporte contínuo durante todo o tratamento. Retornos periódicos com o médico para ajustes, acompanhamento de evolução e esclarecimento de dúvidas.</p>
+              <h3 class="atendimento-step__title" data-en="Follow-up">Acompanhamento</h3>
+              <p class="atendimento-step__text" data-en="Ongoing support throughout the entire treatment. Periodic return visits with the physician for adjustments, monitoring progress and clarifying any questions.">Suporte contínuo durante todo o tratamento. Retornos periódicos com o médico para ajustes, acompanhamento de evolução e esclarecimento de dúvidas.</p>
             </div>
           </div>
 
@@ -188,8 +196,8 @@
       <div class="container">
 
         <div class="section__header reveal">
-          <span class="section__overline">Perguntas Frequentes</span>
-          <h2 class="section__title" id="faq-title">O que é uma prescrição de cannabis medicinal?</h2>
+          <span class="section__overline" data-en="Frequently Asked Questions">Perguntas Frequentes</span>
+          <h2 class="section__title" id="faq-title" data-en="What is a medical cannabis prescription?">O que é uma prescrição de cannabis medicinal?</h2>
         </div>
 
         <div class="accordion">
@@ -197,13 +205,13 @@
           <!-- FAQ 1 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>O que é a prescrição de cannabis medicinal?</span>
+              <span data-en="What is a medical cannabis prescription?">O que é a prescrição de cannabis medicinal?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="A medical cannabis prescription is a document issued by a licensed physician that authorizes the patient to use cannabis-based products for therapeutic purposes. This prescription contains information about the type of product, cannabinoid concentration (such as CBD and THC), dosage and route of administration, and it is indispensable for the lawful purchase of the medication in Brazil.">
                 A prescrição de cannabis medicinal é um documento emitido por médico habilitado que autoriza o paciente a utilizar produtos à base de cannabis para fins terapêuticos. Essa receita contém informações sobre o tipo de produto, concentração de canabinoides (como CBD e THC), dosagem e forma de administração, sendo indispensável para a aquisição legal do medicamento no Brasil.
               </div>
             </div>
@@ -212,13 +220,13 @@
           <!-- FAQ 2 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Quais condições podem ser tratadas?</span>
+              <span data-en="Which conditions can be treated?">Quais condições podem ser tratadas?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="Medical cannabis has been used in the treatment of various conditions, including refractory epilepsy, chronic pain, multiple sclerosis, fibromyalgia, anxiety, insomnia, autism, Parkinson's, Alzheimer's, and nausea and vomiting associated with chemotherapy, among others. The indication always depends on an individual medical evaluation and the clinical picture of each patient.">
                 A cannabis medicinal tem sido utilizada no tratamento de diversas condições, incluindo epilepsia refratária, dor crônica, esclerose múltipla, fibromialgia, ansiedade, insônia, autismo, Parkinson, Alzheimer, náuseas e vômitos associados à quimioterapia, entre outras. A indicação sempre depende da avaliação médica individual e do quadro clínico de cada paciente.
               </div>
             </div>
@@ -227,13 +235,13 @@
           <!-- FAQ 3 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>A consulta pode ser feita por telemedicina?</span>
+              <span data-en="Can the appointment be done via telemedicine?">A consulta pode ser feita por telemedicina?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="Yes. Telemedicine is regulated in Brazil and many of our partner physicians offer video-call appointments. This makes access easier for patients who live in other cities or states, with no need to travel. The prescription can be issued digitally, in accordance with the regulations in force.">
                 Sim. A telemedicina é regulamentada no Brasil e muitos dos nossos médicos parceiros oferecem consultas por videochamada. Isso facilita o acesso de pacientes que moram em outras cidades ou estados, sem necessidade de deslocamento. A prescrição pode ser emitida digitalmente, conforme as normas vigentes.
               </div>
             </div>
@@ -242,13 +250,13 @@
           <!-- FAQ 4 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Quanto custa a consulta?</span>
+              <span data-en="How much does the appointment cost?">Quanto custa a consulta?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="The cost of the appointment varies according to the physician and specialty. Our partners offer special conditions for Diamba Sagrada members, with affordable prices and the possibility of paying in installments. Get in touch with us to learn about the available options and find the professional best suited to your case and budget.">
                 O valor da consulta varia conforme o médico e a especialidade. Nossos parceiros oferecem condições especiais para associados da Diamba Sagrada, com valores acessíveis e possibilidade de parcelamento. Entre em contato conosco para conhecer as opções disponíveis e encontrar o profissional mais adequado ao seu caso e orçamento.
               </div>
             </div>
@@ -257,13 +265,13 @@
           <!-- FAQ 5 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Preciso de encaminhamento do meu médico?</span>
+              <span data-en="Do I need a referral from my doctor?">Preciso de encaminhamento do meu médico?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="A referral is not required. You can book an appointment directly with one of our partner prescribing physicians. However, if you already have previous medical reports, test results or records, it is advisable to bring them to the appointment to assist with the evaluation and provide more complete, personalized care.">
                 Não é obrigatório ter encaminhamento. Você pode agendar diretamente uma consulta com um dos nossos médicos prescritores parceiros. No entanto, se você já possui laudos, exames ou relatórios médicos anteriores, é recomendável levá-los à consulta para auxiliar na avaliação e proporcionar um atendimento mais completo e personalizado.
               </div>
             </div>
@@ -272,13 +280,13 @@
           <!-- FAQ 6 -->
           <div class="accordion__item reveal">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>A prescrição de cannabis medicinal é legal no Brasil?</span>
+              <span data-en="Is a medical cannabis prescription legal in Brazil?">A prescrição de cannabis medicinal é legal no Brasil?</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9"/>
               </svg>
             </button>
             <div class="accordion__content">
-              <div class="accordion__inner">
+              <div class="accordion__inner" data-en="Yes. Anvisa regulates the prescription and use of cannabis-based products for medicinal purposes in Brazil. RDC 660/2022 establishes the rules for the importation of products by individuals, and RDC 327/2019 regulates the manufacture and sale of cannabis products in the country. Any physician registered with the CRM may prescribe, provided they clinically justify the indication.">
                 Sim. A Anvisa regulamenta a prescrição e o uso de produtos à base de cannabis para fins medicinais no Brasil. A RDC 660/2022 estabelece as normas para importação de produtos por pessoa física, e a RDC 327/2019 regulamenta a fabricação e comercialização de produtos de cannabis no país. Qualquer médico inscrito no CRM pode prescrever, desde que justifique clinicamente a indicação.
               </div>
             </div>
@@ -296,54 +304,54 @@
       <div class="container">
 
         <div class="section__header reveal">
-          <span class="section__overline">Envie sua receita</span>
-          <h2 class="section__title" id="upload-title">Upload de Receita Médica</h2>
-          <p class="section__desc">Se você já possui uma prescrição de cannabis medicinal, envie-a de forma segura para darmos continuidade ao seu atendimento.</p>
+          <span class="section__overline" data-en="Send your prescription">Envie sua receita</span>
+          <h2 class="section__title" id="upload-title" data-en="Upload Your Medical Prescription">Upload de Receita Médica</h2>
+          <p class="section__desc" data-en="If you already have a medical cannabis prescription, upload it securely so we can continue your care.">Se você já possui uma prescrição de cannabis medicinal, envie-a de forma segura para darmos continuidade ao seu atendimento.</p>
         </div>
 
         <form id="receita-form" class="receita-form reveal" novalidate>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="receita-nome" class="form-label">Nome completo</label>
-              <input type="text" id="receita-nome" name="nome" class="form-input" required placeholder="Seu nome completo" autocomplete="name">
-              <div class="form-error">Por favor, insira seu nome.</div>
+              <label for="receita-nome" class="form-label" data-en="Full name">Nome completo</label>
+              <input type="text" id="receita-nome" name="nome" class="form-input" required placeholder="Seu nome completo" data-en-placeholder="Your full name" autocomplete="name">
+              <div class="form-error" data-en="Please enter your name.">Por favor, insira seu nome.</div>
             </div>
             <div class="form-group">
-              <label for="receita-contato" class="form-label">E-mail ou WhatsApp</label>
-              <input type="text" id="receita-contato" name="contato" class="form-input" required placeholder="Para retornarmos a você">
-              <div class="form-error">Informe um e-mail ou telefone para contato.</div>
+              <label for="receita-contato" class="form-label" data-en="Email or WhatsApp">E-mail ou WhatsApp</label>
+              <input type="text" id="receita-contato" name="contato" class="form-input" required placeholder="Para retornarmos a você" data-en-placeholder="So we can get back to you">
+              <div class="form-error" data-en="Provide an email or phone number for contact.">Informe um e-mail ou telefone para contato.</div>
             </div>
           </div>
 
           <div class="form-group">
-            <label class="form-label">Receita médica</label>
-            <div class="file-upload" tabindex="0" role="button" aria-label="Enviar receita médica">
+            <label class="form-label" data-en="Medical prescription">Receita médica</label>
+            <div class="file-upload" tabindex="0" role="button" aria-label="Enviar receita médica" data-en-aria-label="Upload medical prescription">
               <svg class="file-upload__icon" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M42 30v8a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4v-8"/>
                 <polyline points="32 16 24 8 16 16"/>
                 <line x1="24" y1="8" x2="24" y2="30"/>
               </svg>
               <div class="file-upload__text">
-                <strong>Arraste seu arquivo ou clique para selecionar</strong><br>
-                <span style="color: var(--color-text-light); font-size: var(--text-sm);">PDF, JPG, PNG — máx. 10MB</span>
+                <strong data-en="Drag your file here or click to select">Arraste seu arquivo ou clique para selecionar</strong><br>
+                <span style="color: var(--color-text-light); font-size: var(--text-sm);" data-en="PDF, JPG, PNG — max. 10MB">PDF, JPG, PNG — máx. 10MB</span>
               </div>
-              <input type="file" name="receita" accept=".pdf,.jpg,.jpeg,.png" required aria-label="Selecionar arquivo de receita médica">
+              <input type="file" name="receita" accept=".pdf,.jpg,.jpeg,.png" required aria-label="Selecionar arquivo de receita médica" data-en-aria-label="Select medical prescription file">
             </div>
-            <div class="form-error">Anexe sua receita para enviar.</div>
+            <div class="form-error" data-en="Attach your prescription to send.">Anexe sua receita para enviar.</div>
           </div>
 
           <div class="form-group">
-            <label for="receita-msg" class="form-label">Mensagem <span style="color: var(--color-text-light); font-size: var(--text-xs);">(opcional)</span></label>
-            <textarea id="receita-msg" name="mensagem" class="form-input" rows="3" placeholder="Algo que devamos saber sobre seu tratamento?"></textarea>
+            <label for="receita-msg" class="form-label" data-en="Message <span style='color: var(--color-text-light); font-size: var(--text-xs);'>(optional)</span>">Mensagem <span style="color: var(--color-text-light); font-size: var(--text-xs);">(opcional)</span></label>
+            <textarea id="receita-msg" name="mensagem" class="form-input" rows="3" placeholder="Algo que devamos saber sobre seu tratamento?" data-en-placeholder="Anything we should know about your treatment?"></textarea>
           </div>
 
           <div class="form-group">
             <div class="form-checkbox">
               <input type="checkbox" id="receita-lgpd" name="lgpd" required>
-              <label for="receita-lgpd">Autorizo o tratamento dos meus dados conforme a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">LGPD</a>.</label>
+              <label for="receita-lgpd" data-en="I authorize the processing of my data under the <a href='privacidade.html' target='_blank' rel='noopener noreferrer'>LGPD</a>.">Autorizo o tratamento dos meus dados conforme a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">LGPD</a>.</label>
             </div>
-            <div class="form-error">É necessário autorizar o tratamento de dados.</div>
+            <div class="form-error" data-en="You must authorize data processing.">É necessário autorizar o tratamento de dados.</div>
           </div>
 
           <div class="receita-form__actions">
@@ -352,9 +360,9 @@
                 <path d="M22 2L11 13"/>
                 <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
               </svg>
-              Enviar receita
+              <span data-en="Send prescription">Enviar receita</span>
             </button>
-            <a href="#" class="btn btn--secondary" data-receita-whatsapp target="_blank" rel="noopener noreferrer">Enviar pelo WhatsApp</a>
+            <a href="#" class="btn btn--secondary" data-receita-whatsapp target="_blank" rel="noopener noreferrer" data-en="Send via WhatsApp">Enviar pelo WhatsApp</a>
           </div>
 
           <div class="receita-form__success" data-receita-success hidden>
@@ -362,7 +370,7 @@
               <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
               <polyline points="22 4 12 14.01 9 11.01"/>
             </svg>
-            <p><strong>Receita enviada com sucesso!</strong> Em breve nossa equipe entra em contato para dar continuidade ao seu atendimento.</p>
+            <p data-en="<strong>Prescription sent successfully!</strong> Our team will contact you shortly to continue your care."><strong>Receita enviada com sucesso!</strong> Em breve nossa equipe entra em contato para dar continuidade ao seu atendimento.</p>
           </div>
         </form>
 
@@ -373,7 +381,7 @@
             <circle cx="12" cy="16" r="1.5"/>
             <path d="M12 17.5V20"/>
           </svg>
-          <p>Seus dados estão protegidos conforme a <strong>LGPD</strong> (Lei Geral de Proteção de Dados). Todas as informações enviadas são armazenadas com criptografia e acessadas exclusivamente pela equipe autorizada da Diamba Sagrada para fins de atendimento ao paciente.</p>
+          <p data-en="Your data is protected under the <strong>LGPD</strong> (Brazil's General Data Protection Law). All information submitted is stored with encryption and accessed exclusively by Diamba Sagrada's authorized team for patient care purposes.">Seus dados estão protegidos conforme a <strong>LGPD</strong> (Lei Geral de Proteção de Dados). Todas as informações enviadas são armazenadas com criptografia e acessadas exclusivamente pela equipe autorizada da Diamba Sagrada para fins de atendimento ao paciente.</p>
         </div>
 
       </div>
@@ -383,7 +391,7 @@
     <!-- ========================================================================
          7. AVISO BANNER
          ======================================================================== -->
-    <section class="section section--sm" aria-label="Aviso importante">
+    <section class="section section--sm" aria-label="Aviso importante" data-en-aria-label="Important notice">
       <div class="container">
         <div class="aviso-banner reveal">
           <!-- Alert triangle icon -->
@@ -392,7 +400,7 @@
             <line x1="12" y1="9" x2="12" y2="13"/>
             <line x1="12" y1="17" x2="12.01" y2="17"/>
           </svg>
-          <p>Toda prescrição deve ser emitida por médico habilitado. A Diamba Sagrada facilita o acesso ao atendimento médico, mas não substitui a consulta. <strong>Nunca se automedique.</strong></p>
+          <p data-en="Every prescription must be issued by a licensed physician. Diamba Sagrada facilitates access to medical care but does not replace the appointment. <strong>Never self-medicate.</strong>">Toda prescrição deve ser emitida por médico habilitado. A Diamba Sagrada facilita o acesso ao atendimento médico, mas não substitui a consulta. <strong>Nunca se automedique.</strong></p>
         </div>
       </div>
     </section>
@@ -408,11 +416,11 @@
       </div>
       <div class="container">
         <div class="cta-final__content reveal">
-          <h2 id="cta-medica-title">Precisa de orientação médica?</h2>
-          <p>Nossa equipe está pronta para acolher você e conectá-lo a um médico prescritor habilitado. Dê o primeiro passo rumo ao tratamento que você merece.</p>
+          <h2 id="cta-medica-title" data-en="Do you need medical guidance?">Precisa de orientação médica?</h2>
+          <p data-en="Our team is ready to welcome you and connect you with a licensed prescribing physician. Take the first step toward the treatment you deserve.">Nossa equipe está pronta para acolher você e conectá-lo a um médico prescritor habilitado. Dê o primeiro passo rumo ao tratamento que você merece.</p>
           <div class="btn-group" style="justify-content:center;">
-            <a href="seja-associado.html" class="btn btn--gold btn--lg">Seja Associado</a>
-            <a href="contato.html" class="btn btn--secondary btn--lg">Fale Conosco</a>
+            <a href="seja-associado.html" class="btn btn--gold btn--lg" data-en="Become a Member">Seja Associado</a>
+            <a href="contato.html" class="btn btn--secondary btn--lg" data-en="Contact Us">Fale Conosco</a>
           </div>
         </div>
       </div>
@@ -430,40 +438,40 @@
 
         <!-- Brand + Slogan -->
         <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial">
+          <a href="index.html" class="footer__logo" aria-label="Diamba Sagrada — Página Inicial" data-en-aria-label="Diamba Sagrada — Home">
             <img src="img/logo.png" alt="Logo Diamba Sagrada" width="40" height="40">
             <span>Diamba Sagrada</span>
           </a>
-          <p class="footer__desc">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
-          <p class="footer__slogan">Cultivar é direito. Tratar é dignidade.</p>
+          <p class="footer__desc" data-en="A patient association dedicated to safe, legal and humane access to medical cannabis in Brazil.">Associação de pacientes dedicada ao acesso seguro, legal e humanizado à cannabis medicinal no Brasil.</p>
+          <p class="footer__slogan" data-en="To cultivate is a right. To treat is dignity.">Cultivar é direito. Tratar é dignidade.</p>
         </div>
 
         <!-- Navegação -->
         <div class="footer__nav">
-          <h4 class="footer__heading">Navegação</h4>
+          <h4 class="footer__heading" data-en="Navigation">Navegação</h4>
           <ul class="footer__list">
-            <li><a href="index.html" class="footer__link">Início</a></li>
-            <li><a href="quem-somos.html" class="footer__link">Quem Somos</a></li>
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="blog.html" class="footer__link">Blog</a></li>
-            <li><a href="contato.html" class="footer__link">Contato</a></li>
+            <li><a href="index.html" class="footer__link" data-en="Home">Início</a></li>
+            <li><a href="quem-somos.html" class="footer__link" data-en="About Us">Quem Somos</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="blog.html" class="footer__link" data-en="Blog">Blog</a></li>
+            <li><a href="contato.html" class="footer__link" data-en="Contact">Contato</a></li>
           </ul>
         </div>
 
         <!-- Áreas -->
         <div class="footer__areas">
-          <h4 class="footer__heading">Áreas</h4>
+          <h4 class="footer__heading" data-en="Areas">Áreas</h4>
           <ul class="footer__list">
-            <li><a href="area-medica.html" class="footer__link">Área Médica</a></li>
-            <li><a href="area-juridica.html" class="footer__link">Área Jurídica</a></li>
-            <li><a href="produtos.html" class="footer__link">Loja</a></li>
-            <li><a href="seja-associado.html" class="footer__link">Seja Associado</a></li>
+            <li><a href="area-medica.html" class="footer__link" data-en="Medical">Área Médica</a></li>
+            <li><a href="area-juridica.html" class="footer__link" data-en="Legal">Área Jurídica</a></li>
+            <li><a href="produtos.html" class="footer__link" data-en="Shop">Loja</a></li>
+            <li><a href="seja-associado.html" class="footer__link" data-en="Become a Member">Seja Associado</a></li>
           </ul>
         </div>
 
         <!-- Contato -->
         <div class="footer__contact">
-          <h4 class="footer__heading">Contato</h4>
+          <h4 class="footer__heading" data-en="Contact">Contato</h4>
           <ul class="footer__list">
             <li>
               <a href="mailto:contato@diambasagrada.org.br" class="footer__link">
@@ -483,7 +491,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada">
+              <a href="https://www.instagram.com/diambasagrada" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram da Diamba Sagrada" data-en-aria-label="Diamba Sagrada on Instagram">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align: middle; margin-right: 0.5rem;">
                   <rect x="2" y="2" width="20" height="20" rx="5"/>
                   <circle cx="12" cy="12" r="5"/>
@@ -499,11 +507,11 @@
 
       <!-- Bottom Bar -->
       <div class="footer__bottom">
-        <span>&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
+        <span data-en="&copy; 2025 Diamba Sagrada. All rights reserved.">&copy; 2025 Diamba Sagrada. Todos os direitos reservados.</span>
         <div class="footer__legal">
-          <a href="#" class="footer__link">Termos de Uso</a>
-          <a href="#" class="footer__link">Política de Privacidade</a>
-          <a href="#" class="footer__link">LGPD</a>
+          <a href="#" class="footer__link" data-en="Terms of Use">Termos de Uso</a>
+          <a href="#" class="footer__link" data-en="Privacy Policy">Política de Privacidade</a>
+          <a href="#" class="footer__link" data-en="LGPD">LGPD</a>
         </div>
       </div>
     </div>
@@ -515,34 +523,35 @@
        ======================================================================== -->
 
   <!-- Back to Top -->
-  <button class="back-to-top" aria-label="Voltar ao topo">
+  <button class="back-to-top" aria-label="Voltar ao topo" data-en-aria-label="Back to top">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <polyline points="18 15 12 9 6 15"/>
     </svg>
   </button>
 
   <!-- WhatsApp Float -->
-  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+  <a href="https://wa.me/553598848060" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp" data-en-aria-label="Contact us on WhatsApp">
     <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor" aria-hidden="true">
       <path d="M16.01 2.64C8.65 2.64 2.67 8.6 2.67 15.94c0 2.35.62 4.64 1.8 6.66L2.5 29.36l7.01-1.84a13.28 13.28 0 0 0 6.5 1.7c7.36 0 13.33-5.96 13.33-13.3S23.37 2.64 16.01 2.64zm0 24.33c-2.1 0-4.15-.57-5.93-1.64l-.43-.25-4.42 1.16 1.18-4.31-.28-.45a11.04 11.04 0 0 1-1.7-5.88c0-6.1 4.97-11.06 11.08-11.06 6.1 0 11.07 4.96 11.07 11.06 0 6.1-4.97 11.07-11.07 11.07h-.5zm6.07-8.28c-.33-.17-1.97-.97-2.28-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.05 1.3-.19.22-.38.25-.72.08-.33-.17-1.4-.52-2.67-1.64-.99-.88-1.65-1.96-1.85-2.29-.19-.33-.02-.51.15-.68.15-.15.33-.39.5-.58.17-.2.22-.33.33-.55.11-.22.06-.42-.03-.58-.08-.17-.74-1.78-1.01-2.43-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.42-.3.33-1.16 1.13-1.16 2.77 0 1.63 1.19 3.21 1.35 3.43.17.22 2.34 3.57 5.67 5 .79.34 1.41.55 1.89.7.8.25 1.52.22 2.09.13.64-.1 1.97-.8 2.24-1.58.28-.78.28-1.44.2-1.58-.09-.14-.31-.22-.64-.39z"/>
     </svg>
   </a>
 
   <!-- Cookie Consent Banner -->
-  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies">
+  <div class="cookie-consent" role="dialog" aria-label="Consentimento de cookies" data-en-aria-label="Cookie consent">
     <div class="cookie-consent__inner">
-      <p class="cookie-consent__text">
+      <p class="cookie-consent__text" data-en="This site uses cookies to improve your experience. By continuing to browse, you agree to our <a href='#' class='cookie-consent__link'>Privacy Policy</a> and to the use of cookies in accordance with the LGPD.">
         Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa
         <a href="#" class="cookie-consent__link">Política de Privacidade</a> e com o uso de cookies conforme a LGPD.
       </p>
       <div class="cookie-consent__actions">
-        <button class="btn btn--primary cookie-consent__accept">Aceitar</button>
-        <button class="btn btn--secondary cookie-consent__decline">Recusar</button>
+        <button class="btn btn--primary cookie-consent__accept" data-en="Accept">Aceitar</button>
+        <button class="btn btn--secondary cookie-consent__decline" data-en="Decline">Recusar</button>
       </div>
     </div>
   </div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

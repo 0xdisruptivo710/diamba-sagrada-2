@@ -4346,3 +4346,71 @@ textarea.form-input {
 }
 .receita-form__success svg { flex-shrink: 0; }
 .receita-form__success p { margin: 0; }
+
+/* ==========================================================================
+   LANGUAGE TOGGLE (PT / EN)
+   ========================================================================== */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-gold);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.lang-toggle__btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 0.35rem 0.62rem;
+  font-family: inherit;
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: var(--color-text-light);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle__btn:hover {
+  color: var(--color-green-deep);
+}
+
+.lang-toggle__btn--active {
+  background: var(--color-gold);
+  color: #14271e;
+  font-weight: 600;
+}
+
+/* Desktop placement — only at the nav breakpoint (matches .nav__links) */
+.nav__inner .lang-toggle {
+  display: none;
+  margin-left: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .nav__inner .lang-toggle {
+    display: inline-flex;
+  }
+}
+
+/* Inside the mobile menu */
+.nav__mobile .lang-toggle {
+  margin-top: 1.25rem;
+}
+
+/* Over the cinematic hero (light text before the nav scrolls) */
+body.has-cinematic-hero .nav:not(.nav--scrolled) .lang-toggle {
+  border-color: rgba(241, 232, 211, 0.5);
+}
+
+body.has-cinematic-hero .nav:not(.nav--scrolled) .lang-toggle__btn {
+  color: rgba(241, 232, 211, 0.88);
+}
+
+body.has-cinematic-hero .nav:not(.nav--scrolled) .lang-toggle__btn--active {
+  color: #14271e;
+}
+
