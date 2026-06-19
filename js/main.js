@@ -10,9 +10,11 @@
   'use strict';
 
   /* ------------------------------------------------------------------------
-     0. WEBHOOK — Padrão único de envio JSON para n8n
+     0. ENVIO — Padrão único de envio JSON dos formulários
+        Aponta para a função serverless do site (api/enviar-formulario.js),
+        que envia por e-mail via Resend. Mesma origem: nada de chave exposta.
      ------------------------------------------------------------------------ */
-  var WEBHOOK_URL = 'https://aios-n8n-webhook.yspmhc.easypanel.host/webhook/diamba-sagrada';
+  var WEBHOOK_URL = '/api/enviar-formulario';
 
   /* ------------------------------------------------------------------------
      0.1 CONFIG — valores definidos na reunião (28/05)
