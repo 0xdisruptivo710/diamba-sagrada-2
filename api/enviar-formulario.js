@@ -78,7 +78,10 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ error: 'RESEND_API_KEY não configurada no servidor.' });
   }
 
-  const to = process.env.RESEND_TO || 'Diambasagradafitoterapicos@gmail.com';
+  // Modo de teste do Resend (sem domínio verificado) exige que o destinatário
+  // bata EXATAMENTE com o e-mail dono da conta — por isso normalizamos p/ minúsculas.
+  let to = process.env.RESEND_TO || 'diambasagradafitoterapicos@gmail.com';
+  if (!to.includes('<')) to = to.toLowerCase();
   const from = process.env.RESEND_FROM || 'Diamba Sagrada <onboarding@resend.dev>';
 
   let payload;
